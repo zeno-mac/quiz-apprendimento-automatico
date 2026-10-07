@@ -10,10 +10,7 @@
             "E' sicuramente maggiore del logaritmo in base due del numero dei dati"
         ],
         "risposte_corrette": [
-            "E' minore o uguale al mumero delle features",
-            "13/02/2023, 15:36",
-            "3 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "E' minore o uguale al mumero delle features"
         ]
     },
     {
@@ -21,17 +18,13 @@
         "numero_domanda": "2",
         "domanda": "Punteggio ottenuto 0,00 su 1,00 Selezionare la sentenza errata relativa alle Random Forest (foreste di alberi decisionali)",
         "risposte_possibili": [
-            "Richiedono tecniche opportune per la creazione di alberi di decisone diversi relativi a uno stesso",
-            "Tendono a migliorare l'explainability (spiegabilità) degli alberi di decisione riducendo l'instabilità",
+            "Richiedono tecniche opportune per la creazione di alberi di decisone diversi relativi a uno stesso dataset",
+            "Tendono a migliorare l'explainability (spiegabilità) degli alberi di decisione riducendo l'instabilità nella selezione degli attributi",
             "Tentano di mitigare il fenomeno dell'overfitting tipico degli alberi di decisione",
             "E' una tecnica di apprendimento ad \"ensemble\" basata su di una combinazione di alberi di decisione"
         ],
         "risposte_corrette": [
-            "Tendono a migliorare l'explainability (spiegabilità) degli alberi di decisione riducendo l'instabilità nella selezione",
-            "degli attributi",
-            "13/02/2023, 15:36",
-            "4 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Tendono a migliorare l'explainability (spiegabilità) degli alberi di decisione riducendo l'instabilità nella selezione degli attributi"
         ]
     },
     {
@@ -45,10 +38,7 @@
             "5/4"
         ],
         "risposte_corrette": [
-            "3/2",
-            "13/02/2023, 15:36",
-            "5 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "3/2"
         ]
     },
     {
@@ -58,15 +48,11 @@
         "risposte_possibili": [
             "Quando il modello è in grado di riconfigurare in modo automatico la propria architettura",
             "Quando il modello è supposto contribuire alla creazione di nuovi dati di training",
-            "Qualora i dati di input possano essere considerati come annotazioni (labels) per guidare",
+            "Qualora i dati di input possano essere considerati come annotazioni (labels) per guidare l'apprendimento, come nel caso degli autoencoders",
             "Quando l'apprendimento pervede una sinergia tra l'uomo e la macchina"
         ],
         "risposte_corrette": [
-            "Qualora i dati di input possano essere considerati come annotazioni (labels) per guidare l'apprendimento, come",
-            "nel caso degli autoencoders",
-            "13/02/2023, 15:36",
-            "6 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Qualora i dati di input possano essere considerati come annotazioni (labels) per guidare l'apprendimento, come nel caso degli autoencoders"
         ]
     },
     {
@@ -80,10 +66,7 @@
             "P(A|B) è sicuramente minore o uguale a P(A)"
         ],
         "risposte_corrette": [
-            "P(A|B) è sicuramente maggiore o uguale di P(A and B)",
-            "13/02/2023, 15:36",
-            "7 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "P(A|B) è sicuramente maggiore o uguale di P(A and B)"
         ]
     },
     {
@@ -97,11 +80,8 @@
             "Consente il calcolo delle probabilità marginali delle singole features"
         ],
         "risposte_corrette": [
-            "Richiede il calcolo di un numero epsonenziale di parametri,",
             "Non permette il calcolo di probabilità condizionali tra le features",
-            "13/02/2023, 15:36",
-            "8 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Richiede il calcolo di un numero epsonenziale di parametri"
         ]
     },
     {
@@ -115,10 +95,7 @@
             "20"
         ],
         "risposte_corrette": [
-            "19",
-            "13/02/2023, 15:36",
-            "9 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "19"
         ]
     },
     {
@@ -132,10 +109,7 @@
             "Effettuare un training molto prolungato"
         ],
         "risposte_corrette": [
-            "Avere dati molto rumorosi",
-            "13/02/2023, 15:36",
-            "10 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Avere dati molto rumorosi"
         ]
     },
     {
@@ -149,10 +123,7 @@
             "Il learning rate può variare durante il training"
         ],
         "risposte_corrette": [
-            "E' una metrica che misura la capacità di apprendimento del modello",
-            "13/02/2023, 15:36",
-            "11 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "E' una metrica che misura la capacità di apprendimento del modello"
         ]
     },
     {
@@ -166,10 +137,7 @@
             "La probabilità di usare uno o l'altra moneta è esattamente la stessa"
         ],
         "risposte_corrette": [
-            "E' più probabile che la moneta sia normale",
-            "13/02/2023, 15:36",
-            "12 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "E' più probabile che la moneta sia normale"
         ]
     },
     {
@@ -179,14 +147,11 @@
         "risposte_possibili": [
             "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente",
             "La predizione non dipende dal bilanciamento dei dati di training rispetto alle classi",
-            "I parametri del modello possono essere tipicamente calcolati in forma chiusa, mediante una formula",
-            "Il calcolo della predizione non si basa sulla loglikelihood dei dati di training, in quanto si tratta di una"
+            "I parametri del modello possono essere tipicamente calcolati in forma chiusa, mediante una formula esplicita",
+            "Il calcolo della predizione non si basa sulla loglikelihood dei dati di training, in quanto si tratta di una tecnica discriminativa"
         ],
         "risposte_corrette": [
-            "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente",
-            "13/02/2023, 15:36",
-            "13 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente"
         ]
     },
     {
@@ -194,14 +159,12 @@
         "numero_domanda": "12",
         "domanda": "Risposta corretta La derivata della funzione logistica è: Punteggio ottenuto 1,00 su 1,00",
         "risposte_possibili": [
-            "b.",
-            "d."
+            "",
+            "",
+            "",
+            ""
         ],
-        "risposte_corrette": [
-            "13/02/2023, 15:36",
-            "14 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
-        ]
+        "risposte_corrette": []
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -214,10 +177,7 @@
             "1/10"
         ],
         "risposte_corrette": [
-            "Non può essere stabilito",
-            "13/02/2023, 15:36",
-            "15 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Non può essere stabilito"
         ]
     },
     {
@@ -231,10 +191,7 @@
             "2"
         ],
         "risposte_corrette": [
-            "13/8",
-            "13/02/2023, 15:36",
-            "16 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "13/8"
         ]
     },
     {
@@ -245,13 +202,10 @@
             "Cerca di determinare un iperpiano di separazione tra due categorie di dati",
             "Il problema di ottimizzazione ammette una soluzione in forma chiusa",
             "La funzione di loss è tipicamente una distanza quardatica tra i valori predetti e quelli osservati",
-            "Cerca di stabilire una relazione tra i valori di una variabile di output e i valori di una o più features di"
+            "Cerca di stabilire una relazione tra i valori di una variabile di output e i valori di una o più features di input"
         ],
         "risposte_corrette": [
-            "Cerca di determinare un iperpiano di separazione tra due categorie di dati",
-            "13/02/2023, 15:36",
-            "17 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Cerca di determinare un iperpiano di separazione tra due categorie di dati"
         ]
     },
     {
@@ -265,10 +219,7 @@
             "Rilevamento di anomalie (anomaly detection)"
         ],
         "risposte_corrette": [
-            "Segmentazione di immagini (semantic segmentation)",
-            "13/02/2023, 15:36",
-            "18 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Segmentazione di immagini (semantic segmentation)"
         ]
     },
     {
@@ -277,17 +228,12 @@
         "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Selezionare la sentenza SCORRETTA relativa alla backpropagation per reti neurali",
         "risposte_possibili": [
             "E' l'algoritmo per il calcolo della derivata parziale della loss rispetto a ogni parametro della rete",
-            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per",
+            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per contrastare il fenomeno della sua scomparsa (vanishing)",
             "Si riduce a semplici calcoli algebrici facilmente parallelizzabili in strutture di calcolo tipo GPU",
-            "L'algoritmo calcola il gradiente un layer alla volta, sfruttando la regola matematica per la derivazione"
+            "L'algoritmo calcola il gradiente un layer alla volta, sfruttando la regola matematica per la derivazione di funzioni composte"
         ],
         "risposte_corrette": [
-            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per",
-            "contrastare il fenomeno della sua scomparsa (vanishing)",
-            "Progetto Febbrario 2023: Inpainting ►",
-            "13/02/2023, 15:36",
-            "19 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per contrastare il fenomeno della sua scomparsa (vanishing)"
         ]
     },
     {
@@ -301,10 +247,7 @@
             "3"
         ],
         "risposte_corrette": [
-            "7",
-            "13/02/2023, 15:36",
-            "20 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "7"
         ]
     },
     {
@@ -318,10 +261,7 @@
             "(7,7,8)"
         ],
         "risposte_corrette": [
-            "(6,6,4)",
-            "13/02/2023, 15:36",
-            "21 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "(6,6,4)"
         ]
     },
     {
@@ -330,16 +270,12 @@
         "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Selezionare la sentenza errata relativa all' \"inception module\"",
         "risposte_possibili": [
             "Sfutta kernel di dimensione diversa",
-            "Tende a ridurre il costo computazionale sfruttando convoluzioni unarie per diminuire il numero dei",
+            "Tende a ridurre il costo computazionale sfruttando convoluzioni unarie per diminuire il numero dei canali",
             "Utilizza al proprio interno delle skip-connections per bypassare l'applicazione di parte dei kernel",
             "E' un componente tipico della rete Inception-v3"
         ],
         "risposte_corrette": [
-            "Utilizza al proprio interno delle skip-connections per bypassare l'applicazione di parte dei",
-            "kernel",
-            "13/02/2023, 15:36",
-            "22 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Utilizza al proprio interno delle skip-connections per bypassare l'applicazione di parte dei kernel"
         ]
     },
     {
@@ -353,10 +289,7 @@
             "Aggiungere un \"momento\" al gradiente, cioè parte del gradiente del passo precedente"
         ],
         "risposte_corrette": [
-            "Fare clipping del gradiente in una range prefissato",
-            "13/02/2023, 15:36",
-            "23 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Fare clipping del gradiente in una range prefissato"
         ]
     },
     {
@@ -370,10 +303,7 @@
             "64"
         ],
         "risposte_corrette": [
-            "68",
-            "13/02/2023, 15:36",
-            "24 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "68"
         ]
     },
     {
@@ -387,10 +317,7 @@
             "E' una metrica principalmente utilizzata nel campo della Object Detection"
         ],
         "risposte_corrette": [
-            "Non è una funzione summetrica dei suoi input",
-            "13/02/2023, 15:36",
-            "25 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Non è una funzione summetrica dei suoi input"
         ]
     },
     {
@@ -398,14 +325,13 @@
         "numero_domanda": "24",
         "domanda": "Risposta corretta Selezionare la sentenza errata relativa ai transformes. Punteggio ottenuto 1,00 su 1,00",
         "risposte_possibili": [
-            "Hanno una tipica struttura encoder-decoder, ognuno formato da uno stack di sotto-componenti",
+            "Hanno una tipica struttura encoder-decoder, ognuno formato da uno stack di sotto-componenti modulari",
             "Sono alla base delle reti della famiglia BERT e GPT",
             "Utilizzano pesantemente il meccanismo di attenzione",
-            "Aggiungono ad ogni livello della rete un encoding posizionale per enfatizzare la posizione"
+            "Aggiungono ad ogni livello della rete un encoding posizionale per enfatizzare la posizione realtiva dei tokens"
         ],
         "risposte_corrette": [
-            "Aggiungono ad ogni livello della rete un encoding posizionale per enfatizzare la posizione realtiva dei tokens",
-            "13/02/2023, 15:36"
+            "Aggiungono ad ogni livello della rete un encoding posizionale per enfatizzare la posizione realtiva dei tokens"
         ]
     },
     {
@@ -433,10 +359,7 @@
             "Si riferisce all'apprendimento di funzioni basato su esempi di training composti da coppie input-output"
         ],
         "risposte_corrette": [
-            "Richiede la costante supervisione di un esperto durante il training",
-            "12/18/24, 13:54",
-            "2 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "Richiede la costante supervisione di un esperto durante il training"
         ]
     },
     {
@@ -464,10 +387,7 @@
             "nessun effetto concreto"
         ],
         "risposte_corrette": [
-            "focalizzare le scelte sui casi più probabili",
-            "12/18/24, 13:54",
-            "3 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "focalizzare le scelte sui casi più probabili"
         ]
     },
     {
@@ -495,10 +415,7 @@
             "Valutare il modello su più set di test, migliorando la generalizzazione."
         ],
         "risposte_corrette": [
-            "Valutare il modello su più set di test, migliorando la generalizzazione.",
-            "12/18/24, 13:54",
-            "4 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "Valutare il modello su più set di test, migliorando la generalizzazione."
         ]
     },
     {
@@ -526,10 +443,7 @@
             "Nulla"
         ],
         "risposte_corrette": [
-            "E' più probabile che il dato sia truccato",
-            "12/18/24, 13:54",
-            "5 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "E' più probabile che il dato sia truccato"
         ]
     },
     {
@@ -557,10 +471,7 @@
             "Una distribuzione uniforme in [0,1]"
         ],
         "risposte_corrette": [
-            "Una distribuzione Normale, ovvero Gaussiana(0,1)",
-            "12/18/24, 13:54",
-            "6 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "Una distribuzione Normale, ovvero Gaussiana(0,1)"
         ]
     },
     {
@@ -588,10 +499,7 @@
             "Avere dati molto rumorosi"
         ],
         "risposte_corrette": [
-            "Avere dati molto rumorosi",
-            "12/18/24, 13:54",
-            "7 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "Avere dati molto rumorosi"
         ]
     },
     {
@@ -619,10 +527,7 @@
             "1/10"
         ],
         "risposte_corrette": [
-            "Non può essere stabilito",
-            "12/18/24, 13:54",
-            "8 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "Non può essere stabilito"
         ]
     },
     {
@@ -650,10 +555,7 @@
             "Il calcolo della predizione si basa sulla loglikelihood dei dati di training"
         ],
         "risposte_corrette": [
-            "I parametri del modello possono essere tipicamente calcolati in forma chiusa, mediante una formula esplicita",
-            "12/18/24, 13:54",
-            "9 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "I parametri del modello possono essere tipicamente calcolati in forma chiusa, mediante una formula esplicita"
         ]
     },
     {
@@ -681,10 +583,7 @@
             "Un tipico esempio di tecnica generativa è Naive Bayes"
         ],
         "risposte_corrette": [
-            "Sono modelli meta-teorici rivolti alla automatizzazione della generazione di reti neurali",
-            "12/18/24, 13:54",
-            "10 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "Sono modelli meta-teorici rivolti alla automatizzazione della generazione di reti neurali"
         ]
     },
     {
@@ -693,13 +592,12 @@
         "domanda": "Selezionare la sentenza corretta",
         "risposte_possibili": [
             "Un neurone artificale può apprendere solo funzioni lineari",
-            "Un neurone artificiale tipicamente calcola una combinazione lineare dei suoi input, seguita dalla applicazione di una funzione di",
+            "Un neurone artificiale tipicamente calcola una combinazione lineare dei suoi input, seguita dalla applicazione di una funzione di attivazione non lineare",
             "Il numero dei parametri di un neurone artificiale è quadratico nella dimensione dei suoi inputs",
             "Un neurone artificiale può apprendere qualunque funzione dei suoi input"
         ],
         "risposte_corrette": [
-            "Un neurone artificiale tipicamente calcola una combinazione lineare dei suoi input, seguita dalla applicazione di una funzione di attivazione non",
-            "lineare"
+            "Un neurone artificiale tipicamente calcola una combinazione lineare dei suoi input, seguita dalla applicazione di una funzione di attivazione non lineare"
         ]
     },
     {
@@ -713,10 +611,7 @@
             "definire l'algoritmo che calcola i gradienti della loss e aggiorna i pesi del modello"
         ],
         "risposte_corrette": [
-            "definire l'algoritmo che calcola i gradienti della loss e aggiorna i pesi del modello",
-            "12/18/24, 13:54",
-            "11 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "definire l'algoritmo che calcola i gradienti della loss e aggiorna i pesi del modello"
         ]
     },
     {
@@ -758,10 +653,7 @@
             "Sono essenzialmente equivalenti alla applicazione di un livello di upsampling seguito da una convoluzione normale"
         ],
         "risposte_corrette": [
-            "Richiedono la trasposizione dell'input prima di calcolare la convoluzione del Kernel",
-            "12/18/24, 13:54",
-            "12 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "Richiedono la trasposizione dell'input prima di calcolare la convoluzione del Kernel"
         ]
     },
     {
@@ -803,10 +695,7 @@
             "(7,7,8)"
         ],
         "risposte_corrette": [
-            "(7,7,8)",
-            "12/18/24, 13:54",
-            "13 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "(7,7,8)"
         ]
     },
     {
@@ -848,11 +737,7 @@
             "le GAN possono soffire del fenomeno di \"mode collapse\", cioè la tendenza a focalizzare la generazione su un unico o pochi esempi"
         ],
         "risposte_corrette": [
-            "le GAN possono soffire del fenomeno di \"mode collapse\", cioè la tendenza a focalizzare la generazione su un unico o",
-            "pochi esempi",
-            "12/18/24, 13:54",
-            "14 of 14",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=356..."
+            "le GAN possono soffire del fenomeno di \"mode collapse\", cioè la tendenza a focalizzare la generazione su un unico o pochi esempi"
         ]
     },
     {
@@ -866,9 +751,7 @@
             "Potrebbe convergere a un minimo locale"
         ],
         "risposte_corrette": [
-            "Può essere applicata solo se la funzione da minimizzare ha una superficie concava",
-            "Ricostruzione della temperatura marina superficiale da occlusione per nuvole ►",
-            "12/18/24, 13:54"
+            "Può essere applicata solo se la funzione da minimizzare ha una superficie concava"
         ]
     },
     {
@@ -896,8 +779,7 @@
             "Ridurre il numero di dati necessari per l'addestramento."
         ],
         "risposte_corrette": [
-            "Valutare il modello su più set di test, migliorando la generalizzazione.",
-            "2 of 14"
+            "Valutare il modello su più set di test, migliorando la generalizzazione."
         ]
     },
     {
@@ -921,12 +803,11 @@
         "risposte_possibili": [
             "Il range del suo valore è tra 0 e log n dove n sono i possibili valori di X",
             "Il suo valore è minimo (e uguale a 0) quando la probabilità è tutta concentrata in una classe",
-            "Il suo valore è minimo (e uguale a 0) quando la probabilità è equamente distribuita tra tutte le",
+            "Il suo valore è minimo (e uguale a 0) quando la probabilità è equamente distribuita tra tutte le classi",
             "è una misura del grado di disordine della variabile aleatoria"
         ],
         "risposte_corrette": [
-            "Il suo valore è minimo (e uguale a 0) quando la probabilità è equamente distribuita tra tutte le classi",
-            "3 of 14"
+            "Il suo valore è minimo (e uguale a 0) quando la probabilità è equamente distribuita tra tutte le classi"
         ]
     },
     {
@@ -940,8 +821,8 @@
             "Consente il calcolo delle probabilità marginali delle singole features"
         ],
         "risposte_corrette": [
-            "Richiede il calcolo di un numero epsonenziale di parametri,",
-            "Non permette il calcolo di probabilità condizionali tra le features"
+            "Non permette il calcolo di probabilità condizionali tra le features",
+            "Richiede il calcolo di un numero epsonenziale di parametri"
         ]
     },
     {
@@ -955,8 +836,7 @@
             "Raggruppare i punti di un cluster attorno al loro centroide"
         ],
         "risposte_corrette": [
-            "Raggruppare i punti di un cluster attorno al loro centroide",
-            "4 of 14"
+            "Raggruppare i punti di un cluster attorno al loro centroide"
         ]
     },
     {
@@ -964,9 +844,9 @@
         "numero_domanda": "7",
         "domanda": "Selezionare la sentenza ERRATA relativa alla tecnica Naive Bayes",
         "risposte_possibili": [
-            "Fornisce un modo computazionalmente efficiente per approssimare la distribuzione congiunta di",
-            "Deriva dall'ipotesi teorica semplificativa che le features siano indipendenti tra loro, date le",
-            "E' una tecnica di tipo generativo in quanto cerca di determinare la distribuzione delle varie",
+            "Fornisce un modo computazionalmente efficiente per approssimare la distribuzione congiunta di probabilità delle features",
+            "Deriva dall'ipotesi teorica semplificativa che le features siano indipendenti tra loro, date le classi",
+            "E' una tecnica di tipo generativo in quanto cerca di determinare la distribuzione delle varie categorie dei dati",
             "Non può essere utilizzata se le features non sono tra loro indipendenti, date le classi"
         ],
         "risposte_corrette": [
@@ -984,8 +864,7 @@
             "Una distribuzione esponenziale"
         ],
         "risposte_corrette": [
-            "Una distribuzione Normale, ovvero Gaussiana(0,1)",
-            "5 of 14"
+            "Una distribuzione Normale, ovvero Gaussiana(0,1)"
         ]
     },
     {
@@ -1008,13 +887,12 @@
         "domanda": "Qual è il principale scopo della normalizzazione dei dati prima dell'addestramento di un modello di machine learning?",
         "risposte_possibili": [
             "Aumentare la precisione delle previsioni del modello.",
-            "Garantire che tutte le feature abbiano la stessa scala, migliorando la convergenza",
+            "Garantire che tutte le feature abbiano la stessa scala, migliorando la convergenza dell'ottimizzazione.",
             "Evitare che i dati contengano valori mancanti.",
             "Ridurre il numero di parametri del modello."
         ],
         "risposte_corrette": [
-            "Garantire che tutte le feature abbiano la stessa scala, migliorando la convergenza dell'ottimizzazione.",
-            "6 of 14"
+            "Garantire che tutte le feature abbiano la stessa scala, migliorando la convergenza dell'ottimizzazione."
         ]
     },
     {
@@ -1039,11 +917,10 @@
             "indica la correlazione tra ciascuna componente e la variabile target",
             "indica quanto una singola componente contribuisce alla varianza complessiva dei dati",
             "indica la deviazione standard della componente rispetto alla media dei dati",
-            "misura la somma cumulativa delle differenze quadratiche tra le osservazioni e i valori predetti"
+            "misura la somma cumulativa delle differenze quadratiche tra le osservazioni e i valori predetti dalla componente"
         ],
         "risposte_corrette": [
-            "indica quanto una singola componente contribuisce alla varianza complessiva dei dati",
-            "7 of 14"
+            "indica quanto una singola componente contribuisce alla varianza complessiva dei dati"
         ]
     },
     {
@@ -1056,7 +933,9 @@
             "1/9",
             "2/9"
         ],
-        "risposte_corrette": []
+        "risposte_corrette": [
+            "1/9"
+        ]
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1069,8 +948,7 @@
             "P(A|B) è sicuramente maggiore o uguale di P(A and B)"
         ],
         "risposte_corrette": [
-            "P(A|B) è sicuramente minore o uguale di P(A and B)",
-            "8 of 14"
+            "P(A|B) è sicuramente minore o uguale di P(A and B)"
         ]
     },
     {
@@ -1094,12 +972,11 @@
         "risposte_possibili": [
             "La predizione non dipende dal bilanciamento dei dati di training rispetto alle classi",
             "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente",
-            "I parametri del modello possono essere tipicamente calcolati in forma chiusa, mediante una formula",
-            "Il calcolo della predizione non si basa sulla loglikelihood dei dati di training, in quanto si"
+            "I parametri del modello possono essere tipicamente calcolati in forma chiusa, mediante una formula esplicita",
+            "Il calcolo della predizione non si basa sulla loglikelihood dei dati di training, in quanto si tratta di una tecnica discriminativa"
         ],
         "risposte_corrette": [
-            "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente",
-            "9 of 14"
+            "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente"
         ]
     },
     {
@@ -1109,7 +986,7 @@
         "risposte_possibili": [
             "Un neurone artificiale può apprendere qualunque funzione dei suoi input",
             "Un neurone artificale definisce un semplice modello matematico che simula il neurone biologico",
-            "Un neurone artificiale tipicamente calcola una combinazione lineare dei suoi input, seguita dalla",
+            "Un neurone artificiale tipicamente calcola una combinazione lineare dei suoi input, seguita dalla applicazione di una funzione di attivazione non lineare",
             "Il numero dei parametri di un neurone artificiale è lineare nel numero dei suoi input"
         ],
         "risposte_corrette": [
@@ -1135,14 +1012,13 @@
         "numero_domanda": "19",
         "domanda": "Selezionare la sentenza SCORRETTA relativa alla backpropagation per reti neurali",
         "risposte_possibili": [
-            "E' l'algoritmo per il calcolo della derivata parziale della loss rispetto a ogni parametro della",
+            "E' l'algoritmo per il calcolo della derivata parziale della loss rispetto a ogni parametro della rete",
             "Si riduce a semplici calcoli algebrici facilmente parallelizzabili in strutture di calcolo tipo GPU",
-            "L'algoritmo calcola il gradiente un layer alla volta, sfruttando la regola matematica per la",
-            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per"
+            "L'algoritmo calcola il gradiente un layer alla volta, sfruttando la regola matematica per la derivazione di funzioni composte",
+            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per contrastare il fenomeno della sua scomparsa (vanishing)"
         ],
         "risposte_corrette": [
-            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer",
-            "attraversato per contrastare il fenomeno della sua scomparsa (vanishing)"
+            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per contrastare il fenomeno della sua scomparsa (vanishing)"
         ]
     },
     {
@@ -1151,13 +1027,12 @@
         "domanda": "10 of 14 Quale è l'effetto tipico della riduzione della dimensione del minibatch durante il training?",
         "risposte_possibili": [
             "La Backpropagation è effettuata meno frequentemente e l'aggiornamento dei parametri è meno accurato",
-            "La Backpropagation è effettuata più frequentemente ma l'aggiornamento dei parametri è meno",
+            "La Backpropagation è effettuata più frequentemente ma l'aggiornamento dei parametri è meno accurato",
             "La Backpropagation è effettuata meno frequentemente ma l'aggiornamento dei parametri è più accurato",
             "La Backpropagation è effettuata più frequentemente e l'aggiornamento dei parametri è più accurato"
         ],
         "risposte_corrette": [
-            "La Backpropagation è effettuata più frequentemente ma l'aggiornamento dei",
-            "parametri è meno accurato"
+            "La Backpropagation è effettuata più frequentemente ma l'aggiornamento dei parametri è meno accurato"
         ]
     },
     {
@@ -1222,7 +1097,7 @@
         "domanda": "Selezione al sentenza corretta relativa alle Transposed Convolutions",
         "risposte_possibili": [
             "Sono prevalentemente utilizzate in architetture per classificazione di immagini",
-            "Sono essenzialmente equivalenti alla applicazione di un livello di downsampling seguito da una",
+            "Sono essenzialmente equivalenti alla applicazione di un livello di downsampling seguito da una convoluzione normale",
             "Possono essere interpretate come convoluzioni normali con stride sub-unitario",
             "Nessuna delle altre risposte è corretta"
         ],
@@ -1249,14 +1124,13 @@
         "numero_domanda": "27",
         "domanda": "Selezionare la sentenza SCORRETTA relativa alle Generative Adversarial Networks",
         "risposte_possibili": [
-            "Durante la fase di allenamento del Generatore i parametri del Discriminatore devono essere",
-            "le GAN possono soffire del fenomeno di \"mode collapse\", cioè la tendenza a focalizzare la",
+            "Durante la fase di allenamento del Generatore i parametri del Discriminatore devono essere congelati, e viceversa",
+            "le GAN possono soffire del fenomeno di \"mode collapse\", cioè la tendenza a focalizzare la generazione su un unico o pochi esempi",
             "Le GANs sono utilizzate per generare attacchi ad una rete di classificazione prefissata",
-            "Le GAN basano il loro training su un game tra il Generatore e il Discriminatore, dove ognuno cerca"
+            "Le GAN basano il loro training su un game tra il Generatore e il Discriminatore, dove ognuno cerca di prevalere sull'altro"
         ],
         "risposte_corrette": [
-            "Le GANs sono utilizzate per generare attacchi ad una rete di classificazione",
-            "prefissata"
+            "Le GANs sono utilizzate per generare attacchi ad una rete di classificazione prefissata"
         ]
     },
     {
@@ -1298,8 +1172,7 @@
             "I modelli a diffusione iterano una operazione di denoising"
         ],
         "risposte_corrette": [
-            "Generano i riusultati attraverso un processo di diffusione della informazione",
-            "Separazione di Immagini Cifar10 ►"
+            "Generano i riusultati attraverso un processo di diffusione della informazione"
         ]
     }
 ]
