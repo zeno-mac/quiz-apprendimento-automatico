@@ -6,10 +6,7 @@
         "domanda_estratta": "Risposta corretta Selezionare la sentenza corretta riguardo alla regressione logistica Punteggio ottenuto 1,00 su 1,00",
         "domanda_raggruppamento": "Selezionare la sentenza scorretta riguardo alla regressione logistica",
         "risposte_corrette_estratte": [
-            "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente",
-            "13/02/2023, 15:36",
-            "13 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente"
         ],
         "risposte_corrette_raggruppamento": [
             "I parametri del modello possono essere tipicamente calcolati in forma",
@@ -21,17 +18,15 @@
         "tipo_discrepanza": "Conflitto con Raggruppamento",
         "esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "12",
-        "domanda_estratta": "Risposta corretta La derivata della funzione logistica è: Punteggio ottenuto 1,00 su 1,00",
+        "domanda_estratta": "La derivata della funzione logistica σ(x) è:",
         "domanda_raggruppamento": "La derivata della funzione logistica δ(x) è",
         "risposte_corrette_estratte": [
-            "13/02/2023, 15:36",
-            "14 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "σ(x) · (1 - σ(x))"
         ],
         "risposte_corrette_raggruppamento": [
             "δ(x) * (1 – δ(x))"
         ],
-        "score_match_domanda": 0.7835051546391752
+        "score_match_domanda": 0.975609756097561
     },
     {
         "tipo_discrepanza": "Conflitto con Raggruppamento",
@@ -40,12 +35,7 @@
         "domanda_estratta": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Selezionare la sentenza SCORRETTA relativa alla backpropagation per reti neurali",
         "domanda_raggruppamento": "Selezionare la sentenza scorretta relativa alla backpropagation per reti neurali",
         "risposte_corrette_estratte": [
-            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per",
-            "contrastare il fenomeno della sua scomparsa (vanishing)",
-            "Progetto Febbrario 2023: Inpainting ►",
-            "13/02/2023, 15:36",
-            "19 of 25",
-            "https://virtuale.unibo.it/mod/quiz/review.php?attempt=2543539&cmid=1130939"
+            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per contrastare il fenomeno della sua scomparsa (vanishing)"
         ],
         "risposte_corrette_raggruppamento": [
             "Si basa tipicamente su algoritmi di tipo generico"
@@ -122,8 +112,7 @@
         "domanda_estratta": "Selezionare la sentenza corretta",
         "domanda_raggruppamento": "Selezionare la sentenza corretta:",
         "risposte_corrette_estratte": [
-            "Un neurone artificiale tipicamente calcola una combinazione lineare dei suoi input, seguita dalla applicazione di una funzione di attivazione non",
-            "lineare"
+            "Un neurone artificiale tipicamente calcola una combinazione lineare dei suoi input, seguita dalla applicazione di una funzione di attivazione non lineare"
         ],
         "risposte_corrette_raggruppamento": [
             "Le GAN possono soffrire del fenomeno di “mode collapse” cioè la",
@@ -198,24 +187,11 @@
     {
         "tipo_discrepanza": "Conflitto con Raggruppamento",
         "esame": "scritto-2025-01-20-testo",
-        "numero_domanda": "13",
-        "domanda_estratta": "Un dataset contiene 1/3 di positivi e 2/3 di negativi. La recall del modello è di 2/3. Che percentuale dei dati sono Falsi Negativi?",
-        "domanda_raggruppamento": "Un dataset contiene 1/3 di positivi e 2/3 di negativi. La recall del modello è di 2/3. Che percentuale dei dati sono i falsi negativi?",
-        "risposte_corrette_estratte": [],
-        "risposte_corrette_raggruppamento": [
-            "1/9"
-        ],
-        "score_match_domanda": 0.9921259842519685
-    },
-    {
-        "tipo_discrepanza": "Conflitto con Raggruppamento",
-        "esame": "scritto-2025-01-20-testo",
         "numero_domanda": "16",
         "domanda_estratta": "Selezionare la sentenza corretta riguardo alla regressione logistica",
         "domanda_raggruppamento": "Selezionare la sentenza scorretta riguardo alla regressione logistica",
         "risposte_corrette_estratte": [
-            "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente",
-            "9 of 14"
+            "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente"
         ],
         "risposte_corrette_raggruppamento": [
             "I parametri del modello possono essere tipicamente calcolati in forma",
@@ -230,8 +206,7 @@
         "domanda_estratta": "Selezionare la sentenza SCORRETTA relativa alla backpropagation per reti neurali",
         "domanda_raggruppamento": "Selezionare la sentenza scorretta relativa alla backpropagation per reti neurali",
         "risposte_corrette_estratte": [
-            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer",
-            "attraversato per contrastare il fenomeno della sua scomparsa (vanishing)"
+            "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per contrastare il fenomeno della sua scomparsa (vanishing)"
         ],
         "risposte_corrette_raggruppamento": [
             "Si basa tipicamente su algoritmi di tipo generico"
@@ -307,8 +282,7 @@
         "domanda_estratta": "Selezionare la sentenza SCORRETTA relativa alle Generative Adversarial Networks",
         "domanda_raggruppamento": "Selezionare la sentenza SCORRETTA relativa alla Intersection overUnion (IoU)",
         "risposte_corrette_estratte": [
-            "Le GANs sono utilizzate per generare attacchi ad una rete di classificazione",
-            "prefissata"
+            "Le GANs sono utilizzate per generare attacchi ad una rete di classificazione prefissata"
         ],
         "risposte_corrette_raggruppamento": [
             "Non è una funzione simmetrica dei suoi input"
@@ -322,8 +296,7 @@
         "domanda_estratta": "14 of 14 Selezionare la sentenza errata relativa ai modelli a diffusione",
         "domanda_raggruppamento": "Selezionare la sentenza errata relativa alla funzione softmax",
         "risposte_corrette_estratte": [
-            "Generano i riusultati attraverso un processo di diffusione della informazione",
-            "Separazione di Immagini Cifar10 ►"
+            "Generano i riusultati attraverso un processo di diffusione della informazione"
         ],
         "risposte_corrette_raggruppamento": [
             "Produce valori compresi nell’intervallo [-1,1]"

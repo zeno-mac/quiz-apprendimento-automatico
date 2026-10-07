@@ -6,7 +6,7 @@ Questo file funge da guida per gli agenti successivi incaricati di validare e co
 
 1. **Conteggio delle Domande**
    - L'esame di simulazione del 22-11-2018 deve contenere esattamente 6 domande.
-   - L'esame del 2022-12-21 deve contenere esattamente 24 domande.
+   - L'esame del 2023-02-12 deve contenere esattamente 24 domande.
    - Tutti gli altri esami devono contenere esattamente 30 domande per file.
    - Segnalare se il numero di domande estratte non corrisponde.
 

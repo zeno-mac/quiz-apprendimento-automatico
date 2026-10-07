@@ -13,7 +13,7 @@ Schema di ogni domanda:
 
 Invarianti attesi (non certi): se risultano violati, non correggere e non scartare: segnalarlo in un report e continuare. Sarò io a decidere se è sbagliato il modello mentale o il parsing.
 
-- Ogni esame ha 30 domande, tranne la simulazione del 22-11-18 (6 domande) e l'esame del 2022-12-21 (24 domande).
+- Ogni esame ha 30 domande, tranne la simulazione del 22-11-18 (6 domande) e l'esame del 2023-02-12 (24 domande).
 - Le domande sono numerate in ordine, senza duplicati.
 - Ogni domanda ha 4 risposte possibili.
 - Quasi tutte hanno una risposta corretta, alcune due.
