@@ -11,7 +11,9 @@
         ],
         "risposte_corrette": [
             "E' minore o uguale al mumero delle features"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -25,7 +27,9 @@
         ],
         "risposte_corrette": [
             "Tendono a migliorare l'explainability (spiegabilità) degli alberi di decisione riducendo l'instabilità nella selezione degli attributi"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -39,7 +43,9 @@
         ],
         "risposte_corrette": [
             "3/2"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -53,7 +59,9 @@
         ],
         "risposte_corrette": [
             "Qualora i dati di input possano essere considerati come annotazioni (labels) per guidare l'apprendimento, come nel caso degli autoencoders"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -67,7 +75,9 @@
         ],
         "risposte_corrette": [
             "P(A|B) è sicuramente maggiore o uguale di P(A and B)"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -82,7 +92,9 @@
         "risposte_corrette": [
             "Non permette il calcolo di probabilità condizionali tra le features",
             "Richiede il calcolo di un numero epsonenziale di parametri"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -96,7 +108,9 @@
         ],
         "risposte_corrette": [
             "19"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -110,7 +124,9 @@
         ],
         "risposte_corrette": [
             "Avere dati molto rumorosi"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -124,7 +140,9 @@
         ],
         "risposte_corrette": [
             "E' una metrica che misura la capacità di apprendimento del modello"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -138,7 +156,9 @@
         ],
         "risposte_corrette": [
             "E' più probabile che la moneta sia normale"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -152,19 +172,25 @@
         ],
         "risposte_corrette": [
             "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "12",
-        "domanda": "Risposta corretta La derivata della funzione logistica è: Punteggio ottenuto 1,00 su 1,00",
+        "domanda": "La derivata della funzione logistica σ(x) è:",
         "risposte_possibili": [
-            "",
-            "",
-            "",
-            ""
+            "σ(x)/σ(1 - x)",
+            "σ(x) · (1 - σ(x))",
+            "σ(x)/(1 - σ(x))",
+            "σ(x) · σ(1 - x)"
         ],
-        "risposte_corrette": []
+        "risposte_corrette": [
+            "σ(x) · (1 - σ(x))"
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "correzione_manuale"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -178,7 +204,9 @@
         ],
         "risposte_corrette": [
             "Non può essere stabilito"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -192,7 +220,9 @@
         ],
         "risposte_corrette": [
             "13/8"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -206,7 +236,9 @@
         ],
         "risposte_corrette": [
             "Cerca di determinare un iperpiano di separazione tra due categorie di dati"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -220,7 +252,9 @@
         ],
         "risposte_corrette": [
             "Segmentazione di immagini (semantic segmentation)"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -234,7 +268,9 @@
         ],
         "risposte_corrette": [
             "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per contrastare il fenomeno della sua scomparsa (vanishing)"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -248,7 +284,9 @@
         ],
         "risposte_corrette": [
             "7"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -262,7 +300,9 @@
         ],
         "risposte_corrette": [
             "(6,6,4)"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -276,7 +316,9 @@
         ],
         "risposte_corrette": [
             "Utilizza al proprio interno delle skip-connections per bypassare l'applicazione di parte dei kernel"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -290,7 +332,9 @@
         ],
         "risposte_corrette": [
             "Fare clipping del gradiente in una range prefissato"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -304,7 +348,9 @@
         ],
         "risposte_corrette": [
             "68"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -318,7 +364,9 @@
         ],
         "risposte_corrette": [
             "Non è una funzione summetrica dei suoi input"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2023-02-12-soluzione",
@@ -332,7 +380,9 @@
         ],
         "risposte_corrette": [
             "Aggiungono ad ogni livello della rete un encoding posizionale per enfatizzare la posizione realtiva dei tokens"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -346,7 +396,9 @@
         ],
         "risposte_corrette": [
             "Possono essere utilizzati solo con features discrete"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -360,7 +412,9 @@
         ],
         "risposte_corrette": [
             "Richiede la costante supervisione di un esperto durante il training"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -374,7 +428,9 @@
         ],
         "risposte_corrette": [
             "3/2"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -388,7 +444,9 @@
         ],
         "risposte_corrette": [
             "focalizzare le scelte sui casi più probabili"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -402,7 +460,9 @@
         ],
         "risposte_corrette": [
             "Il suo calcolo presenta problemi di scalabilità all'aumentare delle features"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -416,7 +476,9 @@
         ],
         "risposte_corrette": [
             "Valutare il modello su più set di test, migliorando la generalizzazione."
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -430,7 +492,9 @@
         ],
         "risposte_corrette": [
             "trovare i K clusters che minimizzano la somma delle distanze quadratiche tra i punti del cluster e il rispettivo centroide."
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -444,7 +508,9 @@
         ],
         "risposte_corrette": [
             "E' più probabile che il dato sia truccato"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -458,7 +524,9 @@
         ],
         "risposte_corrette": [
             "Perchè suppone ingenuamente che le features siano indipendenti tra loro, date le classi"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -472,7 +540,9 @@
         ],
         "risposte_corrette": [
             "Una distribuzione Normale, ovvero Gaussiana(0,1)"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -486,7 +556,9 @@
         ],
         "risposte_corrette": [
             "Garantire che tutte le feature abbiano la stessa scala, migliorando la convergenza dell'ottimizzazione."
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -500,7 +572,9 @@
         ],
         "risposte_corrette": [
             "Avere dati molto rumorosi"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -514,7 +588,9 @@
         ],
         "risposte_corrette": [
             "E' una tecnica per selezionare le features migliori tra quelle date, senza modificarle."
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -528,7 +604,9 @@
         ],
         "risposte_corrette": [
             "Non può essere stabilito"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -542,7 +620,9 @@
         ],
         "risposte_corrette": [
             "P(A|B) è sicuramente maggiore o uguale di P(A and B)"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -556,7 +636,9 @@
         ],
         "risposte_corrette": [
             "I parametri del modello possono essere tipicamente calcolati in forma chiusa, mediante una formula esplicita"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -570,7 +652,9 @@
         ],
         "risposte_corrette": [
             "a) Misurare la discrepanza tra le previsioni del modello e i valori reali, guidando l'ottimizzazione dei parametri."
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -584,7 +668,9 @@
         ],
         "risposte_corrette": [
             "Sono modelli meta-teorici rivolti alla automatizzazione della generazione di reti neurali"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -598,7 +684,9 @@
         ],
         "risposte_corrette": [
             "Un neurone artificiale tipicamente calcola una combinazione lineare dei suoi input, seguita dalla applicazione di una funzione di attivazione non lineare"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -612,7 +700,9 @@
         ],
         "risposte_corrette": [
             "definire l'algoritmo che calcola i gradienti della loss e aggiorna i pesi del modello"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -626,7 +716,9 @@
         ],
         "risposte_corrette": [
             "aggiunta di skip connections"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -640,7 +732,9 @@
         ],
         "risposte_corrette": [
             "Se il gradiente tende a zero anche i parametri e le attivazioni dei neuroni tendono a zero"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -654,7 +748,9 @@
         ],
         "risposte_corrette": [
             "Richiedono la trasposizione dell'input prima di calcolare la convoluzione del Kernel"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -668,7 +764,9 @@
         ],
         "risposte_corrette": [
             "Viene spesso utilizzata nell'ambito della classificazione dei generi musicali"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -682,7 +780,9 @@
         ],
         "risposte_corrette": [
             "Gli Autoencoders richiedono l'uso di livelli densi"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -696,7 +796,9 @@
         ],
         "risposte_corrette": [
             "(7,7,8)"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -710,7 +812,9 @@
         ],
         "risposte_corrette": [
             "Si effettua solo durante il \"training\""
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -724,7 +828,9 @@
         ],
         "risposte_corrette": [
             "La Backpropagation è effettuata più frequentemente ma l'aggiornamento dei parametri è meno accurato"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -738,7 +844,9 @@
         ],
         "risposte_corrette": [
             "le GAN possono soffire del fenomeno di \"mode collapse\", cioè la tendenza a focalizzare la generazione su un unico o pochi esempi"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2024-12-17-testo",
@@ -752,7 +860,9 @@
         ],
         "risposte_corrette": [
             "Può essere applicata solo se la funzione da minimizzare ha una superficie concava"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -766,7 +876,9 @@
         ],
         "risposte_corrette": [
             "E' minore o uguale al mumero delle features"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -780,7 +892,9 @@
         ],
         "risposte_corrette": [
             "Valutare il modello su più set di test, migliorando la generalizzazione."
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -794,7 +908,9 @@
         ],
         "risposte_corrette": [
             "Apprendimento di funzioni basato su esempi di training composti da coppie input-output"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -808,7 +924,9 @@
         ],
         "risposte_corrette": [
             "Il suo valore è minimo (e uguale a 0) quando la probabilità è equamente distribuita tra tutte le classi"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -823,7 +941,9 @@
         "risposte_corrette": [
             "Non permette il calcolo di probabilità condizionali tra le features",
             "Richiede il calcolo di un numero epsonenziale di parametri"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -837,7 +957,9 @@
         ],
         "risposte_corrette": [
             "Raggruppare i punti di un cluster attorno al loro centroide"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -851,7 +973,9 @@
         ],
         "risposte_corrette": [
             "Non può essere utilizzata se le features non sono tra loro indipendenti, date le classi"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -865,7 +989,9 @@
         ],
         "risposte_corrette": [
             "Una distribuzione Normale, ovvero Gaussiana(0,1)"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -879,7 +1005,9 @@
         ],
         "risposte_corrette": [
             "E' più probabile che la moneta sia normale"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -893,7 +1021,9 @@
         ],
         "risposte_corrette": [
             "Garantire che tutte le feature abbiano la stessa scala, migliorando la convergenza dell'ottimizzazione."
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -907,7 +1037,9 @@
         ],
         "risposte_corrette": [
             "Aumentare il numero di epoche di addestramento."
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -921,7 +1053,9 @@
         ],
         "risposte_corrette": [
             "indica quanto una singola componente contribuisce alla varianza complessiva dei dati"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -935,7 +1069,9 @@
         ],
         "risposte_corrette": [
             "1/9"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -949,7 +1085,9 @@
         ],
         "risposte_corrette": [
             "P(A|B) è sicuramente minore o uguale di P(A and B)"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -963,7 +1101,9 @@
         ],
         "risposte_corrette": [
             "E' una metrica che misura la capacità di apprendimento del modello"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -977,7 +1117,9 @@
         ],
         "risposte_corrette": [
             "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -991,7 +1133,9 @@
         ],
         "risposte_corrette": [
             "Un neurone artificiale può apprendere qualunque funzione dei suoi input"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1005,7 +1149,9 @@
         ],
         "risposte_corrette": [
             "Features sintetizzate in modo automatico a partire da altre features"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1019,7 +1165,9 @@
         ],
         "risposte_corrette": [
             "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per contrastare il fenomeno della sua scomparsa (vanishing)"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1033,7 +1181,9 @@
         ],
         "risposte_corrette": [
             "La Backpropagation è effettuata più frequentemente ma l'aggiornamento dei parametri è meno accurato"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1047,7 +1197,9 @@
         ],
         "risposte_corrette": [
             "L'acquisizione di nuovi dati di training non può che peggiorare la situazione"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1061,7 +1213,9 @@
         ],
         "risposte_corrette": [
             "backpropagation in reti profonde"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1075,7 +1229,9 @@
         ],
         "risposte_corrette": [
             "definire l'algoritmo che calcola i gradienti della loss e aggiorna i pesi del modello"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1089,7 +1245,9 @@
         ],
         "risposte_corrette": [
             "Permettono una migliore gestione del problema del vanishing gradient."
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1103,7 +1261,9 @@
         ],
         "risposte_corrette": [
             "Possono essere interpretate come convoluzioni normali con stride sub-unitario"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1117,7 +1277,9 @@
         ],
         "risposte_corrette": [
             "Segmentazione di immagini (semantic segmentation)"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1131,7 +1293,9 @@
         ],
         "risposte_corrette": [
             "Le GANs sono utilizzate per generare attacchi ad una rete di classificazione prefissata"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1145,7 +1309,9 @@
         ],
         "risposte_corrette": [
             "Viene spesso utilizzata nell'ambito della classificazione dei generi musicali"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1159,7 +1325,9 @@
         ],
         "risposte_corrette": [
             "modelli che cercano di apprendere la distribuzione di probabilità dei dati"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     },
     {
         "data_esame": "scritto-2025-01-20-testo",
@@ -1173,6 +1341,8 @@
         ],
         "risposte_corrette": [
             "Generano i riusultati attraverso un processo di diffusione della informazione"
-        ]
+        ],
+        "origine": "moodle_testuale",
+        "revisione": "automatica"
     }
 ]
