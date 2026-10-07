@@ -1,23 +1,48 @@
-Obiettivo generale: creare un sito di quiz con le domande degli anni passati del corso di ML.
+# Agent Guide - Quiz ML
 
-Step attuale: estrarre le domande dai PDF degli anni scorsi e salvarle in un JSON (lista di domande).
+**Obiettivo generale:** creare una web app di quiz con le domande degli esami passati del corso di Machine Learning.
 
-Regola fondamentale: nessun dato deve mai essere indovinato. Ogni informazione deve rispettare i dati originali. Se un dato non è ricavabile con certezza, va segnalato, non completato.
+## Stato del Progetto
 
-Schema di ogni domanda:
-- `data_esame`: str
-- `numero_domanda`: str
-- `domanda`: str
-- `risposte possibili`: [str]
-- `risposte corrette`: [str], contiene il testo della risposta
+Il progetto è diviso in fasi. L'agente AI che prende in carico il lavoro deve posizionarsi in base a questa timeline:
 
-Invarianti attesi (non certi): se risultano violati, non correggere e non scartare: segnalarlo in un report e continuare. Sarò io a decidere se è sbagliato il modello mentale o il parsing.
+- **Fase 1: Estrazione e Validazione (Completata per i PDF testuali)**: I PDF testuali sono stati convertiti in formato JSON (`domande_estratte.json`). I dati estratti sono stati revisionati manualmente, ripuliti e validati tramite appositi script per assicurare un'integrità perfetta al 100%.
+- **Fase 2: Gestione dei PDF basati su Immagini (In pausa / Da fare)**: I PDF composti da screenshot (elencati in `pdf_formats.md`) sono per il momento ignorati in attesa di utilizzare tecniche di elaborazione dell'immagine (OCR avanzato) o di trascrizione manuale.
+- **Fase 3: Sviluppo Web App (Prossimo step)**: Creazione dell'interfaccia utente per il sito di quiz, che consumerà il file `domande_estratte.json`.
 
-- Ogni esame ha 30 domande, tranne la simulazione del 22-11-18 (6 domande) e l'esame del 2023-02-12 (24 domande).
-- Le domande sono numerate in ordine, senza duplicati.
-- Ogni domanda ha 4 risposte possibili.
-- Quasi tutte hanno una risposta corretta, alcune due.
+---
 
-Formati: alcuni PDF sono testuali, altri raccolte di screenshot. I PDF con immagini vanno ignorati per ora ma elencati.
+## Linee Guida per i Dati
 
-Raggruppamento 2023: usa il rosso per le risposte corrette. Non è source of truth; serve solo per il confronto finale.
+**Regola fondamentale:** nessun dato deve mai essere "indovinato" automaticamente. Ogni informazione deve rispecchiare i dati originali dei PDF. Se un dato non è ricavabile con certezza, va segnalato nel report di estrazione, senza tentare completamenti "creativi". Qualsiasi incertezza deve essere decisa dall'umano.
+
+### Schema JSON di ogni domanda
+
+I dati si trovano attualmente all'interno del file `domande_estratte.json`, come lista di oggetti strutturati in questo modo:
+
+- `data_esame`: `str` (L'identificativo/data dell'esame)
+- `numero_domanda`: `str`
+- `domanda`: `str`
+- `risposte_possibili`: `[str]` (Array contenente i 4 testi)
+- `risposte_corrette`: `[str]` (Array contenente il testo esatto della/e risposta/e)
+- `origine`: `str` (Es. `"moodle_testuale"`, indica la provenienza dell'estrazione)
+- `revisione`: `str` (Es. `"correzione_manuale"` o `"automatica"`, traccia se il record è stato aggiustato manualmente dall'umano)
+
+### Invarianti Attesi per l'Integrità dei Dati
+
+Le regole che definiscono la validità di un esame estratto sono codificate in `agent_checks.md`. In sintesi:
+- Ogni esame ha 30 domande, tranne la simulazione del `22-11-18` (6 domande) e l'esame `2023-02-12` (24 domande).
+- Le domande sono numerate in ordine crescente, senza duplicati all'interno di uno stesso esame.
+- Ogni domanda ha esattamente 4 risposte possibili.
+- Le stringhe inserite in `risposte_corrette` devono far match 1-a-1 con un elemento in `risposte_possibili` (tolleranza concessa solo per gli spazi bianchi).
+- Quasi tutte le domande hanno una risposta corretta. Alcune ne hanno due. (In ogni caso: mai 0 risposte corrette).
+
+**Nota per il Raggruppamento 2023:** L'esame raggruppato usa il testo in rosso per evidenziare le risposte corrette. Tale file non è la "source of truth", ma serve solo per il `comparison_test.md` finale e l'audit dei dati.
+
+---
+
+## Strumenti e Script
+
+Se viene eseguita una qualsiasi modifica o una nuova estrazione all'interno di `domande_estratte.json`, l'agente deve verificare che il nuovo JSON non rompa l'integrità dei dati:
+- **Come validare**: Esegui lo script Python `scripts/run_checks.py`.
+- **Output**: Lo script produrrà (o aggiornerà) il report di validazione in `agents/validation_report.md`. I risultati dovranno poi essere consultati e analizzati assieme all'utente.
