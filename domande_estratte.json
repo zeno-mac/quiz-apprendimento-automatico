@@ -2,7 +2,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "1",
-        "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Nel caso di un albero di decisione con features discrete, cosa si può dire della profondità dell'albero?",
+        "domanda": "Nel caso di un albero di decisione con features discrete, cosa si può dire della profondità dell'albero?",
         "risposte_possibili": [
             "E' minore o uguale al mumero delle features",
             "Non si può dire nulla",
@@ -18,7 +18,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "2",
-        "domanda": "Punteggio ottenuto 0,00 su 1,00 Selezionare la sentenza errata relativa alle Random Forest (foreste di alberi decisionali)",
+        "domanda": "Selezionare la sentenza errata relativa alle Random Forest (foreste di alberi decisionali)",
         "risposte_possibili": [
             "Richiedono tecniche opportune per la creazione di alberi di decisone diversi relativi a uno stesso dataset",
             "Tendono a migliorare l'explainability (spiegabilità) degli alberi di decisione riducendo l'instabilità nella selezione degli attributi",
@@ -34,7 +34,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "3",
-        "domanda": "Punteggio ottenuto 0,00 su 1,00 Una variabile aleatoria discreta con valori a,b e c has la seguente distribuzione di probabilità: P(a)=1/4, P(b)=1/2, P(c)=1/4. Qual'è la usa entropia?",
+        "domanda": "Una variabile aleatoria discreta con valori a,b e c has la seguente distribuzione di probabilità: P(a)=1/4, P(b)=1/2, P(c)=1/4. Qual'è la usa entropia?",
         "risposte_possibili": [
             "3/2",
             "log(3)",
@@ -50,7 +50,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "4",
-        "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 In che situazioni si parla di apprendimento auto-supervisionato (self-supervised)",
+        "domanda": "In che situazioni si parla di apprendimento auto-supervisionato (self-supervised)",
         "risposte_possibili": [
             "Quando il modello è in grado di riconfigurare in modo automatico la propria architettura",
             "Quando il modello è supposto contribuire alla creazione di nuovi dati di training",
@@ -66,7 +66,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "5",
-        "domanda": "Punteggio ottenuto 0,00 su 1,00 Selezionare la sentenza corretta relativa alla probalità condizionata P(A|B) tra due eventi A e B",
+        "domanda": "Selezionare la sentenza corretta relativa alla probalità condizionata P(A|B) tra due eventi A e B",
         "risposte_possibili": [
             "P(A|B) è sicuramente maggiore o uguale di P(A and B)",
             "P(A|B) è sicuramente maggiore o uguale di P(A)",
@@ -82,7 +82,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "6",
-        "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Selezionare la sentenza ERRATA relativa alla distribuzione congiunta di probabilità per N variabili aleatorie discrete",
+        "domanda": "Selezionare la sentenza ERRATA relativa alla distribuzione congiunta di probabilità per N variabili aleatorie discrete",
         "risposte_possibili": [
             "E' la distribuzuione di probabilità di tutte le possibili tuple di valori per le variabili",
             "Richiede il calcolo di un numero epsonenziale di parametri",
@@ -99,7 +99,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "7",
-        "domanda": "Punteggio ottenuto 0,00 su 1,00 Avendo 5 categorie di dati e 3 features di input booleane, quanti parametri indipendenti devono essere stimati secondo la tecnica Naive Bayes (compresi i priors).",
+        "domanda": "Avendo 5 categorie di dati e 3 features di input booleane, quanti parametri indipendenti devono essere stimati secondo la tecnica Naive Bayes (compresi i priors).",
         "risposte_possibili": [
             "15",
             "16",
@@ -115,7 +115,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "8",
-        "domanda": "Punteggio ottenuto 0,00 su 1,00 Quale delle seguenti situazioni NON è particolarmente problematica dal punto di vista dell'overfitting?",
+        "domanda": "Quale delle seguenti situazioni NON è particolarmente problematica dal punto di vista dell'overfitting?",
         "risposte_possibili": [
             "Avere pochi dati di training",
             "Avere dati molto rumorosi",
@@ -147,7 +147,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "10",
-        "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Ci sono due monete, una normale e una che restituisce testa con probabilità 3/4 e croce con probabilità 1/4. Faccio due lanci con la stessa moneta e osservo una testa e una croce. Che cosa posso conlcudere?",
+        "domanda": "Ci sono due monete, una normale e una che restituisce testa con probabilità 3/4 e croce con probabilità 1/4. Faccio due lanci con la stessa moneta e osservo una testa e una croce. Che cosa posso conlcudere?",
         "risposte_possibili": [
             "Nulla",
             "E' più probabile che la moneta sia normale",
@@ -195,7 +195,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "13",
-        "domanda": "Punteggio ottenuto 0,00 su 1,00 Un dataset contiene 2/3 di positivi e 1/3 di negativi. La precisione del modello è 9/10. Che percentuale dei dati totali sono Falsi Positivi?",
+        "domanda": "Un dataset contiene 2/3 di positivi e 1/3 di negativi. La precisione del modello è 9/10. Che percentuale dei dati totali sono Falsi Positivi?",
         "risposte_possibili": [
             "1/9",
             "Non può essere stabilito",
@@ -211,7 +211,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "14",
-        "domanda": "Punteggio ottenuto 0,00 su 1,00 Siano date le seguenti distribuzioni di probabilità P e Q: P(0)=3/8, P(1)=1/2, P(2)=1/8, and Q(0)=1/2, Q(1)=1/4, Q(2)=1/4. Quanto vale la crossentropy H(P|Q) tra P e Q?",
+        "domanda": "Siano date le seguenti distribuzioni di probabilità P e Q: P(0)=3/8, P(1)=1/2, P(2)=1/8, and Q(0)=1/2, Q(1)=1/4, Q(2)=1/4. Quanto vale la crossentropy H(P|Q) tra P e Q?",
         "risposte_possibili": [
             "13/8",
             "3/2+log(3)",
@@ -243,7 +243,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "16",
-        "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Quale delle seguenti non è una applicazione tipica degli autoencoders",
+        "domanda": "Quale delle seguenti non è una applicazione tipica degli autoencoders",
         "risposte_possibili": [
             "Segmentazione di immagini (semantic segmentation)",
             "Rimozione del rumore (denoising)",
@@ -259,7 +259,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "17",
-        "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Selezionare la sentenza SCORRETTA relativa alla backpropagation per reti neurali",
+        "domanda": "Selezionare la sentenza SCORRETTA relativa alla backpropagation per reti neurali",
         "risposte_possibili": [
             "E' l'algoritmo per il calcolo della derivata parziale della loss rispetto a ogni parametro della rete",
             "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per contrastare il fenomeno della sua scomparsa (vanishing)",
@@ -275,7 +275,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "18",
-        "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Componendo due layer Conv2D con stride 1, il primo con kernel 5x5 e il secondo con kernel 3x3 quale sarà il campo ricetttivo dei neuroni finali?",
+        "domanda": "Componendo due layer Conv2D con stride 1, il primo con kernel 5x5 e il secondo con kernel 3x3 quale sarà il campo ricetttivo dei neuroni finali?",
         "risposte_possibili": [
             "7",
             "8",
@@ -291,7 +291,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "19",
-        "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Il tensore di input di un layer convolutivo 2D ha dimensione (16,16,8). Sintetizzo 4 kernel con dimensione spaziale (5,5), stride 2, nessun padding (valid mode). Quale sarà la dimensione dell'output?",
+        "domanda": "Il tensore di input di un layer convolutivo 2D ha dimensione (16,16,8). Sintetizzo 4 kernel con dimensione spaziale (5,5), stride 2, nessun padding (valid mode). Quale sarà la dimensione dell'output?",
         "risposte_possibili": [
             "(6,6,4)",
             "(8,8,8)",
@@ -307,7 +307,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "20",
-        "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Selezionare la sentenza errata relativa all' \"inception module\"",
+        "domanda": "Selezionare la sentenza errata relativa all' \"inception module\"",
         "risposte_possibili": [
             "Sfutta kernel di dimensione diversa",
             "Tende a ridurre il costo computazionale sfruttando convoluzioni unarie per diminuire il numero dei canali",
@@ -323,7 +323,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "21",
-        "domanda": "Punteggio ottenuto 0,00 su 1,00 Quale delle seguenti tecniche non può aiutare ad uscire da minimi locali durante la fase di training.",
+        "domanda": "Quale delle seguenti tecniche non può aiutare ad uscire da minimi locali durante la fase di training.",
         "risposte_possibili": [
             "Ridurre la dimensione del minibatch",
             "Fare clipping del gradiente in una range prefissato",
@@ -339,7 +339,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "22",
-        "domanda": "Risposta corretta Punteggio ottenuto 1,00 su 1,00 Un layer convolutivo 2D con stride 1, kernel size 1x1, e senza padding prende in input un layer con dimensioni (32,32,16) e restituisce un layer di dimensione (32,32,4). Quanti sono i suoi parametri?",
+        "domanda": "Un layer convolutivo 2D con stride 1, kernel size 1x1, e senza padding prende in input un layer con dimensioni (32,32,16) e restituisce un layer di dimensione (32,32,4). Quanti sono i suoi parametri?",
         "risposte_possibili": [
             "2",
             "68",
@@ -355,7 +355,7 @@
     {
         "data_esame": "scritto-2023-02-12-soluzione",
         "numero_domanda": "23",
-        "domanda": "Punteggio ottenuto 0,00 su 1,00 Selezionare la sentenza SCORRETTA relativa alla Intersection over Union (IoU)",
+        "domanda": "Selezionare la sentenza SCORRETTA relativa alla Intersection over Union (IoU)",
         "risposte_possibili": [
             "E' frequentemente utilizzata come misura di similutide tra bounding boxes",
             "Restituisce un valore nel range [0,1]",
@@ -1172,7 +1172,7 @@
     {
         "data_esame": "scritto-2025-01-20-testo",
         "numero_domanda": "20",
-        "domanda": "10 of 14 Quale è l'effetto tipico della riduzione della dimensione del minibatch durante il training?",
+        "domanda": "Quale è l'effetto tipico della riduzione della dimensione del minibatch durante il training?",
         "risposte_possibili": [
             "La Backpropagation è effettuata meno frequentemente e l'aggiornamento dei parametri è meno accurato",
             "La Backpropagation è effettuata più frequentemente ma l'aggiornamento dei parametri è meno accurato",
@@ -1220,7 +1220,7 @@
     {
         "data_esame": "scritto-2025-01-20-testo",
         "numero_domanda": "23",
-        "domanda": "11 of 14 Quale è lo scopo dell'optimizer in Tensorflow/Keras?",
+        "domanda": "Quale è lo scopo dell'optimizer in Tensorflow/Keras?",
         "risposte_possibili": [
             "definire l'algoritmo che calcola i gradienti della loss e aggiorna i pesi del modello",
             "salvare i migliori pesi del modello durante il processo di training",
@@ -1268,7 +1268,7 @@
     {
         "data_esame": "scritto-2025-01-20-testo",
         "numero_domanda": "26",
-        "domanda": "12 of 14 Quale delle seguenti non è una applicazione tipica degli autoencoders",
+        "domanda": "Quale delle seguenti non è una applicazione tipica degli autoencoders",
         "risposte_possibili": [
             "Rilevamento di anomalie (anomaly detection)",
             "Rimozione del rumore (denoising)",
@@ -1316,7 +1316,7 @@
     {
         "data_esame": "scritto-2025-01-20-testo",
         "numero_domanda": "29",
-        "domanda": "13 of 14 Con modelli generativi si intende:",
+        "domanda": "Con modelli generativi si intende:",
         "risposte_possibili": [
             "l'uso di attacchi avversariali allo scopo di aumentare la robustezza dei modelli",
             "modelli che cercano di apprendere la distribuzione di probabilità dei dati",
@@ -1332,7 +1332,7 @@
     {
         "data_esame": "scritto-2025-01-20-testo",
         "numero_domanda": "30",
-        "domanda": "14 of 14 Selezionare la sentenza errata relativa ai modelli a diffusione",
+        "domanda": "Selezionare la sentenza errata relativa ai modelli a diffusione",
         "risposte_possibili": [
             "Generano i riusultati attraverso un processo di diffusione della informazione",
             "Tipicamente, lo spazio latente ha la stessa dimensione dello spazio visibile",
