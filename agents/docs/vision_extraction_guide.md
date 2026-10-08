@@ -5,17 +5,19 @@ Questo documento definisce la procedura operativa standard (SOP) per gli agenti 
 ## Obiettivo
 L'obiettivo è estrarre le domande da immagini mantenendo la stessa struttura e gli stessi rigidi vincoli di integrità applicati ai PDF testuali, ottenendo un output JSON validabile e privo di allucinazioni.
 
-## Strategia di Esecuzione (Script)
-L'agente incaricato dovrà automatizzare (tramite script) o eseguire direttamente i seguenti step:
+## Strategia di Esecuzione (Agentica)
+Poiché **non è disponibile una chiave API esterna**, l'agente incaricato dovrà eseguire l'estrazione agendo lui stesso come Vision LLM, seguendo questi step:
 
 1. **Conversione PDF-to-Image:** 
-   Utilizzare librerie come `PyMuPDF` (`fitz`) o `pdf2image` per convertire le singole pagine del PDF in file immagine (es. PNG/JPEG ad alta risoluzione, tipicamente a 150-300 DPI).
-2. **Invocazione Vision API (o elaborazione multimodale agentica):**
-   Inviare ciascuna immagine all'API del Vision LLM (es. OpenAI `gpt-4o`, Google `gemini-1.5-pro` o similari) utilizzando il prompt di sistema rigido definito di seguito.
-3. **Aggregazione:** 
-   Collezionare l'output JSON restituito per ogni pagina, unire tutte le domande, e salvarle in un file JSON temporaneo (es. `domande_estratte_img.json`).
+   Utilizzare/scrivere un piccolo script Python con librerie come `PyMuPDF` (`fitz`) per convertire le singole pagine del PDF in file immagine (es. PNG) all'interno di una cartella temporanea.
+2. **Lettura Visiva (tramite tool):**
+   L'agente deve leggere le immagini generate utilizzando il tool `view_file` (possibilmente in chiamate parallele per velocizzare il processo).
+3. **Trascrizione e Generazione JSON:** 
+   L'agente elabora mentalmente ogni immagine estraendo le domande in base alle regole, e scrive uno script (es. `build_json.py`) che contiene i dati estratti per generare e salvare il file `domande_estratte_img.json`.
 4. **Validazione:**
-   Eseguire script di controllo (es. adattando `run_checks.py` o tramite uno script separato) per garantire l'aderenza formale: domande totali attese, assenza di duplicati, esattamente 4 risposte possibili e match testuale perfetto (1-a-1) tra risposte corrette e possibili.
+   Eseguire script di controllo (es. `run_checks_img.py`) per garantire l'aderenza formale (es. 30 domande per esame, nessun duplicato, 4 risposte possibili, match perfetto tra corrette e possibili).
+5. **Pulizia (Archiviazione):**
+   Terminata l'estrazione, lo script ad-hoc utilizzato (`build_json.py`) va spostato nella cartella `scripts/archive/` per mantenere ordinata la directory principale.
 
 ## Prompt di Sistema per il Vision LLM
 
