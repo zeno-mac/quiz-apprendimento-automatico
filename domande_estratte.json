@@ -1,6 +1,6 @@
 [
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "1",
         "domanda": "Nel caso di un albero di decisione con features discrete, cosa si può dire della profondità dell'albero?",
         "risposte_possibili": [
@@ -16,7 +16,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "2",
         "domanda": "Selezionare la sentenza errata relativa alle Random Forest (foreste di alberi decisionali)",
         "risposte_possibili": [
@@ -32,7 +32,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "3",
         "domanda": "Una variabile aleatoria discreta con valori a,b e c has la seguente distribuzione di probabilità: P(a)=1/4, P(b)=1/2, P(c)=1/4. Qual'è la usa entropia?",
         "risposte_possibili": [
@@ -48,7 +48,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "4",
         "domanda": "In che situazioni si parla di apprendimento auto-supervisionato (self-supervised)",
         "risposte_possibili": [
@@ -64,7 +64,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "5",
         "domanda": "Selezionare la sentenza corretta relativa alla probalità condizionata P(A|B) tra due eventi A e B",
         "risposte_possibili": [
@@ -80,7 +80,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "6",
         "domanda": "Selezionare la sentenza ERRATA relativa alla distribuzione congiunta di probabilità per N variabili aleatorie discrete",
         "risposte_possibili": [
@@ -97,7 +97,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "7",
         "domanda": "Avendo 5 categorie di dati e 3 features di input booleane, quanti parametri indipendenti devono essere stimati secondo la tecnica Naive Bayes (compresi i priors).",
         "risposte_possibili": [
@@ -113,7 +113,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "8",
         "domanda": "Quale delle seguenti situazioni NON è particolarmente problematica dal punto di vista dell'overfitting?",
         "risposte_possibili": [
@@ -129,7 +129,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "9",
         "domanda": "Risposta corretta Selezionare la sentenza ERRATA relativa al learning rate Punteggio ottenuto 1,00 su 1,00",
         "risposte_possibili": [
@@ -145,7 +145,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "10",
         "domanda": "Ci sono due monete, una normale e una che restituisce testa con probabilità 3/4 e croce con probabilità 1/4. Faccio due lanci con la stessa moneta e osservo una testa e una croce. Che cosa posso conlcudere?",
         "risposte_possibili": [
@@ -161,7 +161,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "11",
         "domanda": "Risposta corretta Selezionare la sentenza corretta riguardo alla regressione logistica Punteggio ottenuto 1,00 su 1,00",
         "risposte_possibili": [
@@ -177,7 +177,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "12",
         "domanda": "La derivata della funzione logistica σ(x) è:",
         "risposte_possibili": [
@@ -193,7 +193,7 @@
         "revisione": "correzione_manuale"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "13",
         "domanda": "Un dataset contiene 2/3 di positivi e 1/3 di negativi. La precisione del modello è 9/10. Che percentuale dei dati totali sono Falsi Positivi?",
         "risposte_possibili": [
@@ -209,7 +209,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "14",
         "domanda": "Siano date le seguenti distribuzioni di probabilità P e Q: P(0)=3/8, P(1)=1/2, P(2)=1/8, and Q(0)=1/2, Q(1)=1/4, Q(2)=1/4. Quanto vale la crossentropy H(P|Q) tra P e Q?",
         "risposte_possibili": [
@@ -225,7 +225,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "15",
         "domanda": "Risposta corretta Selezionare la sentenza ERRATA relativa alla regressione lineare Punteggio ottenuto 1,00 su 1,00",
         "risposte_possibili": [
@@ -241,7 +241,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "16",
         "domanda": "Quale delle seguenti non è una applicazione tipica degli autoencoders",
         "risposte_possibili": [
@@ -257,7 +257,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "17",
         "domanda": "Selezionare la sentenza SCORRETTA relativa alla backpropagation per reti neurali",
         "risposte_possibili": [
@@ -273,7 +273,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "18",
         "domanda": "Componendo due layer Conv2D con stride 1, il primo con kernel 5x5 e il secondo con kernel 3x3 quale sarà il campo ricetttivo dei neuroni finali?",
         "risposte_possibili": [
@@ -289,7 +289,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "19",
         "domanda": "Il tensore di input di un layer convolutivo 2D ha dimensione (16,16,8). Sintetizzo 4 kernel con dimensione spaziale (5,5), stride 2, nessun padding (valid mode). Quale sarà la dimensione dell'output?",
         "risposte_possibili": [
@@ -305,7 +305,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "20",
         "domanda": "Selezionare la sentenza errata relativa all' \"inception module\"",
         "risposte_possibili": [
@@ -321,7 +321,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "21",
         "domanda": "Quale delle seguenti tecniche non può aiutare ad uscire da minimi locali durante la fase di training.",
         "risposte_possibili": [
@@ -337,7 +337,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "22",
         "domanda": "Un layer convolutivo 2D con stride 1, kernel size 1x1, e senza padding prende in input un layer con dimensioni (32,32,16) e restituisce un layer di dimensione (32,32,4). Quanti sono i suoi parametri?",
         "risposte_possibili": [
@@ -353,7 +353,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "23",
         "domanda": "Selezionare la sentenza SCORRETTA relativa alla Intersection over Union (IoU)",
         "risposte_possibili": [
@@ -369,7 +369,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2023-02-12-soluzione",
+        "data_esame": "2023-02-12",
         "numero_domanda": "24",
         "domanda": "Risposta corretta Selezionare la sentenza errata relativa ai transformes. Punteggio ottenuto 1,00 su 1,00",
         "risposte_possibili": [
@@ -385,7 +385,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "1",
         "domanda": "Selezionare la sentenza ERRONEA riguardo agli alberi di decisione",
         "risposte_possibili": [
@@ -401,7 +401,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "2",
         "domanda": "Selezionare la sentenza ERRATA riguardo all'apprendimento supervisionato",
         "risposte_possibili": [
@@ -417,7 +417,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "3",
         "domanda": "Una variabile aleatoria discreta con valori a,b e c has la seguente distribuzione di probabilità: P(a)=1/4, P(b)=1/2, P(c)=1/4. Qual'è la usa entropia?",
         "risposte_possibili": [
@@ -433,7 +433,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "4",
         "domanda": "Se un modello calcola una distribuzione di probabilità, aggiungere alla funzione obiettivo una componente tesa a diminuire l'entropia avrà l'effetto di:",
         "risposte_possibili": [
@@ -449,7 +449,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "5",
         "domanda": "Selezionare la sentenza corretta relativa alla dsitribuzione congiunta di probabilità",
         "risposte_possibili": [
@@ -465,7 +465,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "6",
         "domanda": "Qual è lo scopo del metodo di cross-validation K-Fold?",
         "risposte_possibili": [
@@ -481,7 +481,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "7",
         "domanda": "Quale è l'obiettivo principale dell'algoritmo di clustering K-means?",
         "risposte_possibili": [
@@ -497,7 +497,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "8",
         "domanda": "Ci sono due dadi, uno normale e uno truccato che restituisce un 6 con probabilità .5, e gli altri valori con probabilità 0.1 Faccio tre lanci con lo stesso dado e osservo un 3, un 6 e un 2. Cosa posso concludere?",
         "risposte_possibili": [
@@ -513,7 +513,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "9",
         "domanda": "Perchè la tecnica Naive Bayes è detta \"naive\" (ingenua)?",
         "risposte_possibili": [
@@ -529,7 +529,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "10",
         "domanda": "Quale distribuzione di probabilità si assume abitualmente per una variabile obiettivo continua nel caso della tecnica Naive Bayes?",
         "risposte_possibili": [
@@ -545,7 +545,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "11",
         "domanda": "Qual è il principale scopo della normalizzazione dei dati prima dell'addestramento di un modello di machine learning?",
         "risposte_possibili": [
@@ -561,7 +561,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "12",
         "domanda": "Quale delle seguenti situazioni NON è particolarmente problematica dal punto di vista dell'overfitting?",
         "risposte_possibili": [
@@ -577,7 +577,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "13",
         "domanda": "Selezionare la sentenza ERRATA relativa alla Principal Component Analysis (PCA)",
         "risposte_possibili": [
@@ -593,7 +593,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "14",
         "domanda": "Un dataset contiene 2/3 di positivi e 1/3 di negativi. La precisione del modello è 9/10. Che percentuale dei dati totali sono Falsi Positivi?",
         "risposte_possibili": [
@@ -609,7 +609,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "15",
         "domanda": "Selezionare la sentenza corretta relativa alla probalità condizionata P(A|B) tra due eventi A e B",
         "risposte_possibili": [
@@ -625,7 +625,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "16",
         "domanda": "Selezionare la sentenza SCORRETTA riguardo alla regressione logistica",
         "risposte_possibili": [
@@ -641,7 +641,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "17",
         "domanda": "Qual è il ruolo principale della funzione di loss in una rete neurale?",
         "risposte_possibili": [
@@ -657,7 +657,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "18",
         "domanda": "Selezionare la sentenza SCORRETTA riguardo ai modelli generativi",
         "risposte_possibili": [
@@ -673,7 +673,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "19",
         "domanda": "Selezionare la sentenza corretta",
         "risposte_possibili": [
@@ -689,7 +689,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "20",
         "domanda": "Quale è lo scopo dell'optimizer in Tensorflow/Keras?",
         "risposte_possibili": [
@@ -705,7 +705,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "21",
         "domanda": "Quale delle seguenti tecniche NON può essere utilizzata per contrastare l'overfitting?",
         "risposte_possibili": [
@@ -721,7 +721,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "22",
         "domanda": "Selezionare la sentenza SCORRETTA relativa al problema della scomparsa del gradiente (vanishing gradient)",
         "risposte_possibili": [
@@ -737,7 +737,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "23",
         "domanda": "Selezione al sentenza ERRATA relativa alle Transposed Convolutions",
         "risposte_possibili": [
@@ -753,7 +753,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "24",
         "domanda": "Selezionare la sentenza SCORRETTA relativa alla U-Net",
         "risposte_possibili": [
@@ -769,7 +769,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "25",
         "domanda": "Quale delle seguenti sentenze relative agli autoencoders è SCORRETTA?",
         "risposte_possibili": [
@@ -785,7 +785,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "26",
         "domanda": "Il tensore di input di un layer convolutivo 2D ha dimensione (16,16,32). Sintetizzo 8 kernel con dimensione spaziale (3,3), stride 2, nessun padding (valid mode). Quale sarà la dimensione dell'output?",
         "risposte_possibili": [
@@ -801,7 +801,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "27",
         "domanda": "Quale delle seguenti affermazioni relative alla backpropagation è corretta?",
         "risposte_possibili": [
@@ -817,7 +817,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "28",
         "domanda": "Quale è l'effetto tipico della riduzione della dimensione del minibatch durante il training?",
         "risposte_possibili": [
@@ -833,7 +833,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "29",
         "domanda": "Selezionare la sentenza corretta:",
         "risposte_possibili": [
@@ -849,7 +849,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2024-12-17-testo",
+        "data_esame": "2024-12-17",
         "numero_domanda": "30",
         "domanda": "Selezionare la sentenza SCORRETTA relativa alla tecnica a discesa del gradiente.",
         "risposte_possibili": [
@@ -865,7 +865,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "1",
         "domanda": "Nel caso di un albero di decisione con features discrete, cosa si può dire della profondità dell'albero?",
         "risposte_possibili": [
@@ -881,7 +881,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "2",
         "domanda": "Qual è lo scopo del metodo di cross-validation K-Fold?",
         "risposte_possibili": [
@@ -897,7 +897,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "3",
         "domanda": "Che cosa si intende con apprendimento supervisionato?",
         "risposte_possibili": [
@@ -913,7 +913,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "4",
         "domanda": "Selezionare la sentenza ERRATA relativa all'entropia per la distribuzione di probabilità di una variabile aleatoria discreta",
         "risposte_possibili": [
@@ -929,7 +929,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "5",
         "domanda": "Selezionare la sentenza ERRATA relativa alla distribuzione congiunta di probabilità per N variabili aleatorie discrete",
         "risposte_possibili": [
@@ -946,7 +946,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "6",
         "domanda": "Quale è l'obiettivo principale dell'algortimo di clustering K-means?",
         "risposte_possibili": [
@@ -962,7 +962,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "7",
         "domanda": "Selezionare la sentenza ERRATA relativa alla tecnica Naive Bayes",
         "risposte_possibili": [
@@ -978,7 +978,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "8",
         "domanda": "Quale distribuzione di probabilità si assume abitualmente per una variabile obiettivo continua nel caso della tecnica Naive Bayes?",
         "risposte_possibili": [
@@ -994,7 +994,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "9",
         "domanda": "Ci sono due monete, una normale e una che restituisce testa con probabilità 3/4 e croce con probabilità 1/4. Faccio due lanci con la stessa moneta e osservo una testa e una croce. Che cosa posso conlcudere?",
         "risposte_possibili": [
@@ -1010,7 +1010,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "10",
         "domanda": "Qual è il principale scopo della normalizzazione dei dati prima dell'addestramento di un modello di machine learning?",
         "risposte_possibili": [
@@ -1026,7 +1026,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "11",
         "domanda": "Quale delle seguenti opzioni non aiuta a ridurre l'overfitting in un modello di deep learning?",
         "risposte_possibili": [
@@ -1042,7 +1042,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "12",
         "domanda": "Nella Principal Component Analysis, cosa indica la varianza spiegata da ciascuna componente?",
         "risposte_possibili": [
@@ -1058,7 +1058,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "13",
         "domanda": "Un dataset contiene 1/3 di positivi e 2/3 di negativi. La recall del modello è di 2/3. Che percentuale dei dati sono Falsi Negativi?",
         "risposte_possibili": [
@@ -1074,7 +1074,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "14",
         "domanda": "Selezionare la sentenza ERRATA relativa alla probalità condizionata P(A|B) tra due eventi A e B",
         "risposte_possibili": [
@@ -1090,7 +1090,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "15",
         "domanda": "Selezionare la sentenza ERRATA relativa al learning rate",
         "risposte_possibili": [
@@ -1106,7 +1106,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "16",
         "domanda": "Selezionare la sentenza corretta riguardo alla regressione logistica",
         "risposte_possibili": [
@@ -1122,7 +1122,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "17",
         "domanda": "Selezionare la sentenza SCORRETTA relativa ai neuroni artificiali",
         "risposte_possibili": [
@@ -1138,7 +1138,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "18",
         "domanda": "Cosa si intende con \"deep\" features?",
         "risposte_possibili": [
@@ -1154,7 +1154,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "19",
         "domanda": "Selezionare la sentenza SCORRETTA relativa alla backpropagation per reti neurali",
         "risposte_possibili": [
@@ -1170,7 +1170,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "20",
         "domanda": "Quale è l'effetto tipico della riduzione della dimensione del minibatch durante il training?",
         "risposte_possibili": [
@@ -1186,7 +1186,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "21",
         "domanda": "Selezionare la sentenza SCORRETTA relativa all'overfitting",
         "risposte_possibili": [
@@ -1202,7 +1202,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "22",
         "domanda": "Il problema della scomparsa del gradiente (vanishing gradient) dell'intensità del gradiente, dovuta a si riferisce a una progressiva diminuzione",
         "risposte_possibili": [
@@ -1218,7 +1218,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "23",
         "domanda": "Quale è lo scopo dell'optimizer in Tensorflow/Keras?",
         "risposte_possibili": [
@@ -1234,7 +1234,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "24",
         "domanda": "Qual è il principale vantaggio delle connessioni residue (skip connections) in una ResNet?",
         "risposte_possibili": [
@@ -1250,7 +1250,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "25",
         "domanda": "Selezione al sentenza corretta relativa alle Transposed Convolutions",
         "risposte_possibili": [
@@ -1266,7 +1266,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "26",
         "domanda": "Quale delle seguenti non è una applicazione tipica degli autoencoders",
         "risposte_possibili": [
@@ -1282,7 +1282,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "27",
         "domanda": "Selezionare la sentenza SCORRETTA relativa alle Generative Adversarial Networks",
         "risposte_possibili": [
@@ -1298,7 +1298,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "28",
         "domanda": "Selezionare la sentenza SCORRETTA relativa alla U-Net",
         "risposte_possibili": [
@@ -1314,7 +1314,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "29",
         "domanda": "Con modelli generativi si intende:",
         "risposte_possibili": [
@@ -1330,7 +1330,7 @@
         "revisione": "automatica"
     },
     {
-        "data_esame": "scritto-2025-01-20-testo",
+        "data_esame": "2025-01-20",
         "numero_domanda": "30",
         "domanda": "Selezionare la sentenza errata relativa ai modelli a diffusione",
         "risposte_possibili": [
