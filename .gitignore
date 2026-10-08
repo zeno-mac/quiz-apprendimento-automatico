@@ -1,4 +1,6 @@
-exams/*
-scripts/*
+exams/images/*
+exams/txt/*
+scripts/archive/*
 venv/*
 txt/*
+agents/reports/*
