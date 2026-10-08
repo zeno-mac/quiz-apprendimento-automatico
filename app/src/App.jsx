@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Dashboard from './components/Dashboard'
 import './App.css'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       </header>
 
       <main>
-        {/* Qui andrà la Dashboard con la lista degli esami */}
+        <Dashboard />
       </main>
     </div>
   )
