@@ -13,7 +13,7 @@ Poiché **non è disponibile una chiave API esterna**, l'agente incaricato dovr�
 2. **Lettura Visiva (tramite tool):**
    L'agente deve leggere le immagini generate utilizzando il tool `view_file` (possibilmente in chiamate parallele per velocizzare il processo).
 3. **Trascrizione e Generazione JSON:** 
-   L'agente elabora mentalmente ogni immagine estraendo le domande in base alle regole, e scrive uno script (es. `build_json.py`) che contiene i dati estratti per generare e salvare il file `domande_estratte_img.json`.
+   L'agente elabora mentalmente ogni immagine estraendo le domande in base alle regole, e scrive uno script (es. `build_json.py`) che contiene i dati estratti per generare e salvare il file `data/domande_img.json`.
 4. **Validazione:**
    Eseguire script di controllo (es. `run_checks_img.py`) per garantire l'aderenza formale (es. 30 domande per esame, nessun duplicato, 4 risposte possibili, match perfetto tra corrette e possibili).
 5. **Pulizia (Archiviazione):**

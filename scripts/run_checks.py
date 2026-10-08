@@ -5,7 +5,7 @@ def normalize_whitespace(s):
     return re.sub(r'\s+', ' ', str(s).strip())
 
 def main():
-    with open('../domande_estratte.json', 'r', encoding='utf-8') as f:
+    with open('../data/domande.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     exams = {}
@@ -15,7 +15,7 @@ def main():
             exams[ex] = []
         exams[ex].append(d)
 
-    report = ["# Report di Validazione `domande_estratte.json`\n"]
+    report = ["# Report di Validazione `data/domande.json`\n"]
 
     for exam, questions in exams.items():
         report.append(f"## Esame: {exam}")
