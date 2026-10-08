@@ -10,7 +10,8 @@ Questo file funge da guida per gli agenti successivi incaricati di validare e co
    - Tutti gli altri esami devono contenere esattamente 30 domande per file.
    - Segnalare se il numero di domande estratte non corrisponde.
 
-2. **Numerazione Senza Duplicati**
+2. **Ordinamento e Numerazione Senza Duplicati**
+   - L'intero file JSON deve essere ordinato primariamente in base a `data_esame` e secondariamente in base a `numero_domanda`.
    - Verificare che i campi `numero_domanda` all'interno di ogni esame siano strettamente crescenti e senza alcun duplicato.
 
 3. **Numero di Risposte Possibili**

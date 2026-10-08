@@ -32,6 +32,7 @@ I dati si trovano attualmente all'interno del file `domande_estratte.json`, come
 
 Le regole che definiscono la validità di un esame estratto sono codificate in `agents/docs/agent_checks.md`. In sintesi:
 - Ogni esame ha 30 domande, tranne la simulazione del `22-11-18` (6 domande) e l'esame `2023-02-12` (24 domande).
+- L'intero file JSON deve essere ordinato primariamente per `data_esame` e secondariamente per `numero_domanda`.
 - Le domande sono numerate in ordine crescente, senza duplicati all'interno di uno stesso esame.
 - Ogni domanda ha esattamente 4 risposte possibili.
 - Le stringhe inserite in `risposte_corrette` devono far match 1-a-1 con un elemento in `risposte_possibili` (tolleranza concessa solo per gli spazi bianchi).
