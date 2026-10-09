@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import Dashboard from './components/Dashboard'
 import Quiz from './components/Quiz'
+import Results from './components/Results'
 import './App.css'
 
 function App() {
   const [questions, setQuestions] = useState([]);
   const [activeQuiz, setActiveQuiz] = useState(null);
+  const [quizResults, setQuizResults] = useState(null);
 
   useEffect(() => {
     const baseUrl = import.meta.env.BASE_URL || '/';
@@ -33,16 +35,28 @@ function App() {
     setActiveQuiz({ type: 'total', id: 'Totale', data: shuffled });
   };
 
+  const handleStartErrors = (wrongPool) => {
+    if (!wrongPool || wrongPool.length === 0) {
+      alert("Nessun errore da ripassare al momento!");
+      return;
+    }
+    const errorQuestions = questions.filter(q => wrongPool.includes(q.id));
+    const shuffled = [...errorQuestions].sort(() => Math.random() - 0.5);
+    setActiveQuiz({ type: 'error', id: 'Ripasso Errori', data: shuffled });
+  };
+
   const handleFinishQuiz = (answers) => {
-    console.log("Quiz terminato, risposte date:", answers);
-    // TODO: implementare calcolo punteggio e view dei risultati
-    alert("Quiz completato! (Controlla la console per le risposte)");
-    setActiveQuiz(null); // per ora torna alla dashboard
+    setQuizResults({ data: activeQuiz, answers });
+    setActiveQuiz(null);
+  };
+
+  const handleCloseResults = () => {
+    setQuizResults(null);
   };
 
   return (
     <div className="container">
-      {!activeQuiz && (
+      {!activeQuiz && !quizResults && (
         <header className="app-header">
           <h1 className="app-title">Quiz Apprendimento Automatico</h1>
           <p className="app-subtitle">Scegli un esame per iniziare o ripassa gli errori.</p>
@@ -50,17 +64,24 @@ function App() {
       )}
 
       <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-        {!activeQuiz ? (
+        {!activeQuiz && !quizResults ? (
           <Dashboard 
             questions={questions} 
             onStartExam={handleStartExam} 
             onStartTotal={handleStartTotal}
+            onStartErrors={handleStartErrors}
           />
-        ) : (
+        ) : activeQuiz ? (
           <Quiz 
             quizData={activeQuiz} 
             onExit={() => setActiveQuiz(null)} 
             onFinish={handleFinishQuiz}
+          />
+        ) : (
+          <Results 
+            quizData={quizResults.data}
+            answers={quizResults.answers}
+            onClose={handleCloseResults}
           />
         )}
       </main>

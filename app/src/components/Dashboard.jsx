@@ -3,7 +3,7 @@ import { Play, RotateCcw, ChevronDown, Upload, Download } from 'lucide-react';
 import { getProgress } from '../utils/storage';
 import './Dashboard.css';
 
-export default function Dashboard({ questions, onStartExam, onStartTotal }) {
+export default function Dashboard({ questions, onStartExam, onStartTotal, onStartErrors }) {
   const [exams, setExams] = useState([]);
   const [progress, setProgress] = useState({ history: [], wrongQuestionsPool: [] });
 
@@ -40,7 +40,7 @@ export default function Dashboard({ questions, onStartExam, onStartTotal }) {
         <button className="btn btn-primary" style={{ flex: 1, justifyContent: 'center' }} onClick={onStartTotal}>
           <Play size={18} /> Quiz Totale ({questions.length} dom.)
         </button>
-        <button className="btn" style={{ flex: 1, justifyContent: 'center' }}>
+        <button className="btn" style={{ flex: 1, justifyContent: 'center' }} onClick={() => onStartErrors && onStartErrors(progress.wrongQuestionsPool)}>
           <RotateCcw size={18} /> Ripasso Errori ({progress.wrongQuestionsPool.length})
         </button>
       </div>

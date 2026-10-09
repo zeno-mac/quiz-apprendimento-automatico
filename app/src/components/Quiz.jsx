@@ -26,7 +26,13 @@ export default function Quiz({ quizData, onExit, onFinish }) {
   if (!question) return null;
 
   const handleSelect = (ans) => {
-    setAnswers({ ...answers, [currentIndex]: ans });
+    if (answers[currentIndex] === ans) {
+      const newAnswers = { ...answers };
+      delete newAnswers[currentIndex];
+      setAnswers(newAnswers);
+    } else {
+      setAnswers({ ...answers, [currentIndex]: ans });
+    }
   };
 
   const handleNext = () => {
