@@ -3,56 +3,42 @@ import { Play, RotateCcw, ChevronDown, Upload, Download } from 'lucide-react';
 import { getProgress } from '../utils/storage';
 import './Dashboard.css';
 
-export default function Dashboard() {
+export default function Dashboard({ questions, onStartExam, onStartTotal }) {
   const [exams, setExams] = useState([]);
   const [progress, setProgress] = useState({ history: [], wrongQuestionsPool: [] });
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Carica stato da LocalStorage
     const savedProgress = getProgress();
     setProgress(savedProgress);
 
-    // Carica le domande reali (che abbiamo copiato in public/data)
-    const baseUrl = import.meta.env.BASE_URL || '/';
-    fetch(`${baseUrl}data/domande.json`)
-      .then(res => res.json())
-      .then(data => {
-        // Raggruppa per data_esame
-        const examsMap = new Map();
-        data.forEach(q => {
-          if (!examsMap.has(q.data_esame)) {
-            examsMap.set(q.data_esame, 0);
-          }
-          examsMap.set(q.data_esame, examsMap.get(q.data_esame) + 1);
-        });
-        
-        const examsList = Array.from(examsMap.entries()).map(([id, count]) => {
-          // Controlla se questo esame è già stato fatto in passato guardando l'history
-          const isDone = savedProgress.history.some(h => h.examId === id);
-          return { id, count, isDone };
-        });
-        
-        // Ordina cronologicamente decrescente
-        examsList.sort((a, b) => b.id.localeCompare(a.id));
-        setExams(examsList);
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error("Errore nel caricamento delle domande:", error);
-        setLoading(false);
+    if (questions.length > 0) {
+      const examsMap = new Map();
+      questions.forEach(q => {
+        if (!examsMap.has(q.data_esame)) {
+          examsMap.set(q.data_esame, 0);
+        }
+        examsMap.set(q.data_esame, examsMap.get(q.data_esame) + 1);
       });
-  }, []);
+      
+      const examsList = Array.from(examsMap.entries()).map(([id, count]) => {
+        const isDone = savedProgress.history.some(h => h.examId === id);
+        return { id, count, isDone };
+      });
+      
+      examsList.sort((a, b) => b.id.localeCompare(a.id));
+      setExams(examsList);
+    }
+  }, [questions]);
 
-  if (loading) {
+  if (questions.length === 0) {
     return <div style={{ color: 'var(--text-secondary)' }}>Caricamento esami in corso...</div>;
   }
 
   return (
     <div className="dashboard">
       <div className="dashboard-actions">
-        <button className="btn btn-primary" style={{ flex: 1, justifyContent: 'center' }}>
-          <Play size={18} /> Quiz Totale ({exams.reduce((acc, curr) => acc + curr.count, 0)} dom.)
+        <button className="btn btn-primary" style={{ flex: 1, justifyContent: 'center' }} onClick={onStartTotal}>
+          <Play size={18} /> Quiz Totale ({questions.length} dom.)
         </button>
         <button className="btn" style={{ flex: 1, justifyContent: 'center' }}>
           <RotateCcw size={18} /> Ripasso Errori ({progress.wrongQuestionsPool.length})
@@ -86,7 +72,7 @@ export default function Dashboard() {
           </div>
           
           <div className="action-buttons">
-            <button className="btn btn-primary">
+            <button className="btn btn-primary" onClick={() => onStartExam(exam.id)}>
               <Play size={16} /> Inizia
             </button>
             <button className="btn">
