@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Dashboard from './components/Dashboard'
 import Quiz from './components/Quiz'
 import Results from './components/Results'
+import { saveQuizResult } from './utils/storage'
 import './App.css'
 
 function App() {
@@ -46,6 +47,27 @@ function App() {
   };
 
   const handleFinishQuiz = (answers) => {
+    const questions = activeQuiz.data;
+    let score = 0;
+    const wrongList = [];
+    const correctIds = [];
+    
+    questions.forEach((q, index) => {
+      const userAnswer = answers[index];
+      const isCorrect = userAnswer && q.risposte_corrette.some(rc => rc.trim() === userAnswer.trim());
+      
+      if (isCorrect) {
+        score++;
+        correctIds.push(q.id);
+      } else {
+        wrongList.push({
+          id: q.id,
+          selectedAnswer: userAnswer || "Nessuna risposta"
+        });
+      }
+    });
+
+    saveQuizResult(activeQuiz.id, score, questions.length, wrongList, correctIds);
     setQuizResults({ data: activeQuiz, answers });
     setActiveQuiz(null);
   };

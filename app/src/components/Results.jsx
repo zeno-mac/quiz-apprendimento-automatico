@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { CheckCircle, XCircle, Home } from 'lucide-react';
 import { InlineMath } from 'react-katex';
-import { saveQuizResult } from '../utils/storage';
 import './Results.css';
 
 const renderText = (text) => {
@@ -16,35 +15,13 @@ const renderText = (text) => {
 };
 
 export default function Results({ quizData, answers, onClose }) {
-  const [hasSaved, setHasSaved] = useState(false);
   const questions = quizData.data;
   
   const score = questions.reduce((acc, q, index) => {
     const userAnswer = answers[index];
-    const isCorrect = userAnswer && q.risposte_corrette.includes(userAnswer);
+    const isCorrect = userAnswer && q.risposte_corrette.some(rc => rc.trim() === userAnswer.trim());
     return acc + (isCorrect ? 1 : 0);
   }, 0);
-
-  useEffect(() => {
-    if (hasSaved) return;
-    
-    const wrongList = [];
-    const correctIds = [];
-    questions.forEach((q, index) => {
-      const userAnswer = answers[index];
-      if (!userAnswer || !q.risposte_corrette.includes(userAnswer)) {
-        wrongList.push({
-          id: q.id,
-          selectedAnswer: userAnswer || "Nessuna risposta"
-        });
-      } else {
-        correctIds.push(q.id);
-      }
-    });
-
-    saveQuizResult(quizData.id, score, questions.length, wrongList, correctIds);
-    setHasSaved(true);
-  }, [hasSaved, quizData.id, score, questions, answers]);
 
   return (
     <div className="results-container">
@@ -63,7 +40,7 @@ export default function Results({ quizData, answers, onClose }) {
       <div className="review-list">
         {questions.map((q, index) => {
           const userAnswer = answers[index];
-          const isCorrect = userAnswer && q.risposte_corrette.includes(userAnswer);
+          const isCorrect = userAnswer && q.risposte_corrette.some(rc => rc.trim() === userAnswer.trim());
 
           return (
             <div key={index} className={`review-card ${isCorrect ? 'correct' : 'incorrect'}`}>
