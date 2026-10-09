@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, X, CheckCircle2, FileText, Image as ImageIcon, Check, LayoutGrid, ChevronDown } from 'lucide-react';
+import { ArrowLeft, ArrowRight, X, CheckCircle2, Check, LayoutGrid, ChevronDown } from 'lucide-react';
 import { InlineMath } from 'react-katex';
 import 'katex/dist/katex.min.css';
 import './Quiz.css';
@@ -101,17 +101,20 @@ export default function Quiz({ quizData, onExit, onFinish }) {
           <span className="meta-item">
             <strong>N°:</strong> {question.numero_domanda}
           </span>
-          <span className="meta-item" title="Estrazione">
-            {question.origine === 'screenshot_llm' ? <ImageIcon size={14} /> : <FileText size={14} />}
-          </span>
-          <span className="meta-item" title="Revisione">
+          <span 
+            className="meta-item" 
+            style={{ marginLeft: 'auto', cursor: 'help' }} 
+            title={question.revisione === 'manuale' 
+              ? "Questa domanda è stata verificata e corretta manualmente." 
+              : "Questa domanda è stata estratta automaticamente e non è ancora stata verificata."}
+          >
             {question.revisione === 'manuale' ? (
-              <span style={{ color: 'var(--success)', display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
-                <CheckCircle2 size={14} /> Rev. Manuale
+              <span style={{ color: 'var(--success)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                <CheckCircle2 size={16} /> <span style={{ fontWeight: 500 }}>Verificata</span>
               </span>
             ) : (
-              <span style={{ display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
-                Auto
+              <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', opacity: 0.8 }}>
+                <span style={{ fontWeight: 500 }}>Non Verificata</span>
               </span>
             )}
           </span>
