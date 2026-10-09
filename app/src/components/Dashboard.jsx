@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Play, RotateCcw, ChevronDown, Upload, Download, Dices } from 'lucide-react';
 import { getProgress } from '../utils/storage';
 import './Dashboard.css';
@@ -9,6 +9,39 @@ export default function Dashboard({ questions, onStartExam, onStartTotal, onStar
   const [expandedExam, setExpandedExam] = useState(null);
   const [showRandom, setShowRandom] = useState(false);
   const [randomCount, setRandomCount] = useState(15);
+  const fileInputRef = useRef(null);
+
+  const handleExport = () => {
+    const dataStr = JSON.stringify(progress, null, 2);
+    const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+    const exportFileDefaultName = 'quiz_progress.json';
+    const linkElement = document.createElement('a');
+    linkElement.setAttribute('href', dataUri);
+    linkElement.setAttribute('download', exportFileDefaultName);
+    linkElement.click();
+  };
+
+  const handleImport = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (evt) => {
+      try {
+        const importedData = JSON.parse(evt.target.result);
+        if (importedData.history && importedData.wrongQuestionsPool) {
+          localStorage.setItem('quiz_progress', JSON.stringify(importedData));
+          setProgress(importedData);
+          alert('Dati importati con successo!');
+          window.location.reload();
+        } else {
+          alert('Formato file non valido.');
+        }
+      } catch (err) {
+        alert('Errore nella lettura del file.');
+      }
+    };
+    reader.readAsText(file);
+  };
 
   useEffect(() => {
     const savedProgress = getProgress();
@@ -73,10 +106,11 @@ export default function Dashboard({ questions, onStartExam, onStartTotal, onStar
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem', marginBottom: '0.5rem' }}>
         <h2 style={{ fontSize: '1.2rem' }}>Esami Disponibili</h2>
         <div style={{ display: 'flex', gap: '0.5rem' }}>
-          <button className="btn" style={{ padding: '0.4rem', borderRadius: '50%' }} title="Importa Dati">
+          <input type="file" accept=".json" style={{ display: 'none' }} ref={fileInputRef} onChange={handleImport} />
+          <button className="btn" style={{ padding: '0.4rem', borderRadius: '50%' }} title="Importa Dati" onClick={() => fileInputRef.current?.click()}>
             <Upload size={16} />
           </button>
-          <button className="btn" style={{ padding: '0.4rem', borderRadius: '50%' }} title="Esporta Dati">
+          <button className="btn" style={{ padding: '0.4rem', borderRadius: '50%' }} title="Esporta Dati" onClick={handleExport}>
             <Download size={16} />
           </button>
         </div>
