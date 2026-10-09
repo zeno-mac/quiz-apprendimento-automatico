@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Play, RotateCcw, ChevronDown, CheckCircle, Upload, Download } from 'lucide-react';
+import { Play, RotateCcw, ChevronDown, Upload, Download } from 'lucide-react';
 import { getProgress } from '../utils/storage';
 import './Dashboard.css';
 
@@ -14,7 +14,8 @@ export default function Dashboard() {
     setProgress(savedProgress);
 
     // Carica le domande reali (che abbiamo copiato in public/data)
-    fetch('/data/domande.json')
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    fetch(`${baseUrl}data/domande.json`)
       .then(res => res.json())
       .then(data => {
         // Raggruppa per data_esame
@@ -35,6 +36,10 @@ export default function Dashboard() {
         // Ordina cronologicamente decrescente
         examsList.sort((a, b) => b.id.localeCompare(a.id));
         setExams(examsList);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error("Errore nel caricamento delle domande:", error);
         setLoading(false);
       });
   }, []);

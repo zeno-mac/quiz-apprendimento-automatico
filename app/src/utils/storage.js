@@ -1,7 +1,13 @@
 export const getProgress = () => {
   const data = localStorage.getItem('quiz_progress');
   if (!data) return { history: [], wrongQuestionsPool: [] };
-  return JSON.parse(data);
+  
+  try {
+    return JSON.parse(data);
+  } catch (error) {
+    console.error("Error parsing progress from localStorage:", error);
+    return { history: [], wrongQuestionsPool: [] };
+  }
 };
 
 export const saveProgress = (progress) => {
