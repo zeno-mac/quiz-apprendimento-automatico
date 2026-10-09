@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, X, CheckCircle2, FileText, Image as ImageIcon, Check } from 'lucide-react';
+import { ArrowLeft, ArrowRight, X, CheckCircle2, FileText, Image as ImageIcon, Check, LayoutGrid, ChevronDown } from 'lucide-react';
 import { InlineMath } from 'react-katex';
 import 'katex/dist/katex.min.css';
 import './Quiz.css';
@@ -19,6 +19,7 @@ const renderText = (text) => {
 export default function Quiz({ quizData, onExit, onFinish }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
+  const [showGrid, setShowGrid] = useState(false);
 
   const questions = quizData.data;
   const question = questions[currentIndex];
@@ -59,11 +60,38 @@ export default function Quiz({ quizData, onExit, onFinish }) {
         <button className="btn-icon" onClick={onExit} title="Esci e torna alla Dashboard">
           <X size={24} />
         </button>
-        <div className="quiz-progress">
-          {currentIndex + 1}/{questions.length}
+        <div className="quiz-progress" onClick={() => setShowGrid(!showGrid)} title="Mostra griglia domande">
+          <LayoutGrid size={16} style={{ opacity: 0.8 }} />
+          <span>{currentIndex + 1} / {questions.length}</span>
+          <ChevronDown size={18} style={{ opacity: 0.7 }} />
         </div>
         <div style={{ width: 40 }}></div> {/* spacer */}
       </div>
+
+      {showGrid && (
+        <div className="grid-overlay">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+            <h3 style={{ fontSize: '1.1rem', margin: 0 }}>Navigazione Domande</h3>
+            <button className="btn-icon" onClick={() => setShowGrid(false)} style={{ padding: '0.2rem' }}>
+              <X size={20} />
+            </button>
+          </div>
+          <div className="grid-container">
+            {questions.map((_, i) => (
+              <button 
+                key={i} 
+                className={`grid-item ${i === currentIndex ? 'current' : ''} ${answers[i] !== undefined && i !== currentIndex ? 'answered' : ''}`}
+                onClick={() => {
+                  setCurrentIndex(i);
+                  setShowGrid(false);
+                }}
+              >
+                {i + 1}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="question-area">
         <div className="question-meta" style={{ marginBottom: '1rem' }}>
