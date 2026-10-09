@@ -6,6 +6,7 @@ import './Dashboard.css';
 export default function Dashboard({ questions, onStartExam, onStartTotal, onStartErrors }) {
   const [exams, setExams] = useState([]);
   const [progress, setProgress] = useState({ history: [], wrongQuestionsPool: [] });
+  const [expandedExam, setExpandedExam] = useState(null);
 
   useEffect(() => {
     const savedProgress = getProgress();
@@ -75,10 +76,35 @@ export default function Dashboard({ questions, onStartExam, onStartTotal, onStar
             <button className="btn btn-primary" onClick={() => onStartExam(exam.id)}>
               <Play size={16} /> Inizia
             </button>
-            <button className="btn">
-              <ChevronDown size={16} /> Dettagli
+            <button className="btn" onClick={() => setExpandedExam(expandedExam === exam.id ? null : exam.id)}>
+              <ChevronDown size={16} style={{ transform: expandedExam === exam.id ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }} /> 
+              Dettagli
             </button>
           </div>
+
+          {expandedExam === exam.id && (
+            <div className="exam-details" style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid var(--border-color)', animation: 'fadeIn 0.2s ease' }}>
+              <h4 style={{ fontSize: '0.9rem', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>Storico Risultati</h4>
+              {(() => {
+                const examHistory = progress.history.filter(h => h.examId === exam.id).reverse();
+                if (examHistory.length === 0) {
+                  return <div style={{ fontSize: '0.9rem' }}>Nessun tentativo registrato.</div>;
+                }
+                return (
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    {examHistory.map((h, i) => (
+                      <li key={i} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', backgroundColor: 'rgba(255,255,255,0.02)', padding: '0.5rem 0.75rem', borderRadius: '6px' }}>
+                        <span>{new Date(h.date).toLocaleDateString('it-IT')} {new Date(h.date).toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' })}</span>
+                        <strong style={{ color: h.score >= h.total * 0.6 ? 'var(--success)' : 'var(--danger)' }}>
+                          {h.score} / {h.total}
+                        </strong>
+                      </li>
+                    ))}
+                  </ul>
+                );
+              })()}
+            </div>
+          )}
         </div>
       ))}
     </div>
