@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Play, RotateCcw, ChevronDown, Upload, Download } from 'lucide-react';
+import { Play, RotateCcw, ChevronDown, Upload, Download, Dices } from 'lucide-react';
 import { getProgress } from '../utils/storage';
 import './Dashboard.css';
 
-export default function Dashboard({ questions, onStartExam, onStartTotal, onStartErrors }) {
+export default function Dashboard({ questions, onStartExam, onStartTotal, onStartErrors, onStartRandom }) {
   const [exams, setExams] = useState([]);
   const [progress, setProgress] = useState({ history: [], wrongQuestionsPool: [] });
   const [expandedExam, setExpandedExam] = useState(null);
+  const [showRandom, setShowRandom] = useState(false);
+  const [randomCount, setRandomCount] = useState(15);
 
   useEffect(() => {
     const savedProgress = getProgress();
@@ -39,12 +41,34 @@ export default function Dashboard({ questions, onStartExam, onStartTotal, onStar
     <div className="dashboard">
       <div className="dashboard-actions">
         <button className="btn btn-primary" style={{ flex: 1, justifyContent: 'center' }} onClick={onStartTotal}>
-          <Play size={18} /> Quiz Totale ({questions.length} dom.)
+          <Play size={18} /> Totale ({questions.length})
+        </button>
+        <button className="btn" style={{ flex: 1, justifyContent: 'center' }} onClick={() => setShowRandom(!showRandom)}>
+          <Dices size={18} /> Random
         </button>
         <button className="btn" style={{ flex: 1, justifyContent: 'center' }} onClick={() => onStartErrors && onStartErrors(progress.wrongQuestionsPool)}>
-          <RotateCcw size={18} /> Ripasso Errori ({progress.wrongQuestionsPool.length})
+          <RotateCcw size={18} /> Ripasso ({progress.wrongQuestionsPool.length})
         </button>
       </div>
+
+      {showRandom && (
+        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', backgroundColor: 'var(--card-bg)', padding: '1rem', borderRadius: 'var(--border-radius)', marginBottom: '1rem', border: '1px solid var(--border-color)', animation: 'fadeIn 0.2s ease', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+            <span style={{ fontSize: '0.9rem' }}>N° domande:</span>
+            <input 
+              type="number" 
+              min="1" 
+              max={questions.length} 
+              value={randomCount} 
+              onChange={(e) => setRandomCount(parseInt(e.target.value) || 1)}
+              style={{ width: '70px', padding: '0.4rem', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.1)', backgroundColor: 'rgba(255,255,255,0.05)', color: 'white', fontSize: '1rem' }}
+            />
+          </div>
+          <button className="btn btn-primary" onClick={() => onStartRandom && onStartRandom(randomCount)}>
+            Avvia
+          </button>
+        </div>
+      )}
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem', marginBottom: '0.5rem' }}>
         <h2 style={{ fontSize: '1.2rem' }}>Esami Disponibili</h2>

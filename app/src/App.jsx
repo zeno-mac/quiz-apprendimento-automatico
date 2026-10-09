@@ -36,6 +36,12 @@ function App() {
     setActiveQuiz({ type: 'total', id: 'Totale', data: shuffled });
   };
 
+  const handleStartRandom = (count) => {
+    const safeCount = Math.min(Math.max(1, count), questions.length);
+    const shuffled = [...questions].sort(() => Math.random() - 0.5).slice(0, safeCount);
+    setActiveQuiz({ type: 'random', id: `Random (${safeCount})`, data: shuffled });
+  };
+
   const handleStartErrors = (wrongPool) => {
     if (!wrongPool || wrongPool.length === 0) {
       alert("Nessun errore da ripassare al momento!");
@@ -92,6 +98,7 @@ function App() {
             onStartExam={handleStartExam} 
             onStartTotal={handleStartTotal}
             onStartErrors={handleStartErrors}
+            onStartRandom={handleStartRandom}
           />
         ) : activeQuiz ? (
           <Quiz 
