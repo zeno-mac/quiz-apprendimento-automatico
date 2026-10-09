@@ -30,7 +30,7 @@
 
 .exam-card:hover {
   background-color: var(--card-bg-hover);
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--border-color);
 }
 
 .exam-header {
@@ -60,7 +60,7 @@
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--overlay-bg);
 }
 
 .badge.done {
@@ -81,13 +81,13 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--overlay-bg);
   color: var(--text-primary);
   font-size: 0.9rem;
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--overlay-hover);
 }
 
 .btn-primary {

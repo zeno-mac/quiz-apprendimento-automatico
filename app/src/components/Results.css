@@ -67,12 +67,12 @@
 
 .answer-box.user-wrong {
   background-color: rgba(239, 68, 68, 0.1);
-  color: #FCA5A5;
+  color: var(--danger);
 }
 
 .answer-box.correct {
   background-color: rgba(16, 185, 129, 0.1);
-  color: #6EE7B7;
+  color: var(--success);
 }
 
 .results-footer {

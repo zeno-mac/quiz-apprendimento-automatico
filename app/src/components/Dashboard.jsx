@@ -61,7 +61,7 @@ export default function Dashboard({ questions, onStartExam, onStartTotal, onStar
               max={questions.length} 
               value={randomCount} 
               onChange={(e) => setRandomCount(parseInt(e.target.value) || 1)}
-              style={{ width: '70px', padding: '0.4rem', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.1)', backgroundColor: 'rgba(255,255,255,0.05)', color: 'white', fontSize: '1rem' }}
+              style={{ width: '70px', padding: '0.4rem', borderRadius: '6px', border: '1px solid var(--border-color)', backgroundColor: 'var(--overlay-bg)', color: 'var(--text-primary)', fontSize: '1rem' }}
             />
           </div>
           <button className="btn btn-primary" onClick={() => onStartRandom && onStartRandom(randomCount)}>
