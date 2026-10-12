@@ -32,7 +32,11 @@ La logica di salvataggio tiene traccia dello storico e gestisce un pool di error
 - **Griglia Rapida:** Menù a comparsa (overlay) dal counter (es. `1/30`) che mostra una griglia con tutti i numeri delle domande. Permette il salto rapido e indica (tramite CSS) le domande già risposte.
 - **Selezione:** Scelta singola; possibilità di deselezione ricliccando la stessa opzione.
 - **Metadata:** Mostra l'ID e, per la revisione, differenzia tra estrazioni verificate e non verificate (con badge UI chiari, ottimizzati nelle ultime revisioni).
-- **Termina Esame:** Nessun feedback immediato alla risposta; i calcoli avvengono solo alla consegna.
+- **Correzione e Spiegazione Immediata (Modal):** Tasto centrale dedicato ("Mostra Correzione") tra i tasti Precedente e Successivo. Apre un modal che:
+  - Valuta e indica lo stato della risposta data dall'utente (corretta con evidenziazione verde, errata con evidenziazione rossa, oppure non ancora selezionata con avviso giallo/neutro).
+  - Mostra la sezione con la risposta corretta attesa solo qualora la risposta data sia errata o non ancora selezionata (evitando duplicazioni se la risposta è già corretta; nel caso di risposte corrette multiple, elenca eventuali opzioni alternative valide).
+  - Mostra la spiegazione associata alla domanda (campo `spiegazione` nel JSON) oppure, qualora non ancora presente, un box di placeholder informativo (*"Nessuna spiegazione disponibile al momento per questa domanda. Verrà integrata nelle prossime revisioni del dataset."*).
+- **Termina Esame:** Consegna dell'esame con riepilogo complessivo e salvataggio dei risultati nel localStorage.
 
 ### C. View Risultati
 - **Punteggio:** Score complessivo bene in vista (es. `28/30`).
