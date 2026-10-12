@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, X, CheckCircle2, Check, LayoutGrid, ChevronDown } from 'lucide-react';
+import { ArrowLeft, ArrowRight, X, CheckCircle2, Check, LayoutGrid, ChevronDown, HelpCircle } from 'lucide-react';
 import { InlineMath } from 'react-katex';
 import 'katex/dist/katex.min.css';
+import CorrectionModal from './CorrectionModal';
 import './Quiz.css';
 
 const renderText = (text) => {
@@ -20,6 +21,7 @@ export default function Quiz({ quizData, onExit, onFinish }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const [showGrid, setShowGrid] = useState(false);
+  const [showCorrection, setShowCorrection] = useState(false);
 
   const questions = quizData.data;
   const question = questions[currentIndex];
@@ -39,12 +41,14 @@ export default function Quiz({ quizData, onExit, onFinish }) {
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1);
+      setShowCorrection(false);
     }
   };
 
   const handlePrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
+      setShowCorrection(false);
     }
   };
 
@@ -84,6 +88,7 @@ export default function Quiz({ quizData, onExit, onFinish }) {
                 onClick={() => {
                   setCurrentIndex(i);
                   setShowGrid(false);
+                  setShowCorrection(false);
                 }}
               >
                 {i + 1}
@@ -153,6 +158,14 @@ export default function Quiz({ quizData, onExit, onFinish }) {
           <ArrowLeft size={18} /> Precedente
         </button>
 
+        <button
+          className="btn-nav btn-correction"
+          onClick={() => setShowCorrection(true)}
+          title="Mostra la correzione e la spiegazione di questa domanda"
+        >
+          <HelpCircle size={18} /> Mostra Correzione
+        </button>
+
         {currentIndex === questions.length - 1 ? (
           <button
             className="btn-nav primary"
@@ -169,6 +182,14 @@ export default function Quiz({ quizData, onExit, onFinish }) {
           </button>
         )}
       </div>
+
+      <CorrectionModal
+        isOpen={showCorrection}
+        onClose={() => setShowCorrection(false)}
+        question={question}
+        userAnswer={answers[currentIndex]}
+        questionNumber={currentIndex + 1}
+      />
     </div>
   );
 }
