@@ -78,8 +78,8 @@ export default function Quiz({ quizData, onExit, onFinish }) {
           </div>
           <div className="grid-container">
             {questions.map((_, i) => (
-              <button 
-                key={i} 
+              <button
+                key={i}
                 className={`grid-item ${i === currentIndex ? 'current' : ''} ${answers[i] !== undefined && i !== currentIndex ? 'answered' : ''}`}
                 onClick={() => {
                   setCurrentIndex(i);
@@ -101,23 +101,28 @@ export default function Quiz({ quizData, onExit, onFinish }) {
           <span className="meta-item">
             <strong>N°:</strong> {question.numero_domanda}
           </span>
-          <span 
-            className="meta-item" 
-            style={{ marginLeft: 'auto', cursor: 'help' }} 
-            title={question.revisione === 'manuale' 
-              ? "Questa domanda è stata verificata e corretta manualmente." 
-              : "Questa domanda è stata estratta automaticamente e non è ancora stata verificata."}
-          >
-            {question.revisione === 'manuale' ? (
-              <span style={{ color: 'var(--success)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                <CheckCircle2 size={16} /> <span style={{ fontWeight: 500 }}>Verificata</span>
+          {(() => {
+            const isVerified = question.revisione === 'correzione_manuale' || question.revisione === 'manuale';
+            return (
+              <span
+                className="meta-item"
+                style={{ marginLeft: 'auto', cursor: 'help' }}
+                title={isVerified
+                  ? "Il testo di questa domanda è stato verificato e corretto manualmente."
+                  : "Il testo di questa domanda è stato estratto automaticamente e non è ancora stato verificato."}
+              >
+                {isVerified ? (
+                  <span style={{ color: 'var(--success)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                    <CheckCircle2 size={16} /> <span style={{ fontWeight: 500 }}>Verificata</span>
+                  </span>
+                ) : (
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', opacity: 0.8 }}>
+                    <span style={{ fontWeight: 500 }}>Non Verificata</span>
+                  </span>
+                )}
               </span>
-            ) : (
-              <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', opacity: 0.8 }}>
-                <span style={{ fontWeight: 500 }}>Non Verificata</span>
-              </span>
-            )}
-          </span>
+            );
+          })()}
         </div>
 
         <div className="question-text">

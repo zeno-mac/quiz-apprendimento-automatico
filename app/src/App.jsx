@@ -18,8 +18,9 @@ function App() {
   }, [theme]);
 
   useEffect(() => {
-    const baseUrl = import.meta.env.BASE_URL || '/';
-    fetch(`${baseUrl}data/domande.json`)
+    const baseUrl = import.meta.env.BASE_URL || './';
+    const dataUrl = `${baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`}data/domande.json`;
+    fetch(dataUrl)
       .then(res => res.json())
       .then(data => {
         // Aggiungiamo un ID univoco a ogni domanda
