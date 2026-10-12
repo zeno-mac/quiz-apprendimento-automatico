@@ -2912,7 +2912,8 @@
             "Valutare il modello su più set di test, migliorando la generalizzazione."
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La cross-validation K-Fold è una tecnica utilizzata per valutare le prestazioni di un modello di machine learning. Suddivide il dataset in K sottoinsiemi (fold) e addestra il modello K volte, utilizzando ogni volta una fold diversa come set di test e le restanti come set di training. Questo permette di ottenere una stima più affidabile della generalizzazione del modello rispetto a una singola divisione train/test. Aiuta anche a identificare i parametri ottimali del modello e a ridurre l'overfitting."
     },
     {
         "data_esame": "2025-01-20",
