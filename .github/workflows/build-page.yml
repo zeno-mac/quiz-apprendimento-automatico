@@ -1,5 +1,5 @@
-name: Scrape and refresh offers
-run-name: "Scrape and refresh offers #${{ github.run_number }}"
+name: Build page
+run-name: "Build page #${{ github.run_number }}"
 
 on:
   # Runs on pushes targeting the default branch
@@ -18,7 +18,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  scrape-pr:
+  build-page:
     runs-on: ubuntu-latest
     
     steps:
@@ -28,6 +28,6 @@ jobs:
       with:
         node-version: '22'
     - name: Install dependencies
-      run: npm install
+      run: cd app && npm install
     - name: Build and deploy
-      run: npm run deploy
+      run: cd app && npm run deploy
