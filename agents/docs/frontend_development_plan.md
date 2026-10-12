@@ -6,7 +6,7 @@ Questo documento descrive le specifiche tecniche, architetturali e lo stato di a
 - **Framework:** React configurato tramite Vite.
 - **Hosting:** GitHub Pages (SPA statica, nessun backend).
 - **Styling:** CSS puro, niente Tailwind. Palette Dark/Light mode tramite CSS variables.
-- **Gestione Dati Originali:** File `domande.json` servito come static asset in `public/data/`.
+- **Gestione Dati Originali:** File unico master `data/domande.json` (nella root del repository), importato direttamente dall'app React. Nessuna duplicazione o copia statica ridondante.
 - **Database Utente / Salvataggi:** Esclusivamente `localStorage` del browser.
 
 ## 2. Dati e Salvataggio (Local Storage) [COMPLETATO]
@@ -53,4 +53,4 @@ La logica di salvataggio tiene traccia dello storico e gestisce un pool di error
 ## 5. Prossimi Passi (Next Steps) [IN ATTESA]
 - **Build di Produzione:** Eseguire `npm run build` e preparare la cartella `dist`.
 - **Configurazione GitHub Pages:** Impostare il base-path corretto per Vite (se necessario per il repo) e gestire l'eventuale workflow per esporre la build nel branch `gh-pages` o equivalenti.
-- **Verifica Deploy:** Assicurarsi che il path assoluto o relativo della chiamata `fetch` per `domande.json` (`/data/domande.json` o `./data/...`) continui a funzionare dopo aver rilocato i file in produzione.
+- **Verifica Deploy:** Poiché `domande.json` viene importato direttamente nel bundle compilato, non ci sono dipendenze da path relativi o chiamate `fetch` a runtime, garantendo un caricamento immediato e privo di errori 404 su GitHub Pages.

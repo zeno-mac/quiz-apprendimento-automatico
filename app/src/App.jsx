@@ -4,10 +4,16 @@ import Quiz from './components/Quiz'
 import { Sun, Moon } from 'lucide-react'
 import Results from './components/Results'
 import { saveQuizResult } from './utils/storage'
+import rawQuestions from '../../data/domande.json'
 import './App.css'
 
+const initialQuestions = rawQuestions.map(q => ({
+  ...q,
+  id: `${q.data_esame}_${q.numero_domanda}`
+}));
+
 function App() {
-  const [questions, setQuestions] = useState([]);
+  const [questions] = useState(initialQuestions);
   const [activeQuiz, setActiveQuiz] = useState(null);
   const [quizResults, setQuizResults] = useState(null);
   const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
@@ -16,22 +22,6 @@ function App() {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
   }, [theme]);
-
-  useEffect(() => {
-    const baseUrl = import.meta.env.BASE_URL || './';
-    const dataUrl = `${baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`}data/domande.json`;
-    fetch(dataUrl)
-      .then(res => res.json())
-      .then(data => {
-        // Aggiungiamo un ID univoco a ogni domanda
-        const withIds = data.map(q => ({
-          ...q,
-          id: `${q.data_esame}_${q.numero_domanda}`
-        }));
-        setQuestions(withIds);
-      })
-      .catch(err => console.error("Errore nel caricamento delle domande:", err));
-  }, []);
 
   const handleStartExam = (examId) => {
     const examQuestions = questions.filter(q => q.data_esame === examId);

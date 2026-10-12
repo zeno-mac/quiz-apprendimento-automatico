@@ -2895,7 +2895,8 @@
             "E' minore o uguale al mumero delle features"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La profondità massima di un albero di decisione con features discrete è limitata dal numero di features, poiché ogni feature può apparire al massimo una volta nel percorso decisionale. Tuttavia, l'albero potrebbe essere più corto se tutte le foglie diventano pure prima di esaurire le features."
     },
     {
         "data_esame": "2025-01-20",
