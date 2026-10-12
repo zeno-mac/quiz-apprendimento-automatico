@@ -1,0 +1,33 @@
+name: Scrape and refresh offers
+run-name: "Scrape and refresh offers #${{ github.run_number }}"
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+    paths:
+      - 'app/**'
+      - 'data/**'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scrape-pr:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+    - name: Install dependencies
+      run: npm install
+    - name: Build and deploy
+      run: npm run deploy
