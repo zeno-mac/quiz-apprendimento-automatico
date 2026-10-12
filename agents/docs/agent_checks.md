@@ -24,6 +24,7 @@ Questo file funge da guida per gli agenti successivi incaricati di validare e co
 
 5. **Requisito Quantità Risposte Corrette**
    - Quasi tutte le domande dovrebbero avere 1 risposta corretta. Alcune potrebbero averne 2.
+   - **Nota per la Web App:** L'utente nell'interfaccia può selezionare solo una risposta. Se sono presenti più risposte corrette nel JSON, significa semplicemente che ci sono più possibilità valide e all'utente basterà selezionarne una qualsiasi per ottenere il punto.
    - Nessuna domanda deve avere 0 risposte corrette. Segnalare come avviso se ce ne sono 0 o >2.
 
 ## Output Atteso

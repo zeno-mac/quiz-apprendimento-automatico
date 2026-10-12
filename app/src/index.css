@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Dark mode palette based on Dribbble reference */
+  --bg-color: #17181F; /* Very dark background */
+  --card-bg: #232530; /* Lighter grey for cards */
+  --card-bg-hover: #2C2F3C;
+  --text-primary: #F3F4F6;
+  --text-secondary: #9CA3AF;
+  --accent-color: #4F46E5; /* Vibrant blue-indigo */
+  --accent-hover: #4338CA;
+  --success: #10B981;
+  --danger: #EF4444;
+  --border-radius: 16px;
+  --border-radius-sm: 8px;
+  --border-color: rgba(255, 255, 255, 0.05);
+  --overlay-bg: rgba(255, 255, 255, 0.05);
+  --overlay-hover: rgba(255, 255, 255, 0.1);
+}
+
+:root[data-theme="light"] {
+  --bg-color: #F9FAFB;
+  --card-bg: #FFFFFF;
+  --card-bg-hover: #F3F4F6;
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --accent-color: #4F46E5;
+  --accent-hover: #4338CA;
+  --success: #10B981;
+  --danger: #EF4444;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --overlay-bg: rgba(0, 0, 0, 0.05);
+  --overlay-hover: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  flex: 1;
+}
+
+/* Scrollbar styling for dark mode */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4B5563;
+}

@@ -6,9 +6,9 @@
 
 Il progetto è diviso in fasi. L'agente AI che prende in carico il lavoro deve posizionarsi in base a questa timeline:
 
-- **Fase 1: Estrazione e Validazione (Completata per i PDF testuali)**: I PDF testuali sono stati convertiti in formato JSON (`domande_estratte.json`). I dati estratti sono stati revisionati manualmente, ripuliti e validati tramite appositi script per assicurare un'integrità perfetta al 100%.
+- **Fase 1: Estrazione e Validazione (Completata per i PDF testuali)**: I PDF testuali sono stati convertiti in formato JSON (`data/domande.json`). I dati estratti sono stati revisionati manualmente, ripuliti e validati tramite appositi script per assicurare un'integrità perfetta al 100%.
 - **Fase 2: Gestione dei PDF basati su Immagini**: I PDF composti da screenshot (elencati in `agents/docs/pdf_formats.md`) vengono elaborati seguendo le indicazioni presenti in [`agents/docs/vision_extraction_guide.md`](agents/docs/vision_extraction_guide.md).
-- **Fase 3: Sviluppo Web App (Prossimo step)**: Creazione dell'interfaccia utente per il sito di quiz, che consumerà il file `domande_estratte.json`.
+- **Fase 3: Sviluppo Web App (Prossimo step)**: Creazione dell'interfaccia utente per il sito di quiz, che consumerà il file `data/domande.json`.
 
 ---
 
@@ -18,7 +18,7 @@ Il progetto è diviso in fasi. L'agente AI che prende in carico il lavoro deve p
 
 ### Schema JSON di ogni domanda
 
-I dati si trovano attualmente all'interno del file `domande_estratte.json`, come lista di oggetti strutturati in questo modo:
+I dati si trovano attualmente all'interno del file `data/domande.json`, come lista di oggetti strutturati in questo modo:
 
 - `data_esame`: `str` (Data dell'esame in formato YYYY-MM-DD)
 - `numero_domanda`: `str`
@@ -27,6 +27,8 @@ I dati si trovano attualmente all'interno del file `domande_estratte.json`, come
 - `risposte_corrette`: `[str]` (Array contenente il testo esatto della/e risposta/e)
 - `origine`: `str` (Es. `"moodle_testuale"`, indica la provenienza dell'estrazione)
 - `revisione`: `str` (Es. `"correzione_manuale"` o `"automatica"`, traccia se il record è stato aggiustato manualmente dall'umano)
+- `spiegazione`: `str` (Opzionale. Testo della spiegazione del perché la risposta corretta è valida. Attualmente non ancora popolata nel dataset: la Web App gestisce la sua eventuale assenza mostrando un placeholder di cortesia fino all'inserimento definitivo).
+
 
 ### Invarianti Attesi per l'Integrità dei Dati
 
@@ -44,7 +46,7 @@ Le regole che definiscono la validità di un esame estratto sono codificate in `
 
 ## Strumenti e Script
 
-Se viene eseguita una qualsiasi modifica o una nuova estrazione all'interno di `domande_estratte.json`, l'agente deve verificare che il nuovo JSON non rompa l'integrità dei dati:
+Se viene eseguita una qualsiasi modifica o una nuova estrazione all'interno di `data/domande.json`, l'agente deve verificare che il nuovo JSON non rompa l'integrità dei dati:
 - **Come validare**: Esegui lo script Python `scripts/run_checks.py`.
 - **Output**: Lo script produrrà (o aggiornerà) il report di validazione in `agents/reports/validation_report.md`. I risultati dovranno poi essere consultati e analizzati assieme all'utente.
 
