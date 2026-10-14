@@ -13,7 +13,8 @@
         ],
         "data_esame": "2022-11-18",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Gli alberi di decisione gestiscono anche feature continue: si usano test a soglia (A < Θ), scegliendo la soglia con l'information gain, ad esempio a metà tra due valori consecutivi ordinati. Le altre affermazioni sono vere: predizione molto economica, forte rischio di overfitting e capacità di esprimere qualunque funzione di classificazione."
     },
     {
         "numero_domanda": "2",
@@ -29,7 +30,8 @@
         ],
         "data_esame": "2022-11-18",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Naive Bayes è «ingenuo» perché assume che le feature siano indipendenti tra loro data la classe: P(X1,…,Xn|Y) = ∏ P(Xi|Y). Questa ipotesi semplificativa riduce enormemente i parametri da stimare, ma raramente è vera nella realtà."
     },
     {
         "numero_domanda": "3",
@@ -45,7 +47,8 @@
         ],
         "data_esame": "2022-11-18",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Nell'apprendimento supervisionato il training usa esempi composti da coppie input-output (x, y), da cui si impara una funzione. «Supervisionato» non significa che un esperto segua direttamente l'addestramento: le etichette sono raccolte prima."
     },
     {
         "numero_domanda": "4",
@@ -61,7 +64,8 @@
         ],
         "data_esame": "2022-11-18",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La backpropagation calcola il gradiente della loss per aggiornare i parametri, quindi serve solo durante il training; in inference basta la forward pass. Il suo costo è paragonabile a quello del calcolo in avanti e non riguarda solo le skip connections."
     },
     {
         "numero_domanda": "5",
@@ -77,7 +81,8 @@
         ],
         "data_esame": "2022-11-18",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un neurone artificiale calcola σ(w·x + b): una combinazione lineare degli input seguita da una funzione di attivazione non lineare. Ha un numero di parametri lineare (non quadratico) nel numero di input e non può apprendere qualunque funzione."
     },
     {
         "numero_domanda": "6",
@@ -93,7 +98,8 @@
         ],
         "data_esame": "2022-11-18",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il vanishing gradient nasce nella backpropagation di reti profonde: il gradiente è un prodotto di molti fattori, tra cui le derivate delle attivazioni (la sigmoide è sempre < 0,25), e diventa piccolissimo. Non dipende da qualità o quantità dei dati né dalla durata del training."
     },
     {
         "data_esame": "2022-12-21",
@@ -109,7 +115,8 @@
             "ridistribuire le probabilità in modo più bilanciato tra tutti i casi"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Aggiungere un termine che aumenta l'entropia spinge la distribuzione verso l'uniformità: le probabilità vengono ridistribuite in modo più bilanciato tra i casi, evitando che il modello si concentri su pochi risultati. Non ha relazione con il vanishing gradient."
     },
     {
         "data_esame": "2022-12-21",
@@ -125,7 +132,8 @@
             "E' una funzione simmetrica: H(P|Q) = H(Q|P)"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La cross-entropy non è simmetrica: H(P,Q) = H(P) + KL(P‖Q) e la divergenza KL non è simmetrica, quindi in generale H(P,Q) ≠ H(Q,P). Le altre affermazioni sono vere: è minima quando P = Q (vale H(P)) ed è legata alla log-likelihood."
     },
     {
         "data_esame": "2022-12-21",
@@ -141,7 +149,8 @@
             "\\(\\sigma(x) \\cdot (1-\\sigma(x))\\)"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La derivata della sigmoide σ(x) = 1/(1+e^−x) si esprime con la sigmoide stessa: σ'(x) = σ(x)·(1 − σ(x)). Ha forma a campana con massimo 0,25 in x = 0; questa proprietà semplifica molto il calcolo del gradiente nella regressione logistica."
     },
     {
         "data_esame": "2022-12-21",
@@ -157,7 +166,8 @@
             "Il suo calcolo presenta problemi di scalabilità all'aumentare delle features"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La distribuzione congiunta contiene la probabilità di ogni combinazione di valori delle feature: con n feature booleane servono 2^n − 1 parametri. Cresce in modo esponenziale (problema di scalabilità) e richiederebbe enormi quantità di dati. Permette comunque predizioni e probabilità condizionali."
     },
     {
         "data_esame": "2022-12-21",
@@ -173,7 +183,8 @@
             "E' più probabile che il dato sia truccato"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Si confrontano le verosimiglianze: con il dado normale 1/6 · 1/6 ≈ 0,028; con quello truccato 0,1 · 0,5 = 0,05. La seconda è maggiore, quindi (a parità di probabilità a priori dei due dadi) è più probabile che il dado sia truccato, anche se non si può esserne certi."
     },
     {
         "data_esame": "2022-12-21",
@@ -189,7 +200,8 @@
             "1/9"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il dataset ha 1/3 di positivi. La recall è TP/(TP+FN) = 2/3, quindi i falsi negativi (positivi non trovati) sono 1/3 dei positivi: 1/3 · 1/3 = 1/9 dei dati totali. I veri positivi sono invece 2/3 · 1/3 = 2/9 del totale."
     },
     {
         "data_esame": "2022-12-21",
@@ -205,7 +217,8 @@
             "tra 0 e log n dove n sono i possibili valori di X"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'entropia H(X) = −Σ P(x) log P(x) vale 0 se tutta la probabilità è su un solo valore ed è massima (log n) se la distribuzione è uniforme su n valori. Il suo intervallo è quindi [0, log n]: non è limitata a [0,1] e non è mai negativa."
     },
     {
         "data_esame": "2022-12-21",
@@ -221,7 +234,8 @@
             "Non dipende dal bilanciamento dei dati di training rispetto alle classi"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La regressione logistica è addestrata per massima verosimiglianza sui dati: la proporzione delle classi nel training set influenza i parametri (in particolare il bias), quindi la predizione dipende dal bilanciamento. Le altre affermazioni sono vere: combinazione lineare, frontiera a iperpiano, probabilità crescente con la distanza."
     },
     {
         "data_esame": "2022-12-21",
@@ -237,7 +251,8 @@
             "Quando la classificazione dipende da un confronto tra features"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un classificatore lineare separa le classi con un iperpiano. Se la classe dipende da un confronto tra feature (es. classe A se p1 = p2, caso tipo XOR) la frontiera non è lineare e il modello fallisce. Feature correlate, irrilevanti o indipendenti data la classe non sono invece un problema."
     },
     {
         "data_esame": "2022-12-21",
@@ -253,7 +268,8 @@
             "Per ogni input, esiste almeno una classe con probabilità > 0.5"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Nella regressione multinomiale le probabilità sommano a 1 su k classi: con molte classi può capitare che nessuna superi 0,5 (es. distribuzione uniforme, 1/k). L'affermazione è quindi errata. Le altre sono vere: pesi diversi per classe, pesi come importanza delle feature, n·m + m parametri."
     },
     {
         "data_esame": "2022-12-21",
@@ -269,7 +285,8 @@
             "Produce valori compresi nell'intervallo [-1,1]"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La softmax produce valori in (0,1) che sommano a 1 per ogni input: è una distribuzione di probabilità sulle classi. Non produce valori in [−1,1] (quello è l'intervallo della tangente iperbolica). Generalizza la funzione logistica al caso multiclasse."
     },
     {
         "data_esame": "2022-12-21",
@@ -285,7 +302,8 @@
             "Tecniche di classificazione che si focalizzano sulla definizione delle frontiere di decisione (decision boundaries)"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le tecniche discriminative (es. regressione logistica) stimano direttamente P(Y|X) o la frontiera di decisione tra le classi, senza modellare come sono distribuiti i dati. Le tecniche generative (es. Naive Bayes) stimano invece P(X|Y) e usano la regola di Bayes."
     },
     {
         "data_esame": "2022-12-21",
@@ -301,7 +319,8 @@
             "2012"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "AlexNet, rete convoluzionale profonda di Krizhevsky, Sutskever e Hinton, ha vinto la ImageNet competition nel 2012. Quell'anno segna l'avvio della rivoluzione del deep learning, insieme a ReLU e dropout; le altre date sono troppo lontane (1971, 1993) o troppo recenti (2019)."
     },
     {
         "data_esame": "2022-12-21",
@@ -317,7 +336,8 @@
             "La rappresentazione interna prodotta dall'encoder abitualmente ha una dimensione ridotta rispetto a quella di partenza"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un autoencoder è una rete addestrata a ricostruire l'input a partire da una rappresentazione interna appresa (latente), di solito di dimensione inferiore all'input: è una forma di compressione. Non richiede livelli densi né una simmetria rigida tra encoder e decoder."
     },
     {
         "data_esame": "2022-12-21",
@@ -333,7 +353,8 @@
             "La profondità del layer in cui si trova il neurone e le dimensioni e gli strides dei kernel dei layers precedenti"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il campo ricettivo è la regione dell'input che influenza un neurone. Cresce con la profondità e dipende da dimensioni e stride dei kernel dei layer precedenti: Win = K + (Wout − 1)·S. Il numero di canali non conta."
     },
     {
         "data_esame": "2022-12-21",
@@ -349,7 +370,8 @@
             "Una sequenza alternata di convoluzioni e downsampling, seguita da flattening e pochi livelli densi finali"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un classificatore di immagini ha una lunga sequenza di convoluzioni alternate a downsampling (che estraggono le feature), seguita da flattening e da pochi (2-3) livelli densi finali che sfruttano le feature per classificare. Encoder-decoder è tipico di autoencoder e U-Net."
     },
     {
         "data_esame": "2022-12-21",
@@ -365,7 +387,8 @@
             "Features sintetizzate in modo automatico a partire da altre features"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le «deep» features sono feature estratte automaticamente dalla rete a partire da altre feature, in livelli successivi di astrazione (è uno dei due sensi di «deep» in deep learning, insieme al numero di strati). Non riguardano sensori di profondità né l'intervento umano."
     },
     {
         "data_esame": "2022-12-21",
@@ -381,7 +404,8 @@
             "La Backpropagation è effettuata più frequentemente ma l'aggiornamento dei parametri è meno accurato"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con minibatch più piccoli i parametri si aggiornano più spesso (gli aggiornamenti per epoca sono dimensione del training set / batchsize), ma ogni aggiornamento è meno accurato perché il gradiente deriva da pochi dati specifici."
     },
     {
         "data_esame": "2022-12-21",
@@ -397,7 +421,8 @@
             "Potrebbe convergere a un minimo locale"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La discesa del gradiente segue la direzione opposta al gradiente e, su superfici complesse come quelle delle reti non lineari, può fermarsi in un minimo locale. Non garantisce il minimo globale e il risultato dipende dall'inizializzazione dei parametri."
     },
     {
         "data_esame": "2022-12-21",
@@ -413,7 +438,8 @@
             "La dimensione spaziale diminuisce"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con stride > 1 il kernel si sposta a passi più grandi e si applica meno volte: la dimensione spaziale dell'output diminuisce (Wout = (Win + P − K)/S + 1). Il numero di canali dipende invece dal numero di kernel, non dallo stride."
     },
     {
         "data_esame": "2022-12-21",
@@ -429,7 +455,8 @@
             "Le GAN possono soffrire del fenomeno di \"mode collapse\", cioè la tendenza a focalizzare la generazione su un unico o pochi esempi"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le GAN possono soffrire di mode collapse: il generatore si specializza su pochi esempi (o uno solo) che ingannano bene il discriminatore. Non hanno una struttura encoder-decoder, non usano la log-likelihood dei dati generati e non servono a creare attacchi."
     },
     {
         "data_esame": "2022-12-21",
@@ -445,7 +472,8 @@
             "Elaborazione di sequenze di dati"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Gli LSTM sono reti ricorrenti con memoria e porte (gate) pensate per elaborare sequenze di dati (testo, audio, serie temporali): traduzione, riconoscimento vocale, predizione del prossimo elemento. La segmentazione di immagini è tipica di U-Net."
     },
     {
         "data_esame": "2022-12-21",
@@ -461,7 +489,8 @@
             "categorical crossentropy"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con attivazione softmax in uscita, la loss che deriva dalla massima log-likelihood è la categorical crossentropy tra la distribuzione osservata (1 per la classe vera, 0 per le altre) e quella prodotta dal modello. La binary crossentropy riguarda il caso binario con sigmoide."
     },
     {
         "data_esame": "2022-12-21",
@@ -477,7 +506,8 @@
             "modelli che cercano di apprendere la distribuzione di probabilità dei dati"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un modello generativo cerca di apprendere la distribuzione di probabilità p_data dei dati reali a partire dagli esempi, per stimarla o campionare nuovi dati simili. Non è l'automazione della creazione di reti, né attacchi adversarial, né tecniche genetiche."
     },
     {
         "data_esame": "2022-12-21",
@@ -493,7 +523,8 @@
             "aggiunta di skip connections"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le skip connections (reti residuali) fanno arrivare il gradiente agli strati bassi, contrastando il vanishing gradient: non sono una tecnica anti-overfitting. Early stopping, data augmentation, dropout e loss di regolarizzazione limitano invece l'adattamento eccessivo ai dati di training."
     },
     {
         "data_esame": "2022-12-21",
@@ -509,7 +540,8 @@
             "La dimensione spaziale del kernel e il numero dei canali di input e output"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Ogni kernel ha dimensione N×M×D (D = canali di input) e ci sono tanti kernel quanti i canali di output: parametri = N·M·D·C_out (+ bias). I pesi sono condivisi, quindi non dipendono da stride né dalle dimensioni spaziali di input e output."
     },
     {
         "data_esame": "2022-12-21",
@@ -525,7 +557,8 @@
             "Segmentazione semantica"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La U-Net nasce per la segmentazione semantica (classificare ogni pixel), in origine su immagini biomediche. Impara la segmentazione end-to-end, senza basarsi su una rete di classificazione, e funziona con relativamente pochi dati grazie alla data augmentation."
     },
     {
         "data_esame": "2022-12-21",
@@ -541,7 +574,8 @@
             "Coincide con l'entropia H(Y|X) di Y dato X"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'informazione mutua è I(X,Y) = H(Y) − H(Y|X) = H(X) − H(X|Y): misura il guadagno di informazione su Y osservando X ed è simmetrica. Non coincide con l'entropia condizionata H(Y|X), che ne è soltanto un termine."
     },
     {
         "data_esame": "2022-12-21",
@@ -557,7 +591,8 @@
             "(15,15,1)"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Wout = (Win + P − K)/S + 1 = (32 − 4)/2 + 1 = 15 per ogni asse. Un unico kernel produce un solo feature map, quindi 1 canale: output (15,15,1). I canali di input (8) sono assorbiti dal kernel e non incidono sulla profondità dell'output."
     },
     {
         "data_esame": "2022-12-21",
@@ -573,7 +608,8 @@
             "1 in corrispondenza del massimo e 0 altrove"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il max pooling restituisce il massimo di una regione: la sua derivata è 1 in corrispondenza dell'elemento massimo e 0 per gli altri, quindi il gradiente della backpropagation passa solo attraverso il massimo. È derivabile (quasi ovunque)."
     },
     {
         "numero_domanda": "1",
@@ -589,7 +625,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un albero di decisione può rappresentare qualunque funzione di classificazione sulle feature, perché ogni combinazione di valori può condurre a una foglia. Le altre opzioni sono false: l'overfitting è un rischio elevato, la predizione costa poco (basta percorrere un cammino) e le feature continue sono gestite con soglie."
     },
     {
         "numero_domanda": "2",
@@ -605,7 +642,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un termine che riduce l'entropia rende la distribuzione più «piccata»: la probabilità si concentra sui casi più probabili (entropia 0 = tutta la probabilità su un solo caso). È l'effetto opposto a quello di aumentare l'entropia, che bilancia le probabilità."
     },
     {
         "numero_domanda": "3",
@@ -621,7 +659,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La cross-entropy è H(P,Q) = −Σ P(i) log Q(i) = H(P) + D_KL(P‖Q): entropia di P più divergenza di Kullback-Leibler. Non è simmetrica, ha il suo valore minimo (non massimo) per P = Q e coincide con la negativa log-likelihood del modello Q sui dati."
     },
     {
         "numero_domanda": "4",
@@ -638,7 +677,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La derivata σ'(x) = σ(x)(1 − σ(x)) ha forma a campana: cresce fino a x = 0 (massimo 0,25), poi decresce e tende a 0 a ±∞. Non è quindi monotona. È invece simmetrica rispetto a 0: l'opzione «simmetrica», marcata come errata anch'essa nel file, in realtà è vera."
     },
     {
         "numero_domanda": "5",
@@ -654,7 +694,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Verosimiglianza di 3, 6, 2: dado normale (1/6)³ ≈ 0,0046; dado truccato 0,1 · 0,5 · 0,1 = 0,005. Il dado truccato dà una probabilità lievemente maggiore, quindi è più probabile che sia quello (con uguale probabilità a priori). Non si può dire «nulla»: i dati portano informazione."
     },
     {
         "numero_domanda": "6",
@@ -670,7 +711,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'apprendimento supervisionato richiede esempi etichettati (ground truth), che possono essere costosi da ottenere, ma non la supervisione costante di un esperto durante il training: l'addestramento procede in automatico sui dati. Comprende sia classificazione che regressione."
     },
     {
         "numero_domanda": "7",
@@ -686,7 +728,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Naive Bayes si basa sull'indipendenza condizionale delle feature, ma può essere usato anche quando non vale: la stima risulta solo meno accurata (esistono casi limite, come p1 = p2, in cui fallisce). Le altre affermazioni sono vere: è un modello generativo e approssima in modo efficiente la distribuzione congiunta."
     },
     {
         "numero_domanda": "8",
@@ -702,7 +745,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La recall riguarda solo i positivi (TP e FN). I falsi positivi sono negativi classificati male e la recall non dà alcuna informazione su di essi: servirebbero la precisione o la specificità. Non può quindi essere stabilito."
     },
     {
         "numero_domanda": "9",
@@ -718,7 +762,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Per la regressione logistica non esiste una soluzione analitica: si massimizza la log-likelihood con metodi iterativi come la discesa del gradiente. Le altre affermazioni sono vere: restituisce probabilità, si basa sulla log-likelihood e dipende dal bilanciamento delle classi."
     },
     {
         "numero_domanda": "10",
@@ -734,7 +779,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Ogni classe ha un proprio vettore di pesi, quindi le feature pesano in modo diverso per ogni classe. I parametri sono n·m + m (cresce come O(n·m), non O(n+m)); i pesi possono essere negativi e non sempre esiste una classe con probabilità > 0,5."
     },
     {
         "numero_domanda": "11",
@@ -750,7 +796,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "softmax(j,x) = e^{xj} / Σ e^{xk} restituisce una distribuzione di probabilità sulle classi (valori in (0,1), somma 1 per ogni input). Si può usare anche con due classi, non produce valori negativi e la somma a 1 vale sulle classi di un input, non sul minibatch."
     },
     {
         "numero_domanda": "12",
@@ -766,7 +813,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un classificatore lineare separa le classi con un iperpiano. Se la classe dipende da un confronto tra feature (es. classe A se p1 = p2, caso tipo XOR) la frontiera non è lineare e il modello fallisce. Feature correlate, irrilevanti o indipendenti data la classe non sono invece un problema."
     },
     {
         "numero_domanda": "13",
@@ -782,7 +830,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le tecniche discriminative (es. regressione logistica) stimano direttamente P(Y|X) o la frontiera di decisione tra le classi, senza modellare come sono distribuiti i dati. Le tecniche generative (es. Naive Bayes) stimano invece P(X|Y) e usano la regola di Bayes."
     },
     {
         "numero_domanda": "14",
@@ -798,7 +847,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La ReLU, max(0,x), è monotona non decrescente, ha derivata a gradino e lei o le sue varianti sono usate nei livelli interni delle reti profonde, convoluzionali comprese. Attenua inoltre il vanishing gradient. È quindi errato dire che non si possa usare nei layer convoluzionali."
     },
     {
         "numero_domanda": "15",
@@ -814,7 +864,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'entropia misura il disordine: è minima (0) quando la probabilità è concentrata in una sola classe (nessuna incertezza) ed è massima (log n) quando è equamente distribuita. L'affermazione errata scambia i due casi."
     },
     {
         "numero_domanda": "16",
@@ -830,7 +881,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un autoencoder può essere costruito anche con livelli convoluzionali: non richiede livelli densi. Encoder e decoder non devono essere simmetrici, la rappresentazione interna è di solito più piccola dell'input e si può usare per il denoising."
     },
     {
         "numero_domanda": "17",
@@ -846,7 +898,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La backpropagation applica a ritroso la regola della derivata di funzioni composte (chain rule): non usa algoritmi genetici. È invece vero che richiede di memorizzare le attivazioni della forward pass, ha un costo paragonabile al calcolo in avanti e si fa solo in training."
     },
     {
         "numero_domanda": "18",
@@ -862,7 +915,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il campo ricettivo è la porzione di input che influenza un neurone: nei primi layer coincide con il kernel (es. 3×3), molto più piccolo dell'immagine. Cresce con la profondità, soprattutto con downsampling (stride > 1, pooling). Non è quindi sempre almeno pari all'input."
     },
     {
         "numero_domanda": "19",
@@ -878,7 +932,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Inception-v3, VGG19 e ResNet sono reti per la classificazione di immagini. La U-Net, con struttura encoder-decoder, è nata per la segmentazione semantica (output a livello di pixel), non per la classificazione."
     },
     {
         "numero_domanda": "20",
@@ -894,7 +949,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Wout = ⌊(Win + P − K)/S⌋ + 1 = ⌊(16 − 3)/2⌋ + 1 = 7 per ogni asse spaziale (6,5 arrotondato per difetto). Ogni kernel lavora su tutti i 32 canali di input e produce un solo feature map: con 8 kernel l'output ha 8 canali, cioè (7,7,8)."
     },
     {
         "numero_domanda": "21",
@@ -910,7 +966,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con minibatch più grandi si fanno meno aggiornamenti per epoca, ma ognuno è più accurato perché il gradiente è calcolato su più dati (il caso limite è il full batch). L'addestramento può risultare più lento perché i parametri sono aggiornati più di rado."
     },
     {
         "numero_domanda": "22",
@@ -926,7 +983,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La discesa del gradiente minimizza una funzione seguendo l'opposto del gradiente e non richiede affatto una superficie concava: si usa anche su superfici complesse con molti minimi locali, come nelle reti non lineari. È vero che dipende dall'inizializzazione e che conviene ridurre il learning rate alla fine."
     },
     {
         "numero_domanda": "23",
@@ -942,7 +1000,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Gli LSTM sono un tipo di rete ricorrente che usa porte (forget, input, output) per gestire la cella di memoria durante l'elaborazione di sequenze. Non sono usati prevalentemente per la segmentazione di immagini mediche (compito tipico della U-Net)."
     },
     {
         "numero_domanda": "24",
@@ -958,7 +1017,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con una sigmoide finale per la classificazione binaria, la negativa log-likelihood è −y·log Q − (1−y)·log(1−Q), cioè la binary crossentropy. L'errore quadratico è tipico della regressione, la categorical crossentropy del caso multiclasse con softmax."
     },
     {
         "numero_domanda": "25",
@@ -974,7 +1034,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "I modelli generativi apprendono la distribuzione dei dati; GAN, VAE e modelli a diffusione ne sono esempi profondi e anche Naive Bayes è generativo. Non sono «modelli meta-teorici» per generare automaticamente reti neurali: questa affermazione è errata."
     },
     {
         "numero_domanda": "26",
@@ -990,7 +1051,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un singolo neurone non può apprendere qualunque funzione: separa con un iperpiano, quindi non calcola ad esempio lo XOR. Per funzioni più complesse servono più strati. Gli altri enunciati sono veri: parametri lineari nel numero di input e struttura σ(w·x + b)."
     },
     {
         "numero_domanda": "27",
@@ -1006,7 +1068,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Ogni kernel ha 3×3×3 = 27 pesi (dimensione spaziale × canali di input) più 1 bias = 28 parametri. I kernel sono 16 (uno per canale di output): 28 · 16 = 448. Le dimensioni spaziali di input e output non contano, perché i pesi sono condivisi."
     },
     {
         "numero_domanda": "28",
@@ -1022,7 +1085,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Se il gradiente tende a zero i parametri smettono di aggiornarsi e la rete non apprende, ma questo non fa tendere a zero parametri o attivazioni, che restano ai valori correnti. Il problema è mitigato dalla ReLU e dalle connessioni residuali."
     },
     {
         "numero_domanda": "29",
@@ -1038,7 +1102,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Una convoluzione trasposta equivale a un upsampling seguito da una convoluzione normale, ovvero a una convoluzione con stride sub-unitario, e si usa nei decoder (autoencoder, U-Net). Il nome deriva dalla matrice trasposta dell'operatore di convoluzione, non da una trasposizione dell'input."
     },
     {
         "numero_domanda": "30",
@@ -1054,7 +1119,8 @@
         ],
         "data_esame": "2023-01-16",
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La U-Net è usata per la segmentazione semantica e per il denoising di immagini, ed è il componente tipico (rete di denoising) dei modelli a diffusione. Lavora su immagini: non è utilizzata per classificare generi musicali."
     },
     {
         "data_esame": "2023-02-12",
@@ -1070,7 +1136,8 @@
             "E' minore o uguale al mumero delle features"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con feature discrete ogni attributo viene usato al più una volta lungo un cammino: dopo lo split su Xi si crea un figlio per ogni suo valore e non serve riutilizzarlo. Quindi la profondità non supera il numero delle feature; non dipende dal numero delle classi né è legata al logaritmo del numero dei dati."
     },
     {
         "data_esame": "2023-02-12",
@@ -1086,7 +1153,8 @@
             "Tendono a migliorare l'explainability (spiegabilità) degli alberi di decisione riducendo l'instabilità nella selezione degli attributi"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le Random Forest combinano molti alberi diversi (bagging e feature randomness) per mitigare overfitting e instabilità degli alberi singoli. Ma un ensemble non è leggibile come un unico albero di regole semplici: la spiegabilità tende a peggiorare, non a migliorare. Per questo l'affermazione è errata."
     },
     {
         "data_esame": "2023-02-12",
@@ -1102,7 +1170,8 @@
             "3/2"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "In base 2: H = −(1/4·log₂(1/4) + 1/2·log₂(1/2) + 1/4·log₂(1/4)) = 1/4·2 + 1/2·1 + 1/4·2 = 3/2 bit. È inferiore al massimo log₂3 ≈ 1,58 perché la distribuzione non è uniforme: b è più probabile degli altri due valori."
     },
     {
         "data_esame": "2023-02-12",
@@ -1118,7 +1187,8 @@
             "Qualora i dati di input possano essere considerati come annotazioni (labels) per guidare l'apprendimento, come nel caso degli autoencoders"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Si ha apprendimento auto-supervisionato quando i dati di input stessi fungono da etichette: un autoencoder è addestrato a ricostruire l'input e un modello linguistico a predire il prossimo elemento di una sequenza. Non servono annotazioni umane."
     },
     {
         "data_esame": "2023-02-12",
@@ -1134,7 +1204,8 @@
             "P(A|B) è sicuramente maggiore o uguale di P(A and B)"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Per definizione P(A|B) = P(A∧B)/P(B). Poiché P(B) ≤ 1, dividere per P(B) non può diminuire il valore, quindi P(A|B) ≥ P(A∧B). Non esiste invece un confronto certo con P(A): condizionare a B può aumentare o diminuire la probabilità di A."
     },
     {
         "data_esame": "2023-02-12",
@@ -1151,7 +1222,8 @@
             "Richiede il calcolo di un numero epsonenziale di parametri"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Dalla congiunta si ricava qualunque probabilità, anche condizionale: P(A|B) = P(A∧B)/P(B). È quindi errato dire che non lo permetta. È invece vero che servono un numero esponenziale di parametri (2^n − 1): quell'opzione, marcata come errata nel file, in realtà è corretta."
     },
     {
         "data_esame": "2023-02-12",
@@ -1167,7 +1239,8 @@
             "19"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con 5 classi servono 4 parametri indipendenti per i priori (devono sommare a 1). Poi, per ogni classe e ogni feature booleana, serve un solo parametro P(Xi=1|Y), perché l'altro valore si ricava per differenza: 5 · 3 = 15. Totale: 4 + 15 = 19."
     },
     {
         "data_esame": "2023-02-12",
@@ -1183,7 +1256,8 @@
             "Avere dati molto rumorosi"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Pochi dati di training, un modello molto espressivo e un training molto prolungato sono le cause tipiche di overfitting: il modello finisce per specializzarsi sulle particolarità del training set. Tra le opzioni, i dati rumorosi sono quella considerata meno critica in questo senso."
     },
     {
         "data_esame": "2023-02-12",
@@ -1199,7 +1273,8 @@
             "E' una metrica che misura la capacità di apprendimento del modello"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il learning rate è un iper-parametro, non una metrica: è fissato dall'esterno, determina la lunghezza del passo nella discesa del gradiente e può variare durante il training. Se troppo alto accelera l'apprendimento ma può saltare sopra il minimo."
     },
     {
         "data_esame": "2023-02-12",
@@ -1215,7 +1290,8 @@
             "E' più probabile che la moneta sia normale"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Per l'osservazione {testa, croce} la moneta normale dà 1/2 · 1/2 = 1/4, quella truccata 3/4 · 1/4 = 3/16. Poiché 1/4 > 3/16, è più probabile che la moneta sia normale (a parità di probabilità a priori)."
     },
     {
         "data_esame": "2023-02-12",
@@ -1231,7 +1307,8 @@
             "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Non esiste una formula in forma chiusa per la regressione logistica, quindi i parametri si calcolano con la discesa del gradiente (massimizzando la log-likelihood). Le altre opzioni sono false: il calcolo si basa sulla log-likelihood e la predizione dipende dal bilanciamento dei dati."
     },
     {
         "data_esame": "2023-02-12",
@@ -1247,7 +1324,8 @@
             "σ(x) · (1 - σ(x))"
         ],
         "origine": "moodle_testuale",
-        "revisione": "correzione_manuale"
+        "revisione": "correzione_manuale",
+        "spiegazione": "La derivata della sigmoide σ(x) = 1/(1+e^−x) si esprime con la sigmoide stessa: σ'(x) = σ(x)·(1 − σ(x)). Ha forma a campana con massimo 0,25 in x = 0; questa proprietà semplifica molto il calcolo del gradiente nella regressione logistica."
     },
     {
         "data_esame": "2023-02-12",
@@ -1263,7 +1341,8 @@
             "Non può essere stabilito"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La precisione è TP/(TP+FP) = 9/10, ma senza conoscere TP (cioè la recall) non si può ricavare FP: si sa solo che FP = TP/9. Quindi la percentuale di falsi positivi sul totale non può essere stabilita."
     },
     {
         "data_esame": "2023-02-12",
@@ -1279,7 +1358,8 @@
             "13/8"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "H(P,Q) = −Σ P(i) log₂ Q(i) = 3/8·log₂2 + 1/2·log₂4 + 1/8·log₂4 = 3/8·1 + 1/2·2 + 1/8·2 = 3/8 + 1 + 1/4 = 13/8. P fa da peso e Q sta nel logaritmo: scambiandoli il risultato cambia, perché la cross-entropy non è simmetrica."
     },
     {
         "data_esame": "2023-02-12",
@@ -1295,7 +1375,8 @@
             "Cerca di determinare un iperpiano di separazione tra due categorie di dati"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La regressione lineare predice un valore numerico stimando la relazione tra output e feature: minimizza l'errore quadratico e ha una soluzione analitica (W = A⁻¹Y). Cercare un iperpiano di separazione tra due classi è invece un compito di classificazione, non di regressione."
     },
     {
         "data_esame": "2023-02-12",
@@ -1311,7 +1392,8 @@
             "Segmentazione di immagini (semantic segmentation)"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Applicazioni tipiche degli autoencoder: denoising, riduzione della dimensionalità ed estrazione di feature (generalizzano la PCA), anomaly detection e modelli generativi (VAE). La segmentazione semantica è invece tipica di reti come la U-Net."
     },
     {
         "data_esame": "2023-02-12",
@@ -1327,7 +1409,8 @@
             "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per contrastare il fenomeno della sua scomparsa (vanishing)"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La backpropagation calcola il gradiente un layer alla volta con la chain rule, usando operazioni algebriche parallelizzabili su GPU. Non rinforza artificialmente il gradiente: il vanishing gradient si contrasta con scelte architetturali come ReLU e connessioni residuali."
     },
     {
         "data_esame": "2023-02-12",
@@ -1343,7 +1426,8 @@
             "7"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il campo ricettivo si calcola a ritroso: con stride 1 vale 1 + (5 − 1) + (3 − 1) = 7. Equivalentemente, un neurone del secondo layer (3×3) vede 3 neuroni del primo, ciascuno dei quali vede 5 pixel: 5 + (3 − 1) = 7. Il padding non lo modifica."
     },
     {
         "data_esame": "2023-02-12",
@@ -1359,7 +1443,8 @@
             "(6,6,4)"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Wout = ⌊(16 − 5)/2⌋ + 1 = 6 per ogni asse spaziale (11/2 = 5,5 arrotondato per difetto a 5). I 4 kernel producono 4 feature map, quindi l'output è (6,6,4). I canali di input (8) sono assorbiti dai kernel 5×5×8 e non influenzano la profondità."
     },
     {
         "data_esame": "2023-02-12",
@@ -1375,7 +1460,8 @@
             "Utilizza al proprio interno delle skip-connections per bypassare l'applicazione di parte dei kernel"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un modulo inception applica in parallelo kernel di dimensioni diverse (towers) e usa convoluzioni 1×1 per ridurre i canali e il costo computazionale; è la base di Inception-v3. Le skip connections sono tipiche delle reti residuali (ResNet), non dell'inception module."
     },
     {
         "data_esame": "2023-02-12",
@@ -1391,7 +1477,8 @@
             "Fare clipping del gradiente in una range prefissato"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il clipping limita l'ampiezza del gradiente ed evita passi troppo grandi: non aiuta quindi a uscire da un minimo locale. Aiutano invece minibatch piccoli (gradiente più rumoroso), un learning rate più alto e il momentum, che dà inerzia al movimento."
     },
     {
         "data_esame": "2023-02-12",
@@ -1407,7 +1494,8 @@
             "68"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Ogni kernel 1×1 ha 1·1·16 = 16 pesi più 1 bias = 17. Con 4 kernel (uno per canale di output): 17 · 4 = 68 parametri, ovvero 1·1·16·4 + 4. Le convoluzioni 1×1 servono a ridurre il numero di canali, come negli inception module."
     },
     {
         "data_esame": "2023-02-12",
@@ -1423,7 +1511,8 @@
             "Non è una funzione summetrica dei suoi input"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'IoU è |A∩B| / |A∪B|: è simmetrica (scambiando A e B non cambia), assume valori in [0,1] ed è usata per confrontare bounding box nella object detection (anche in NMS e mAP). Non è quindi vero che non sia simmetrica."
     },
     {
         "data_esame": "2023-02-12",
@@ -1439,7 +1528,8 @@
             "Aggiungono ad ogni livello della rete un encoding posizionale per enfatizzare la posizione realtiva dei tokens"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "I Transformer hanno struttura encoder-decoder, con stack di moduli, e usano molto l'attenzione; sono alla base di BERT e GPT. L'encoding posizionale (seno/coseno) è sommato agli embedding solo all'ingresso, non ad ogni livello: per questo l'affermazione è errata."
     },
     {
         "data_esame": "2023-12-19",
@@ -1455,7 +1545,8 @@
             "Possono essere utilizzati solo con features discrete"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Gli alberi di decisione gestiscono anche feature continue: si usano test a soglia (A < Θ), scegliendo la soglia con l'information gain, ad esempio a metà tra due valori consecutivi ordinati. Le altre affermazioni sono vere: predizione molto economica, forte rischio di overfitting e capacità di esprimere qualunque funzione di classificazione."
     },
     {
         "data_esame": "2023-12-19",
@@ -1471,7 +1562,8 @@
             "tra 0 e log n dove n sono i possibili valori di X"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'entropia H(X) = −Σ P(x) log P(x) vale 0 se tutta la probabilità è su un solo valore ed è massima (log n) se la distribuzione è uniforme su n valori. Il suo intervallo è quindi [0, log n]: non è limitata a [0,1] e non è mai negativa."
     },
     {
         "data_esame": "2023-12-19",
@@ -1487,7 +1579,8 @@
             "Il suo calcolo presenta problemi di scalabilità all'aumentare delle features"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La distribuzione congiunta contiene la probabilità di ogni combinazione di valori delle feature: con n feature booleane servono 2^n − 1 parametri. Cresce in modo esponenziale (problema di scalabilità) e richiederebbe enormi quantità di dati. Permette comunque predizioni e probabilità condizionali."
     },
     {
         "data_esame": "2023-12-19",
@@ -1503,7 +1596,8 @@
             "ridistribuire le probabilità in modo più bilanciato tra tutti i casi"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Aggiungere un termine che aumenta l'entropia spinge la distribuzione verso l'uniformità: le probabilità vengono ridistribuite in modo più bilanciato tra i casi, evitando che il modello si concentri su pochi risultati. Non ha relazione con il vanishing gradient."
     },
     {
         "data_esame": "2023-12-19",
@@ -1519,7 +1613,8 @@
             "1/9"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il dataset ha 1/3 di positivi. La recall è TP/(TP+FN) = 2/3, quindi i falsi negativi (positivi non trovati) sono 1/3 dei positivi: 1/3 · 1/3 = 1/9 dei dati totali. I veri positivi sono invece 2/3 · 1/3 = 2/9 del totale."
     },
     {
         "data_esame": "2023-12-19",
@@ -1535,7 +1630,8 @@
             "E' più probabile che il dato sia truccato"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Si confrontano le verosimiglianze: con il dado normale 1/6 · 1/6 ≈ 0,028; con quello truccato 0,1 · 0,5 = 0,05. La seconda è maggiore, quindi (a parità di probabilità a priori dei due dadi) è più probabile che il dado sia truccato, anche se non si può esserne certi."
     },
     {
         "data_esame": "2023-12-19",
@@ -1551,7 +1647,8 @@
             "E' una funzione simmetrica: H(P,Q) = H(Q,P)"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La cross-entropy non è simmetrica: H(P,Q) = H(P) + KL(P‖Q) e la divergenza KL non è simmetrica, quindi in generale H(P,Q) ≠ H(Q,P). Le altre affermazioni sono vere: è minima quando P = Q (vale H(P)) ed è legata alla log-likelihood."
     },
     {
         "data_esame": "2023-12-19",
@@ -1567,7 +1664,8 @@
             "Potrebbe convergere a un minimo locale"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La discesa del gradiente segue la direzione opposta al gradiente e, su superfici complesse come quelle delle reti non lineari, può fermarsi in un minimo locale. Non garantisce il minimo globale e il risultato dipende dall'inizializzazione dei parametri."
     },
     {
         "data_esame": "2023-12-19",
@@ -1583,7 +1681,8 @@
             "La Backpropagation è effettuata più frequentemente ma l'aggiornamento dei parametri è meno accurato"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con minibatch più piccoli i parametri si aggiornano più spesso (gli aggiornamenti per epoca sono dimensione del training set / batchsize), ma ogni aggiornamento è meno accurato perché il gradiente deriva da pochi dati specifici."
     },
     {
         "data_esame": "2023-12-19",
@@ -1599,7 +1698,8 @@
             "Non dipende dal bilanciamento dei dati di training rispetto alle classi"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La regressione logistica è addestrata per massima verosimiglianza sui dati: la proporzione delle classi nel training set influenza i parametri (in particolare il bias), quindi la predizione dipende dal bilanciamento. Le altre affermazioni sono vere: combinazione lineare, frontiera a iperpiano, probabilità crescente con la distanza."
     },
     {
         "data_esame": "2023-12-19",
@@ -1615,7 +1715,8 @@
             "Quando la classificazione dipende da un confronto tra features"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un classificatore lineare separa le classi con un iperpiano. Se la classe dipende da un confronto tra feature (es. classe A se p1 = p2, caso tipo XOR) la frontiera non è lineare e il modello fallisce. Feature correlate, irrilevanti o indipendenti data la classe non sono invece un problema."
     },
     {
         "data_esame": "2023-12-19",
@@ -1631,7 +1732,8 @@
             "Per ogni input, esiste almeno una classe con probabilità > 0.5"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Nella regressione multinomiale le probabilità sommano a 1 su k classi: con molte classi può capitare che nessuna superi 0,5 (es. distribuzione uniforme, 1/k). L'affermazione è quindi errata. Le altre sono vere: pesi diversi per classe, pesi come importanza delle feature, n·m + m parametri."
     },
     {
         "data_esame": "2023-12-19",
@@ -1647,7 +1749,8 @@
             "Produce valori compresi nell'intervallo [-1,1]"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La softmax produce valori in (0,1) che sommano a 1 per ogni input: è una distribuzione di probabilità sulle classi. Non produce valori in [−1,1] (quello è l'intervallo della tangente iperbolica). Generalizza la funzione logistica al caso multiclasse."
     },
     {
         "data_esame": "2023-12-19",
@@ -1663,7 +1766,8 @@
             "categorical crossentropy"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con attivazione softmax in uscita, la loss che deriva dalla massima log-likelihood è la categorical crossentropy tra la distribuzione osservata (1 per la classe vera, 0 per le altre) e quella prodotta dal modello. La binary crossentropy riguarda il caso binario con sigmoide."
     },
     {
         "data_esame": "2023-12-19",
@@ -1679,7 +1783,8 @@
             "Tecniche di classificazione che si focalizzano sulla definizione delle frontiere di decisione (decision boundaries)"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le tecniche discriminative (es. regressione logistica) stimano direttamente P(Y|X) o la frontiera di decisione tra le classi, senza modellare come sono distribuiti i dati. Le tecniche generative (es. Naive Bayes) stimano invece P(X|Y) e usano la regola di Bayes."
     },
     {
         "data_esame": "2023-12-19",
@@ -1695,7 +1800,8 @@
             "aggiunta di skip connections"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le skip connections (reti residuali) fanno arrivare il gradiente agli strati bassi, contrastando il vanishing gradient: non sono una tecnica anti-overfitting. Early stopping, data augmentation, dropout e loss di regolarizzazione limitano invece l'adattamento eccessivo ai dati di training."
     },
     {
         "data_esame": "2023-12-19",
@@ -1711,7 +1817,8 @@
             "Raggruppare i punti di un cluster attorno al loro centroide"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "K-means divide i dati in K cluster raggruppando i punti attorno al centroide del cluster: alterna l'assegnazione di ogni punto al centroide più vicino e il ricalcolo dei centroidi. Non cerca il punto medio del dataset né ottimizza il numero dei cluster, che è fissato in anticipo."
     },
     {
         "data_esame": "2023-12-19",
@@ -1727,7 +1834,8 @@
             "Features sintetizzate in modo automatico a partire da altre features"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le «deep» features sono feature estratte automaticamente dalla rete a partire da altre feature, in livelli successivi di astrazione (è uno dei due sensi di «deep» in deep learning, insieme al numero di strati). Non riguardano sensori di profondità né l'intervento umano."
     },
     {
         "data_esame": "2023-12-19",
@@ -1743,7 +1851,8 @@
             "definire l'algoritmo che calcola i gradienti della loss e aggiorna i pesi del modello"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'optimizer (es. Adam) governa la discesa del gradiente: definisce come usare i gradienti della loss per aggiornare i pesi, eventualmente adattando il learning rate o usando il momentum. Salvare i pesi migliori e penalizzare i pesi sono compiti di altri componenti (callback, regularizer)."
     },
     {
         "data_esame": "2023-12-19",
@@ -1759,7 +1868,8 @@
             "Se il gradiente tende a zero anche i parametri e le attivazioni dei neuroni tendono a zero"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Se il gradiente tende a zero i parametri smettono di aggiornarsi e la rete non apprende, ma questo non fa tendere a zero parametri o attivazioni, che restano ai valori correnti. Il problema è mitigato dalla ReLU e dalle connessioni residuali."
     },
     {
         "data_esame": "2023-12-19",
@@ -1775,7 +1885,8 @@
             "(15,15,1)"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Wout = (Win + P − K)/S + 1 = (32 − 4)/2 + 1 = 15 per ogni asse. Un unico kernel produce un solo feature map, quindi 1 canale: output (15,15,1). I canali di input (8) sono assorbiti dal kernel e non incidono sulla profondità dell'output."
     },
     {
         "data_esame": "2023-12-19",
@@ -1791,7 +1902,8 @@
             "La dimensione spaziale diminuisce"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con stride > 1 il kernel si sposta a passi più grandi e si applica meno volte: la dimensione spaziale dell'output diminuisce (Wout = (Win + P − K)/S + 1). Il numero di canali dipende invece dal numero di kernel, non dallo stride."
     },
     {
         "data_esame": "2023-12-19",
@@ -1807,7 +1919,8 @@
             "La dimensione spaziale del kernel e il numero dei canali di input e output"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Ogni kernel ha dimensione N×M×D (D = canali di input) e ci sono tanti kernel quanti i canali di output: parametri = N·M·D·C_out (+ bias). I pesi sono condivisi, quindi non dipendono da stride né dalle dimensioni spaziali di input e output."
     },
     {
         "data_esame": "2023-12-19",
@@ -1823,7 +1936,8 @@
             "La profondità del layer in cui si trova il neurone e le dimensioni e gli strides dei kernel dei layers precedenti"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il campo ricettivo è la regione dell'input che influenza un neurone. Cresce con la profondità e dipende da dimensioni e stride dei kernel dei layer precedenti: Win = K + (Wout − 1)·S. Il numero di canali non conta."
     },
     {
         "data_esame": "2023-12-19",
@@ -1839,7 +1953,8 @@
             "1 in corrispondenza del massimo e 0 altrove"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il max pooling restituisce il massimo di una regione: la sua derivata è 1 in corrispondenza dell'elemento massimo e 0 per gli altri, quindi il gradiente della backpropagation passa solo attraverso il massimo. È derivabile (quasi ovunque)."
     },
     {
         "data_esame": "2023-12-19",
@@ -1855,7 +1970,8 @@
             "Una sequenza alternata di convoluzioni e downsampling, seguita da flattening e pochi livelli densi finali"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un classificatore di immagini ha una lunga sequenza di convoluzioni alternate a downsampling (che estraggono le feature), seguita da flattening e da pochi (2-3) livelli densi finali che sfruttano le feature per classificare. Encoder-decoder è tipico di autoencoder e U-Net."
     },
     {
         "data_esame": "2023-12-19",
@@ -1871,7 +1987,8 @@
             "La rappresentazione interna prodotta dall'encoder abitualmente ha una dimensione ridotta rispetto a quella di partenza"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un autoencoder è una rete addestrata a ricostruire l'input a partire da una rappresentazione interna appresa (latente), di solito di dimensione inferiore all'input: è una forma di compressione. Non richiede livelli densi né una simmetria rigida tra encoder e decoder."
     },
     {
         "data_esame": "2023-12-19",
@@ -1887,7 +2004,8 @@
             "modelli che cercano di apprendere la distribuzione di probabilità dei dati"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un modello generativo cerca di apprendere la distribuzione di probabilità p_data dei dati reali a partire dagli esempi, per stimarla o campionare nuovi dati simili. Non è l'automazione della creazione di reti, né attacchi adversarial, né tecniche genetiche."
     },
     {
         "data_esame": "2023-12-19",
@@ -1903,7 +2021,8 @@
             "le GAN possono soffrire del fenomeno di \"mode collapse\", cioè la tendenza a focalizzare la generazione su un unico o pochi esempi"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le GAN possono soffrire di mode collapse: il generatore si specializza su pochi esempi (o uno solo) che ingannano bene il discriminatore. Non hanno una struttura encoder-decoder, non usano la log-likelihood dei dati generati e non servono a creare attacchi."
     },
     {
         "data_esame": "2023-12-19",
@@ -1919,7 +2038,8 @@
             "Segmentazione semantica"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La U-Net nasce per la segmentazione semantica (classificare ogni pixel), in origine su immagini biomediche. Impara la segmentazione end-to-end, senza basarsi su una rete di classificazione, e funziona con relativamente pochi dati grazie alla data augmentation."
     },
     {
         "data_esame": "2024-01-18",
@@ -1935,7 +2055,8 @@
             "Possono esprimere qualunque funzione di classificazione"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un albero di decisione può rappresentare qualunque funzione di classificazione sulle feature, perché ogni combinazione di valori può condurre a una foglia. Le altre opzioni sono false: l'overfitting è un rischio elevato, la predizione costa poco (basta percorrere un cammino) e le feature continue sono gestite con soglie."
     },
     {
         "data_esame": "2024-01-18",
@@ -1951,7 +2072,8 @@
             "Il suo valore è minimo (e uguale a 0) quando la probabilità è equamente distribuita tra tutte le classi"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'entropia misura il disordine: è minima (0) quando la probabilità è concentrata in una sola classe (nessuna incertezza) ed è massima (log n) quando è equamente distribuita. L'affermazione errata scambia i due casi."
     },
     {
         "data_esame": "2024-01-18",
@@ -1967,7 +2089,8 @@
             "focalizzare le scelte sui casi più probabili"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un termine che riduce l'entropia rende la distribuzione più «piccata»: la probabilità si concentra sui casi più probabili (entropia 0 = tutta la probabilità su un solo caso). È l'effetto opposto a quello di aumentare l'entropia, che bilancia le probabilità."
     },
     {
         "data_esame": "2024-01-18",
@@ -1983,7 +2106,8 @@
             "è una funzione monotona"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La derivata σ'(x) = σ(x)(1 − σ(x)) ha forma a campana: cresce fino a x = 0 (massimo 0,25), poi decresce e tende a 0 a ±∞. Non è quindi monotona. È invece simmetrica rispetto a 0, ha il massimo in 0 e tende a 0 per x → −∞."
     },
     {
         "data_esame": "2024-01-18",
@@ -1999,7 +2123,8 @@
             "E' più probabile che il dato sia truccato"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Verosimiglianza di 3, 6, 2: dado normale (1/6)³ ≈ 0,0046; dado truccato 0,1 · 0,5 · 0,1 = 0,005. Il dado truccato dà una probabilità lievemente maggiore, quindi è più probabile che sia quello (con uguale probabilità a priori). Non si può dire «nulla»: i dati portano informazione."
     },
     {
         "data_esame": "2024-01-18",
@@ -2015,7 +2140,8 @@
             "Richiede la costante supervisione di un esperto durante il training"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'apprendimento supervisionato richiede esempi etichettati (ground truth), che possono essere costosi da ottenere, ma non la supervisione costante di un esperto durante il training: l'addestramento procede in automatico sui dati. Comprende sia classificazione che regressione."
     },
     {
         "data_esame": "2024-01-18",
@@ -2031,7 +2157,8 @@
             "Non può essere utilizzata se le features non sono tra loro indipendenti, date le classi"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Naive Bayes si basa sull'indipendenza condizionale delle feature, ma può essere usato anche quando non vale: la stima risulta solo meno accurata (esistono casi limite, come p1 = p2, in cui fallisce). Le altre affermazioni sono vere: è un modello generativo e approssima in modo efficiente la distribuzione congiunta."
     },
     {
         "data_esame": "2024-01-18",
@@ -2047,7 +2174,8 @@
             "Non può essere stabilito"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La recall riguarda solo i positivi (TP e FN). I falsi positivi sono negativi classificati male e la recall non dà alcuna informazione su di essi: servirebbero la precisione o la specificità. Non può quindi essere stabilito."
     },
     {
         "data_esame": "2024-01-18",
@@ -2063,7 +2191,8 @@
             "I parametri del modello possono essere tipicamente calcolati in forma chiusa, mediante una formula esplicita"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Per la regressione logistica non esiste una soluzione analitica: si massimizza la log-likelihood con metodi iterativi come la discesa del gradiente. Le altre affermazioni sono vere: restituisce probabilità, si basa sulla log-likelihood e dipende dal bilanciamento delle classi."
     },
     {
         "data_esame": "2024-01-18",
@@ -2079,7 +2208,8 @@
             "Può essere applicata solo se la funzione da minimizzare ha una superficie concava"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La discesa del gradiente minimizza una funzione seguendo l'opposto del gradiente e non richiede affatto una superficie concava: si usa anche su superfici complesse con molti minimi locali, come nelle reti non lineari. È vero che dipende dall'inizializzazione e che conviene ridurre il learning rate alla fine."
     },
     {
         "data_esame": "2024-01-18",
@@ -2095,7 +2225,8 @@
             "La Backpropagation è effettuata meno frequentemente ma l'aggiornamento dei parametri è più accurato"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con minibatch più grandi si fanno meno aggiornamenti per epoca, ma ognuno è più accurato perché il gradiente è calcolato su più dati (il caso limite è il full batch). L'addestramento può risultare più lento perché i parametri sono aggiornati più di rado."
     },
     {
         "data_esame": "2024-01-18",
@@ -2111,7 +2242,8 @@
             "Il peso con cui è valutata ogni feature è tipicamente diverso per ogni classe"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Ogni classe ha un proprio vettore di pesi, quindi le feature pesano in modo diverso per ogni classe. I parametri sono n·m + m (cresce come O(n·m), non O(n+m)); i pesi possono essere negativi e non sempre esiste una classe con probabilità > 0,5."
     },
     {
         "data_esame": "2024-01-18",
@@ -2127,7 +2259,8 @@
             "Restituisce una distribuzione di probabilità sulle classi"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "softmax(j,x) = e^{xj} / Σ e^{xk} restituisce una distribuzione di probabilità sulle classi (valori in (0,1), somma 1 per ogni input). Si può usare anche con due classi, non produce valori negativi e la somma a 1 vale sulle classi di un input, non sul minibatch."
     },
     {
         "data_esame": "2024-01-18",
@@ -2143,7 +2276,8 @@
             "Quando la classificazione dipende da un confronto tra features"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un classificatore lineare separa le classi con un iperpiano. Se la classe dipende da un confronto tra feature (es. classe A se p1 = p2, caso tipo XOR) la frontiera non è lineare e il modello fallisce. Feature correlate, irrilevanti o indipendenti data la classe non sono invece un problema."
     },
     {
         "data_esame": "2024-01-18",
@@ -2159,7 +2293,8 @@
             "Si focalizzano sulla definizione delle frontiere di decisione (decision boundaries)"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le tecniche discriminative (es. regressione logistica) stimano direttamente P(Y|X) o la frontiera di decisione tra le classi, senza modellare come sono distribuiti i dati. Le tecniche generative (es. Naive Bayes) stimano invece P(X|Y) e usano la regola di Bayes."
     },
     {
         "data_esame": "2024-01-18",
@@ -2175,7 +2310,8 @@
             "L'acquisizione di nuovi dati di training non può che peggiorare la situazione"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Più dati di training sono uno dei rimedi principali contro l'overfitting: il modello ha meno possibilità di memorizzare casi particolari. Le altre affermazioni sono corrette: è più pericoloso con modelli molto espressivi e si contrasta con regolarizzazione ed early stopping."
     },
     {
         "data_esame": "2024-01-18",
@@ -2191,7 +2327,8 @@
             "non può essere utilizzata per layer convoluzionali"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La ReLU, max(0,x), è monotona non decrescente, ha derivata a gradino e lei o le sue varianti sono usate nei livelli interni delle reti profonde, convoluzionali comprese. Attenua inoltre il vanishing gradient. È quindi errato dire che non si possa usare nei layer convoluzionali."
     },
     {
         "data_esame": "2024-01-18",
@@ -2207,7 +2344,8 @@
             "Un neurone artificiale può apprendere qualunque funzione dei suoi input"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un singolo neurone non può apprendere qualunque funzione: separa con un iperpiano, quindi non calcola ad esempio lo XOR. Per funzioni più complesse servono più strati. Gli altri enunciati sono veri: parametri lineari nel numero di input e struttura σ(w·x + b)."
     },
     {
         "data_esame": "2024-01-18",
@@ -2223,7 +2361,8 @@
             "Si basa tipicamente su algoritmi di tipo genetico"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La backpropagation applica a ritroso la regola della derivata di funzioni composte (chain rule): non usa algoritmi genetici. È invece vero che richiede di memorizzare le attivazioni della forward pass, ha un costo paragonabile al calcolo in avanti e si fa solo in training."
     },
     {
         "data_esame": "2024-01-18",
@@ -2239,7 +2378,8 @@
             "Se il gradiente tende a zero anche i parametri e le attivazioni dei neuroni tendono a zero"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Se il gradiente tende a zero i parametri smettono di aggiornarsi e la rete non apprende, ma questo non fa tendere a zero parametri o attivazioni, che restano ai valori correnti. Il problema è mitigato dalla ReLU e dalle connessioni residuali."
     },
     {
         "data_esame": "2024-01-18",
@@ -2255,7 +2395,8 @@
             "binary crossentropy"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con una sigmoide finale per la classificazione binaria, la negativa log-likelihood è −y·log Q − (1−y)·log(1−Q), cioè la binary crossentropy. L'errore quadratico è tipico della regressione, la categorical crossentropy del caso multiclasse con softmax."
     },
     {
         "data_esame": "2024-01-18",
@@ -2271,7 +2412,8 @@
             "448"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Ogni kernel ha 3×3×3 = 27 pesi (dimensione spaziale × canali di input) più 1 bias = 28 parametri. I kernel sono 16 (uno per canale di output): 28 · 16 = 448. Le dimensioni spaziali di input e output non contano, perché i pesi sono condivisi."
     },
     {
         "data_esame": "2024-01-18",
@@ -2287,7 +2429,8 @@
             "(7,7,8)"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Wout = ⌊(Win + P − K)/S⌋ + 1 = ⌊(16 − 3)/2⌋ + 1 = 7 per ogni asse spaziale (6,5 arrotondato per difetto). Ogni kernel lavora su tutti i 32 canali di input e produce un solo feature map: con 8 kernel l'output ha 8 canali, cioè (7,7,8)."
     },
     {
         "data_esame": "2024-01-18",
@@ -2303,7 +2446,8 @@
             "La dimensione spaziale diminuisce"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con stride > 1 il kernel si sposta a passi più grandi e si applica meno volte: la dimensione spaziale dell'output diminuisce (Wout = (Win + P − K)/S + 1). Il numero di canali dipende invece dal numero di kernel, non dallo stride."
     },
     {
         "data_esame": "2024-01-18",
@@ -2319,7 +2463,8 @@
             "E' sempre almeno pari alla dimensione spaziale del dato di input"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il campo ricettivo è la porzione di input che influenza un neurone: nei primi layer coincide con il kernel (es. 3×3), molto più piccolo dell'immagine. Cresce con la profondità, soprattutto con downsampling (stride > 1, pooling). Non è quindi sempre almeno pari all'input."
     },
     {
         "data_esame": "2024-01-18",
@@ -2335,7 +2480,8 @@
             "Richiedono la trasposizione dell'input prima di calcolare la convoluzione del Kernel"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Una convoluzione trasposta equivale a un upsampling seguito da una convoluzione normale, ovvero a una convoluzione con stride sub-unitario, e si usa nei decoder (autoencoder, U-Net). Il nome deriva dalla matrice trasposta dell'operatore di convoluzione, non da una trasposizione dell'input."
     },
     {
         "data_esame": "2024-01-18",
@@ -2351,7 +2497,8 @@
             "Gli Autoencoders richiedono l'uso di livelli densi"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un autoencoder può essere costruito anche con livelli convoluzionali: non richiede livelli densi. Encoder e decoder non devono essere simmetrici, la rappresentazione interna è di solito più piccola dell'input e si può usare per il denoising."
     },
     {
         "data_esame": "2024-01-18",
@@ -2367,7 +2514,8 @@
             "Sono modelli meta-teorici rivolti alla automatizzazione della generazione di reti neurali"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "I modelli generativi apprendono la distribuzione dei dati; GAN, VAE e modelli a diffusione ne sono esempi profondi e anche Naive Bayes è generativo. Non sono «modelli meta-teorici» per generare automaticamente reti neurali: questa affermazione è errata."
     },
     {
         "data_esame": "2024-01-18",
@@ -2383,7 +2531,8 @@
             "U-Net"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Inception-v3, VGG19 e ResNet sono reti per la classificazione di immagini. La U-Net, con struttura encoder-decoder, è nata per la segmentazione semantica (output a livello di pixel), non per la classificazione."
     },
     {
         "data_esame": "2024-01-18",
@@ -2399,7 +2548,8 @@
             "Viene spesso utilizzata nell'ambito della classificazione dei generi musicali"
         ],
         "origine": "screenshot_llm",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La U-Net è usata per la segmentazione semantica e per il denoising di immagini, ed è il componente tipico (rete di denoising) dei modelli a diffusione. Lavora su immagini: non è utilizzata per classificare generi musicali."
     },
     {
         "data_esame": "2024-12-17",
@@ -2415,7 +2565,8 @@
             "Possono essere utilizzati solo con features discrete"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Gli alberi di decisione gestiscono anche feature continue: si usano test a soglia (A < Θ), scegliendo la soglia con l'information gain, ad esempio a metà tra due valori consecutivi ordinati. Le altre affermazioni sono vere: predizione molto economica, forte rischio di overfitting e capacità di esprimere qualunque funzione di classificazione."
     },
     {
         "data_esame": "2024-12-17",
@@ -2431,7 +2582,8 @@
             "Richiede la costante supervisione di un esperto durante il training"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'apprendimento supervisionato richiede esempi etichettati (ground truth), che possono essere costosi da ottenere, ma non la supervisione costante di un esperto durante il training: l'addestramento procede in automatico sui dati. Comprende sia classificazione che regressione."
     },
     {
         "data_esame": "2024-12-17",
@@ -2447,7 +2599,8 @@
             "3/2"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "In base 2: H = −(1/4·log₂(1/4) + 1/2·log₂(1/2) + 1/4·log₂(1/4)) = 1/4·2 + 1/2·1 + 1/4·2 = 3/2 bit. È inferiore al massimo log₂3 ≈ 1,58 perché la distribuzione non è uniforme: b è più probabile degli altri due valori."
     },
     {
         "data_esame": "2024-12-17",
@@ -2463,7 +2616,8 @@
             "focalizzare le scelte sui casi più probabili"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un termine che riduce l'entropia rende la distribuzione più «piccata»: la probabilità si concentra sui casi più probabili (entropia 0 = tutta la probabilità su un solo caso). È l'effetto opposto a quello di aumentare l'entropia, che bilancia le probabilità."
     },
     {
         "data_esame": "2024-12-17",
@@ -2479,7 +2633,8 @@
             "Il suo calcolo presenta problemi di scalabilità all'aumentare delle features"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La distribuzione congiunta contiene la probabilità di ogni combinazione di valori delle feature: con n feature booleane servono 2^n − 1 parametri. Cresce in modo esponenziale (problema di scalabilità) e richiederebbe enormi quantità di dati. Permette comunque predizioni e probabilità condizionali."
     },
     {
         "data_esame": "2024-12-17",
@@ -2495,7 +2650,8 @@
             "Valutare il modello su più set di test, migliorando la generalizzazione."
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Nella K-Fold cross-validation i dati sono divisi in K parti: a turno una è il test set e le altre il training. Si ottengono K valutazioni, mediate per stimare in modo più affidabile la generalizzazione. Non aumenta i dati né sceglie da sola il modello migliore."
     },
     {
         "data_esame": "2024-12-17",
@@ -2511,7 +2667,8 @@
             "trovare i K clusters che minimizzano la somma delle distanze quadratiche tra i punti del cluster e il rispettivo centroide."
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "K-means cerca K cluster che minimizzino la somma delle distanze quadratiche tra ogni punto e il centroide del proprio cluster. Non massimizza il numero di cluster né le distanze interne, e non minimizza la distanza tra punti di cluster diversi."
     },
     {
         "data_esame": "2024-12-17",
@@ -2527,7 +2684,8 @@
             "E' più probabile che il dato sia truccato"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Verosimiglianza di 3, 6, 2: dado normale (1/6)³ ≈ 0,0046; dado truccato 0,1 · 0,5 · 0,1 = 0,005. Il dado truccato dà una probabilità lievemente maggiore, quindi è più probabile che sia quello (con uguale probabilità a priori). Non si può dire «nulla»: i dati portano informazione."
     },
     {
         "data_esame": "2024-12-17",
@@ -2543,7 +2701,8 @@
             "Perchè suppone ingenuamente che le features siano indipendenti tra loro, date le classi"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Naive Bayes è «ingenuo» perché assume che le feature siano indipendenti tra loro data la classe: P(X1,…,Xn|Y) = ∏ P(Xi|Y). Questa ipotesi semplificativa riduce enormemente i parametri da stimare, ma raramente è vera nella realtà."
     },
     {
         "data_esame": "2024-12-17",
@@ -2559,7 +2718,8 @@
             "Una distribuzione Normale, ovvero Gaussiana(0,1)"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Per feature continue la probabilità puntuale P(Xi|Y) sarebbe nulla, quindi si assume una distribuzione Gaussiana (Normale) con media µ e deviazione σ stimate per ogni classe e feature. Si sceglie poi la classe che massimizza πk · ∏ N(ai|µik, σik)."
     },
     {
         "data_esame": "2024-12-17",
@@ -2575,7 +2735,8 @@
             "Garantire che tutte le feature abbiano la stessa scala, migliorando la convergenza dell'ottimizzazione."
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La normalizzazione porta tutte le feature su una scala simile, così nessuna domina le altre e la discesa del gradiente converge più rapidamente. Non gestisce i valori mancanti, non riduce i parametri e non aumenta di per sé la precisione."
     },
     {
         "data_esame": "2024-12-17",
@@ -2591,7 +2752,8 @@
             "Avere dati molto rumorosi"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Pochi dati di training, un modello molto espressivo e un training molto prolungato sono le cause tipiche di overfitting: il modello finisce per specializzarsi sulle particolarità del training set. Tra le opzioni, i dati rumorosi sono quella considerata meno critica in questo senso."
     },
     {
         "data_esame": "2024-12-17",
@@ -2607,7 +2769,8 @@
             "E' una tecnica per selezionare le features migliori tra quelle date, senza modificarle."
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La PCA non seleziona le feature migliori senza modificarle: crea nuove feature (componenti principali) come combinazioni lineari di quelle originali, in un nuovo sistema di coordinate che preserva la massima varianza, e permette così di ridurne il numero."
     },
     {
         "data_esame": "2024-12-17",
@@ -2623,7 +2786,8 @@
             "Non può essere stabilito"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La precisione è TP/(TP+FP) = 9/10, ma senza conoscere TP (cioè la recall) non si può ricavare FP: si sa solo che FP = TP/9. Quindi la percentuale di falsi positivi sul totale non può essere stabilita."
     },
     {
         "data_esame": "2024-12-17",
@@ -2639,7 +2803,8 @@
             "P(A|B) è sicuramente maggiore o uguale di P(A and B)"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Per definizione P(A|B) = P(A∧B)/P(B). Poiché P(B) ≤ 1, dividere per P(B) non può diminuire il valore, quindi P(A|B) ≥ P(A∧B). Non esiste invece un confronto certo con P(A): condizionare a B può aumentare o diminuire la probabilità di A."
     },
     {
         "data_esame": "2024-12-17",
@@ -2655,7 +2820,8 @@
             "I parametri del modello possono essere tipicamente calcolati in forma chiusa, mediante una formula esplicita"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Per la regressione logistica non esiste una soluzione analitica: si massimizza la log-likelihood con metodi iterativi come la discesa del gradiente. Le altre affermazioni sono vere: restituisce probabilità, si basa sulla log-likelihood e dipende dal bilanciamento delle classi."
     },
     {
         "data_esame": "2024-12-17",
@@ -2671,7 +2837,8 @@
             "a) Misurare la discrepanza tra le previsioni del modello e i valori reali, guidando l'ottimizzazione dei parametri."
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La loss misura la discrepanza tra le predizioni del modello e i valori reali; il suo gradiente indica come modificare i parametri, quindi guida l'ottimizzazione. Learning rate e regolarizzazione sono elementi distinti dalla loss."
     },
     {
         "data_esame": "2024-12-17",
@@ -2687,7 +2854,8 @@
             "Sono modelli meta-teorici rivolti alla automatizzazione della generazione di reti neurali"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "I modelli generativi apprendono la distribuzione dei dati; GAN, VAE e modelli a diffusione ne sono esempi profondi e anche Naive Bayes è generativo. Non sono «modelli meta-teorici» per generare automaticamente reti neurali: questa affermazione è errata."
     },
     {
         "data_esame": "2024-12-17",
@@ -2703,7 +2871,8 @@
             "Un neurone artificiale tipicamente calcola una combinazione lineare dei suoi input, seguita dalla applicazione di una funzione di attivazione non lineare"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un neurone artificiale calcola σ(w·x + b): una combinazione lineare degli input seguita da una funzione di attivazione non lineare. Ha un numero di parametri lineare (non quadratico) nel numero di input e non può apprendere qualunque funzione."
     },
     {
         "data_esame": "2024-12-17",
@@ -2719,7 +2888,8 @@
             "definire l'algoritmo che calcola i gradienti della loss e aggiorna i pesi del modello"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'optimizer (es. Adam) governa la discesa del gradiente: definisce come usare i gradienti della loss per aggiornare i pesi, eventualmente adattando il learning rate o usando il momentum. Salvare i pesi migliori e penalizzare i pesi sono compiti di altri componenti (callback, regularizer)."
     },
     {
         "data_esame": "2024-12-17",
@@ -2735,7 +2905,8 @@
             "aggiunta di skip connections"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le skip connections (reti residuali) fanno arrivare il gradiente agli strati bassi, contrastando il vanishing gradient: non sono una tecnica anti-overfitting. Early stopping, data augmentation, dropout e loss di regolarizzazione limitano invece l'adattamento eccessivo ai dati di training."
     },
     {
         "data_esame": "2024-12-17",
@@ -2751,7 +2922,8 @@
             "Se il gradiente tende a zero anche i parametri e le attivazioni dei neuroni tendono a zero"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Se il gradiente tende a zero i parametri smettono di aggiornarsi e la rete non apprende, ma questo non fa tendere a zero parametri o attivazioni, che restano ai valori correnti. Il problema è mitigato dalla ReLU e dalle connessioni residuali."
     },
     {
         "data_esame": "2024-12-17",
@@ -2767,7 +2939,8 @@
             "Richiedono la trasposizione dell'input prima di calcolare la convoluzione del Kernel"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Una convoluzione trasposta equivale a un upsampling seguito da una convoluzione normale, ovvero a una convoluzione con stride sub-unitario, e si usa nei decoder (autoencoder, U-Net). Il nome deriva dalla matrice trasposta dell'operatore di convoluzione, non da una trasposizione dell'input."
     },
     {
         "data_esame": "2024-12-17",
@@ -2783,7 +2956,8 @@
             "Viene spesso utilizzata nell'ambito della classificazione dei generi musicali"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La U-Net è usata per la segmentazione semantica e per il denoising di immagini, ed è il componente tipico (rete di denoising) dei modelli a diffusione. Lavora su immagini: non è utilizzata per classificare generi musicali."
     },
     {
         "data_esame": "2024-12-17",
@@ -2799,7 +2973,8 @@
             "Gli Autoencoders richiedono l'uso di livelli densi"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un autoencoder può essere costruito anche con livelli convoluzionali: non richiede livelli densi. Encoder e decoder non devono essere simmetrici, la rappresentazione interna è di solito più piccola dell'input e si può usare per il denoising."
     },
     {
         "data_esame": "2024-12-17",
@@ -2815,7 +2990,8 @@
             "(7,7,8)"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Wout = ⌊(Win + P − K)/S⌋ + 1 = ⌊(16 − 3)/2⌋ + 1 = 7 per ogni asse spaziale (6,5 arrotondato per difetto). Ogni kernel lavora su tutti i 32 canali di input e produce un solo feature map: con 8 kernel l'output ha 8 canali, cioè (7,7,8)."
     },
     {
         "data_esame": "2024-12-17",
@@ -2831,7 +3007,8 @@
             "Si effettua solo durante il \"training\""
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La backpropagation calcola il gradiente della loss per aggiornare i parametri, quindi serve solo durante il training; in inference basta la forward pass. Il suo costo è paragonabile a quello del calcolo in avanti e non riguarda solo le skip connections."
     },
     {
         "data_esame": "2024-12-17",
@@ -2847,7 +3024,8 @@
             "La Backpropagation è effettuata più frequentemente ma l'aggiornamento dei parametri è meno accurato"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con minibatch più piccoli i parametri si aggiornano più spesso (gli aggiornamenti per epoca sono dimensione del training set / batchsize), ma ogni aggiornamento è meno accurato perché il gradiente deriva da pochi dati specifici."
     },
     {
         "data_esame": "2024-12-17",
@@ -2863,7 +3041,8 @@
             "le GAN possono soffire del fenomeno di \"mode collapse\", cioè la tendenza a focalizzare la generazione su un unico o pochi esempi"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le GAN possono soffrire di mode collapse: il generatore si specializza su pochi esempi (o uno solo) che ingannano bene il discriminatore. Non hanno una struttura encoder-decoder, non usano la log-likelihood dei dati generati e non servono a creare attacchi."
     },
     {
         "data_esame": "2024-12-17",
@@ -2879,7 +3058,8 @@
             "Può essere applicata solo se la funzione da minimizzare ha una superficie concava"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La discesa del gradiente minimizza una funzione seguendo l'opposto del gradiente e non richiede affatto una superficie concava: si usa anche su superfici complesse con molti minimi locali, come nelle reti non lineari. È vero che dipende dall'inizializzazione e che conviene ridurre il learning rate alla fine."
     },
     {
         "data_esame": "2025-01-20",
@@ -2896,7 +3076,7 @@
         ],
         "origine": "moodle_testuale",
         "revisione": "automatica",
-        "spiegazione": "La profondità massima di un albero di decisione con features discrete è limitata dal numero di features, poiché ogni feature può apparire al massimo una volta nel percorso decisionale. Tuttavia, l'albero potrebbe essere più corto se tutte le foglie diventano pure prima di esaurire le features."
+        "spiegazione": "Con feature discrete ogni attributo viene usato al più una volta lungo un cammino: dopo lo split su Xi si crea un figlio per ogni suo valore e non serve riutilizzarlo. Quindi la profondità non supera il numero delle feature; non dipende dal numero delle classi né è legata al logaritmo del numero dei dati."
     },
     {
         "data_esame": "2025-01-20",
@@ -2913,7 +3093,7 @@
         ],
         "origine": "moodle_testuale",
         "revisione": "automatica",
-        "spiegazione": "La cross-validation K-Fold è una tecnica utilizzata per valutare le prestazioni di un modello di machine learning. Suddivide il dataset in K sottoinsiemi (fold) e addestra il modello K volte, utilizzando ogni volta una fold diversa come set di test e le restanti come set di training. Questo permette di ottenere una stima più affidabile della generalizzazione del modello rispetto a una singola divisione train/test. Aiuta anche a identificare i parametri ottimali del modello e a ridurre l'overfitting."
+        "spiegazione": "Nella K-Fold cross-validation i dati sono divisi in K parti: a turno una è il test set e le altre il training. Si ottengono K valutazioni, mediate per stimare in modo più affidabile la generalizzazione. Non aumenta i dati né sceglie da sola il modello migliore."
     },
     {
         "data_esame": "2025-01-20",
@@ -2929,7 +3109,8 @@
             "Apprendimento di funzioni basato su esempi di training composti da coppie input-output"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Nell'apprendimento supervisionato il training usa esempi composti da coppie input-output (x, y), da cui si impara una funzione. «Supervisionato» non significa che un esperto segua direttamente l'addestramento: le etichette sono raccolte prima."
     },
     {
         "data_esame": "2025-01-20",
@@ -2945,7 +3126,8 @@
             "Il suo valore è minimo (e uguale a 0) quando la probabilità è equamente distribuita tra tutte le classi"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'entropia misura il disordine: è minima (0) quando la probabilità è concentrata in una sola classe (nessuna incertezza) ed è massima (log n) quando è equamente distribuita. L'affermazione errata scambia i due casi."
     },
     {
         "data_esame": "2025-01-20",
@@ -2962,7 +3144,8 @@
             "Richiede il calcolo di un numero epsonenziale di parametri"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Dalla congiunta si ricava qualunque probabilità, anche condizionale: P(A|B) = P(A∧B)/P(B). È quindi errato dire che non lo permetta. È invece vero che servono un numero esponenziale di parametri (2^n − 1): quell'opzione, marcata come errata nel file, in realtà è corretta."
     },
     {
         "data_esame": "2025-01-20",
@@ -2978,7 +3161,8 @@
             "Raggruppare i punti di un cluster attorno al loro centroide"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "K-means divide i dati in K cluster raggruppando i punti attorno al centroide del cluster: alterna l'assegnazione di ogni punto al centroide più vicino e il ricalcolo dei centroidi. Non cerca il punto medio del dataset né ottimizza il numero dei cluster, che è fissato in anticipo."
     },
     {
         "data_esame": "2025-01-20",
@@ -2994,7 +3178,8 @@
             "Non può essere utilizzata se le features non sono tra loro indipendenti, date le classi"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Naive Bayes si basa sull'indipendenza condizionale delle feature, ma può essere usato anche quando non vale: la stima risulta solo meno accurata (esistono casi limite, come p1 = p2, in cui fallisce). Le altre affermazioni sono vere: è un modello generativo e approssima in modo efficiente la distribuzione congiunta."
     },
     {
         "data_esame": "2025-01-20",
@@ -3010,7 +3195,8 @@
             "Una distribuzione Normale, ovvero Gaussiana(0,1)"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Per feature continue la probabilità puntuale P(Xi|Y) sarebbe nulla, quindi si assume una distribuzione Gaussiana (Normale) con media µ e deviazione σ stimate per ogni classe e feature. Si sceglie poi la classe che massimizza πk · ∏ N(ai|µik, σik)."
     },
     {
         "data_esame": "2025-01-20",
@@ -3026,7 +3212,8 @@
             "E' più probabile che la moneta sia normale"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Per l'osservazione {testa, croce} la moneta normale dà 1/2 · 1/2 = 1/4, quella truccata 3/4 · 1/4 = 3/16. Poiché 1/4 > 3/16, è più probabile che la moneta sia normale (a parità di probabilità a priori)."
     },
     {
         "data_esame": "2025-01-20",
@@ -3042,7 +3229,8 @@
             "Garantire che tutte le feature abbiano la stessa scala, migliorando la convergenza dell'ottimizzazione."
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La normalizzazione porta tutte le feature su una scala simile, così nessuna domina le altre e la discesa del gradiente converge più rapidamente. Non gestisce i valori mancanti, non riduce i parametri e non aumenta di per sé la precisione."
     },
     {
         "data_esame": "2025-01-20",
@@ -3058,7 +3246,8 @@
             "Aumentare il numero di epoche di addestramento."
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Allenare più a lungo permette al modello di adattarsi sempre di più ai dettagli del training set, quindi tende ad aumentare l'overfitting. Lo riducono invece avere più dati, semplificare il modello, usare dropout o weight decay e fermarsi in anticipo (early stopping)."
     },
     {
         "data_esame": "2025-01-20",
@@ -3074,7 +3263,8 @@
             "indica quanto una singola componente contribuisce alla varianza complessiva dei dati"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La varianza spiegata di una componente è la quota della varianza totale dei dati catturata da quella componente: indica quanto contribuisce alla varianza complessiva. Serve a decidere quante componenti mantenere."
     },
     {
         "data_esame": "2025-01-20",
@@ -3090,7 +3280,8 @@
             "1/9"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il dataset ha 1/3 di positivi. La recall è TP/(TP+FN) = 2/3, quindi i falsi negativi (positivi non trovati) sono 1/3 dei positivi: 1/3 · 1/3 = 1/9 dei dati totali. I veri positivi sono invece 2/3 · 1/3 = 2/9 del totale."
     },
     {
         "data_esame": "2025-01-20",
@@ -3106,7 +3297,8 @@
             "P(A|B) è sicuramente minore o uguale di P(A and B)"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Poiché P(A|B) = P(A∧B)/P(B) e P(B) ≤ 1, vale P(A|B) ≥ P(A∧B), non ≤ (salvo il caso limite P(B) = 1). L'affermazione contraria è errata. È invece possibile che P(A|B) sia maggiore o minore di P(A), a seconda che B favorisca o sfavorisca A."
     },
     {
         "data_esame": "2025-01-20",
@@ -3122,7 +3314,8 @@
             "E' una metrica che misura la capacità di apprendimento del modello"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il learning rate è un iper-parametro, non una metrica: è fissato dall'esterno, determina la lunghezza del passo nella discesa del gradiente e può variare durante il training. Se troppo alto accelera l'apprendimento ma può saltare sopra il minimo."
     },
     {
         "data_esame": "2025-01-20",
@@ -3138,7 +3331,8 @@
             "I parametri del modello sono tipicamente calcolati mediante discesa del gradiente"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Non esiste una formula in forma chiusa per la regressione logistica, quindi i parametri si calcolano con la discesa del gradiente (massimizzando la log-likelihood). Le altre opzioni sono false: il calcolo si basa sulla log-likelihood e la predizione dipende dal bilanciamento dei dati."
     },
     {
         "data_esame": "2025-01-20",
@@ -3154,7 +3348,8 @@
             "Un neurone artificiale può apprendere qualunque funzione dei suoi input"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un singolo neurone non può apprendere qualunque funzione: separa con un iperpiano, quindi non calcola ad esempio lo XOR. Per funzioni più complesse servono più strati. Gli altri enunciati sono veri: parametri lineari nel numero di input e struttura σ(w·x + b)."
     },
     {
         "data_esame": "2025-01-20",
@@ -3170,7 +3365,8 @@
             "Features sintetizzate in modo automatico a partire da altre features"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Le «deep» features sono feature estratte automaticamente dalla rete a partire da altre feature, in livelli successivi di astrazione (è uno dei due sensi di «deep» in deep learning, insieme al numero di strati). Non riguardano sensori di profondità né l'intervento umano."
     },
     {
         "data_esame": "2025-01-20",
@@ -3186,7 +3382,8 @@
             "Tipicamente, il gradiente viene artificialmente rinforzato ad ogni layer attraversato per contrastare il fenomeno della sua scomparsa (vanishing)"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La backpropagation calcola il gradiente un layer alla volta con la chain rule, usando operazioni algebriche parallelizzabili su GPU. Non rinforza artificialmente il gradiente: il vanishing gradient si contrasta con scelte architetturali come ReLU e connessioni residuali."
     },
     {
         "data_esame": "2025-01-20",
@@ -3202,7 +3399,8 @@
             "La Backpropagation è effettuata più frequentemente ma l'aggiornamento dei parametri è meno accurato"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Con minibatch più piccoli i parametri si aggiornano più spesso (gli aggiornamenti per epoca sono dimensione del training set / batchsize), ma ogni aggiornamento è meno accurato perché il gradiente deriva da pochi dati specifici."
     },
     {
         "data_esame": "2025-01-20",
@@ -3218,7 +3416,8 @@
             "L'acquisizione di nuovi dati di training non può che peggiorare la situazione"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Più dati di training sono uno dei rimedi principali contro l'overfitting: il modello ha meno possibilità di memorizzare casi particolari. Le altre affermazioni sono corrette: è più pericoloso con modelli molto espressivi e si contrasta con regolarizzazione ed early stopping."
     },
     {
         "data_esame": "2025-01-20",
@@ -3234,7 +3433,8 @@
             "backpropagation in reti profonde"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Il vanishing gradient nasce nella backpropagation di reti profonde: il gradiente è un prodotto di molti fattori, tra cui le derivate delle attivazioni (la sigmoide è sempre < 0,25), e diventa piccolissimo. Non dipende da qualità o quantità dei dati né dalla durata del training."
     },
     {
         "data_esame": "2025-01-20",
@@ -3250,7 +3450,8 @@
             "definire l'algoritmo che calcola i gradienti della loss e aggiorna i pesi del modello"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "L'optimizer (es. Adam) governa la discesa del gradiente: definisce come usare i gradienti della loss per aggiornare i pesi, eventualmente adattando il learning rate o usando il momentum. Salvare i pesi migliori e penalizzare i pesi sono compiti di altri componenti (callback, regularizer)."
     },
     {
         "data_esame": "2025-01-20",
@@ -3266,7 +3467,8 @@
             "Permettono una migliore gestione del problema del vanishing gradient."
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Nelle ResNet la skip connection permette al gradiente degli strati alti di arrivare agli strati bassi senza passare per i pesi, che possono causare vanishing o exploding gradient. Non riduce i parametri e non è una misura anti-overfitting."
     },
     {
         "data_esame": "2025-01-20",
@@ -3282,7 +3484,8 @@
             "Possono essere interpretate come convoluzioni normali con stride sub-unitario"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Una convoluzione trasposta si può interpretare come una convoluzione normale con stride sub-unitario (frazionario), che aumenta la dimensione spaziale; equivale a un upsampling seguito da una convoluzione. Si usa nei decoder (autoencoder, U-Net), non nella classificazione."
     },
     {
         "data_esame": "2025-01-20",
@@ -3298,7 +3501,8 @@
             "Segmentazione di immagini (semantic segmentation)"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Applicazioni tipiche degli autoencoder: denoising, riduzione della dimensionalità ed estrazione di feature (generalizzano la PCA), anomaly detection e modelli generativi (VAE). La segmentazione semantica è invece tipica di reti come la U-Net."
     },
     {
         "data_esame": "2025-01-20",
@@ -3314,7 +3518,8 @@
             "Le GANs sono utilizzate per generare attacchi ad una rete di classificazione prefissata"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Una GAN è un gioco tra generatore e discriminatore, addestrati alternativamente congelando l'altro, e può soffrire di mode collapse. Non serve a generare attacchi contro un classificatore prefissato: è un modello generativo."
     },
     {
         "data_esame": "2025-01-20",
@@ -3330,7 +3535,8 @@
             "Viene spesso utilizzata nell'ambito della classificazione dei generi musicali"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "La U-Net è usata per la segmentazione semantica e per il denoising di immagini, ed è il componente tipico (rete di denoising) dei modelli a diffusione. Lavora su immagini: non è utilizzata per classificare generi musicali."
     },
     {
         "data_esame": "2025-01-20",
@@ -3346,7 +3552,8 @@
             "modelli che cercano di apprendere la distribuzione di probabilità dei dati"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "Un modello generativo cerca di apprendere la distribuzione di probabilità p_data dei dati reali a partire dagli esempi, per stimarla o campionare nuovi dati simili. Non è l'automazione della creazione di reti, né attacchi adversarial, né tecniche genetiche."
     },
     {
         "data_esame": "2025-01-20",
@@ -3362,6 +3569,7 @@
             "Generano i riusultati attraverso un processo di diffusione della informazione"
         ],
         "origine": "moodle_testuale",
-        "revisione": "automatica"
+        "revisione": "automatica",
+        "spiegazione": "I modelli a diffusione partono da rumore gaussiano e iterano una rete di denoising (tipicamente una U-Net, la stessa a ogni passo) fino a ottenere l'immagine; lo spazio latente ha la stessa dimensione di quello visibile. Non «diffondono informazione»: rimuovono rumore."
     }
 ]
