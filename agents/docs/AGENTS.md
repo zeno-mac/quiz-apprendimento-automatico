@@ -28,6 +28,8 @@ I dati si trovano attualmente all'interno del file `data/domande.json`, come lis
 - `origine`: `str` (Es. `"moodle_testuale"`, indica la provenienza dell'estrazione)
 - `revisione`: `str` (Es. `"correzione_manuale"` o `"automatica"`, traccia se il record è stato aggiustato manualmente dall'umano)
 - `spiegazione`: `str` (Opzionale. Testo della spiegazione del perché la risposta corretta è valida. Attualmente non ancora popolata nel dataset: la Web App gestisce la sua eventuale assenza mostrando un placeholder di cortesia fino all'inserimento definitivo).
+- `ripetizioni`: `int` (Numero di volte in cui la stessa domanda compare nel dataset, contando tutte le occorrenze tra tutti gli esami. Vale almeno 1).
+- `altri_esami`: `[str]` (Lista delle date degli esami — in formato `YYYY-MM-DD` — in cui questa domanda compare. Include sempre almeno l'esame corrente, quindi la lunghezza di questa lista coincide con il valore di `ripetizioni`).
 
 
 ### Invarianti Attesi per l'Integrità dei Dati
