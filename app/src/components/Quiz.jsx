@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, X, CheckCircle2, Check, LayoutGrid, ChevronDown, HelpCircle } from 'lucide-react';
+import React, { useState, useRef, useEffect } from 'react';
+import { ArrowLeft, ArrowRight, X, CheckCircle2, Check, LayoutGrid, ChevronDown, HelpCircle, Repeat2 } from 'lucide-react';
 import { InlineMath } from 'react-katex';
 import 'katex/dist/katex.min.css';
 import CorrectionModal from './CorrectionModal';
@@ -22,6 +22,19 @@ export default function Quiz({ quizData, onExit, onFinish }) {
   const [answers, setAnswers] = useState({});
   const [showGrid, setShowGrid] = useState(false);
   const [showCorrection, setShowCorrection] = useState(false);
+  const [showExamsPopover, setShowExamsPopover] = useState(false);
+  const popoverRef = useRef(null);
+
+  // Close popover when clicking outside
+  useEffect(() => {
+    const handler = (e) => {
+      if (popoverRef.current && !popoverRef.current.contains(e.target)) {
+        setShowExamsPopover(false);
+      }
+    };
+    if (showExamsPopover) document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, [showExamsPopover]);
 
   const questions = quizData.data;
   const question = questions[currentIndex];
@@ -42,6 +55,7 @@ export default function Quiz({ quizData, onExit, onFinish }) {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setShowCorrection(false);
+      setShowExamsPopover(false);
     }
   };
 
@@ -49,6 +63,7 @@ export default function Quiz({ quizData, onExit, onFinish }) {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
       setShowCorrection(false);
+      setShowExamsPopover(false);
     }
   };
 
@@ -89,6 +104,7 @@ export default function Quiz({ quizData, onExit, onFinish }) {
                   setCurrentIndex(i);
                   setShowGrid(false);
                   setShowCorrection(false);
+                  setShowExamsPopover(false);
                 }}
               >
                 {i + 1}
@@ -106,6 +122,39 @@ export default function Quiz({ quizData, onExit, onFinish }) {
           <span className="meta-item">
             <strong>N°:</strong> {question.numero_domanda}
           </span>
+
+          {/* Ripetizioni badge with popover */}
+          {question.ripetizioni != null && (
+            <div ref={popoverRef} style={{ position: 'relative', display: 'inline-flex' }}>
+              <span
+                className={`meta-item repetitions-badge ${question.ripetizioni > 1 ? 'repeated' : ''}`}
+                onClick={() => setShowExamsPopover(v => !v)}
+                onMouseEnter={() => setShowExamsPopover(true)}
+                onMouseLeave={(e) => {
+                  if (!popoverRef.current?.contains(e.relatedTarget)) {
+                    setShowExamsPopover(false);
+                  }
+                }}
+              >
+                <Repeat2 size={14} />
+                <span>{question.ripetizioni === 1 ? 'Appare 1 volta' : `Appare ${question.ripetizioni} volte`}</span>
+              </span>
+              {showExamsPopover && question.altri_esami?.length > 0 && (
+                <div className="exams-popover">
+                  <div className="exams-popover-title">Presente in:</div>
+                  <ul className="exams-popover-list">
+                    {question.altri_esami.map((exam) => (
+                      <li key={exam} className={exam === question.data_esame ? 'current-exam' : ''}>
+                        {exam}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+
+
           {(() => {
             const isVerified = question.revisione === 'correzione_manuale' || question.revisione === 'manuale';
             return (

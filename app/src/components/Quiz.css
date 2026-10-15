@@ -247,3 +247,78 @@
     justify-content: center;
   }
 }
+
+/* ── Repetitions badge ─────────────────────────────────── */
+.repetitions-badge {
+  position: relative;
+  cursor: pointer;
+  padding: 0.15rem 0.6rem;
+  border-radius: 2rem;
+  border: 1px solid var(--border-color);
+  font-size: 0.8rem;
+  transition: background 0.2s, border-color 0.2s;
+  user-select: none;
+}
+
+.repetitions-badge:hover {
+  background-color: var(--overlay-hover);
+  border-color: var(--accent-color);
+}
+
+.repetitions-badge.repeated {
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.35);
+  background-color: rgba(245, 158, 11, 0.08);
+}
+
+.repetitions-badge.repeated:hover {
+  background-color: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.6);
+}
+
+/* ── Exams popover ─────────────────────────────────────── */
+.exams-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  transform: none;
+  width: max-content;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  animation: fadeIn 0.15s ease;
+  pointer-events: none;
+}
+
+.exams-popover-title {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.exams-popover-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.exams-popover-list li {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.exams-popover-list li.current-exam {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
