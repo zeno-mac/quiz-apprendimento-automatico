@@ -4,3 +4,4 @@ scripts/archive/*
 venv/*
 txt/*
 agents/reports/*
+tmp/*
